@@ -1,0 +1,3583 @@
+[
+  {
+    "input": {
+      "tag": "forge:ingots/bismuth_bronze"
+    },
+    "result": {
+      "item": "tfc:metal/axe_head/bismuth_bronze"
+    },
+    "rules": [
+      "punch_last",
+      "hit_second_last",
+      "upset_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/bismuth_bronze"
+    },
+    "result": {
+      "item": "tfc:metal/chain/bismuth_bronze",
+      "count": 16
+    },
+    "rules": [
+      "hit_any",
+      "hit_any",
+      "draw_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/bismuth_bronze"
+    },
+    "result": {
+      "item": "tfc:metal/chisel_head/bismuth_bronze"
+    },
+    "rules": [
+      "hit_last",
+      "hit_not_last",
+      "draw_not_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:sheets/bismuth_bronze"
+    },
+    "result": {
+      "item": "tfc:metal/fish_hook/bismuth_bronze"
+    },
+    "rules": [
+      "draw_not_last",
+      "bend_any",
+      "hit_any"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/bismuth_bronze"
+    },
+    "result": {
+      "item": "tfc:metal/hammer_head/bismuth_bronze"
+    },
+    "rules": [
+      "punch_last",
+      "shrink_not_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/bismuth_bronze"
+    },
+    "result": {
+      "item": "tfc:metal/hoe_head/bismuth_bronze"
+    },
+    "rules": [
+      "punch_last",
+      "hit_not_last",
+      "bend_not_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/bismuth_bronze"
+    },
+    "result": {
+      "item": "tfc:metal/javelin_head/bismuth_bronze"
+    },
+    "rules": [
+      "hit_last",
+      "hit_second_last",
+      "draw_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/bismuth_bronze"
+    },
+    "result": {
+      "item": "tfc:metal/knife_blade/bismuth_bronze"
+    },
+    "rules": [
+      "hit_last",
+      "draw_second_last",
+      "draw_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/bismuth_bronze"
+    },
+    "result": {
+      "item": "tfc:metal/lamp/bismuth_bronze"
+    },
+    "rules": [
+      "bend_last",
+      "bend_second_last",
+      "draw_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_ingots/bismuth_bronze"
+    },
+    "result": {
+      "item": "tfc:metal/mace_head/bismuth_bronze"
+    },
+    "rules": [
+      "hit_last",
+      "shrink_not_last",
+      "bend_not_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/bismuth_bronze"
+    },
+    "result": {
+      "item": "tfc:metal/pickaxe_head/bismuth_bronze"
+    },
+    "rules": [
+      "punch_last",
+      "bend_not_last",
+      "draw_not_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/bismuth_bronze"
+    },
+    "result": {
+      "item": "tfc:metal/propick_head/bismuth_bronze"
+    },
+    "rules": [
+      "punch_last",
+      "draw_not_last",
+      "bend_not_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/bismuth_bronze"
+    },
+    "result": {
+      "item": "tfc:metal/rod/bismuth_bronze",
+      "count": 2
+    },
+    "rules": [
+      "bend_last",
+      "draw_second_last",
+      "draw_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/bismuth_bronze"
+    },
+    "result": {
+      "item": "tfc:metal/saw_blade/bismuth_bronze"
+    },
+    "rules": [
+      "hit_last",
+      "hit_second_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/bismuth_bronze"
+    },
+    "result": {
+      "item": "tfc:metal/scythe_blade/bismuth_bronze"
+    },
+    "rules": [
+      "hit_last",
+      "draw_second_last",
+      "bend_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_ingots/bismuth_bronze"
+    },
+    "result": {
+      "item": "tfc:metal/sheet/bismuth_bronze"
+    },
+    "rules": [
+      "hit_last",
+      "hit_second_last",
+      "hit_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_sheets/bismuth_bronze"
+    },
+    "result": {
+      "item": "tfc:metal/shield/bismuth_bronze"
+    },
+    "rules": [
+      "upset_last",
+      "bend_second_last",
+      "bend_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/bismuth_bronze"
+    },
+    "result": {
+      "item": "tfc:metal/shovel_head/bismuth_bronze"
+    },
+    "rules": [
+      "punch_last",
+      "hit_not_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_ingots/bismuth_bronze"
+    },
+    "result": {
+      "item": "tfc:metal/sword_blade/bismuth_bronze"
+    },
+    "rules": [
+      "hit_last",
+      "bend_second_last",
+      "bend_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:sheets/bismuth_bronze"
+    },
+    "result": {
+      "item": "tfc:metal/trapdoor/bismuth_bronze"
+    },
+    "rules": [
+      "bend_last",
+      "draw_second_last",
+      "draw_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_sheets/bismuth_bronze"
+    },
+    "result": {
+      "item": "tfc:metal/tuyere/bismuth_bronze"
+    },
+    "rules": [
+      "bend_last",
+      "bend_second_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:sheets/bismuth_bronze"
+    },
+    "result": {
+      "item": "tfc:metal/unfinished_boots/bismuth_bronze"
+    },
+    "rules": [
+      "bend_last",
+      "bend_second_last",
+      "shrink_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_sheets/bismuth_bronze"
+    },
+    "result": {
+      "item": "tfc:metal/unfinished_chestplate/bismuth_bronze"
+    },
+    "rules": [
+      "hit_last",
+      "hit_second_last",
+      "upset_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_sheets/bismuth_bronze"
+    },
+    "result": {
+      "item": "tfc:metal/unfinished_greaves/bismuth_bronze"
+    },
+    "rules": [
+      "bend_any",
+      "draw_any",
+      "hit_any"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_sheets/bismuth_bronze"
+    },
+    "result": {
+      "item": "tfc:metal/unfinished_helmet/bismuth_bronze"
+    },
+    "rules": [
+      "hit_last",
+      "bend_second_last",
+      "bend_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/bismuth"
+    },
+    "result": {
+      "item": "tfc:metal/rod/bismuth",
+      "count": 2
+    },
+    "rules": [
+      "bend_last",
+      "draw_second_last",
+      "draw_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_ingots/bismuth"
+    },
+    "result": {
+      "item": "tfc:metal/sheet/bismuth"
+    },
+    "rules": [
+      "hit_last",
+      "hit_second_last",
+      "hit_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/black_bronze"
+    },
+    "result": {
+      "item": "tfc:metal/axe_head/black_bronze"
+    },
+    "rules": [
+      "punch_last",
+      "hit_second_last",
+      "upset_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/black_bronze"
+    },
+    "result": {
+      "item": "tfc:metal/chain/black_bronze",
+      "count": 16
+    },
+    "rules": [
+      "hit_any",
+      "hit_any",
+      "draw_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/black_bronze"
+    },
+    "result": {
+      "item": "tfc:metal/chisel_head/black_bronze"
+    },
+    "rules": [
+      "hit_last",
+      "hit_not_last",
+      "draw_not_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:sheets/black_bronze"
+    },
+    "result": {
+      "item": "tfc:metal/fish_hook/black_bronze"
+    },
+    "rules": [
+      "draw_not_last",
+      "bend_any",
+      "hit_any"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/black_bronze"
+    },
+    "result": {
+      "item": "tfc:metal/hammer_head/black_bronze"
+    },
+    "rules": [
+      "punch_last",
+      "shrink_not_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/black_bronze"
+    },
+    "result": {
+      "item": "tfc:metal/hoe_head/black_bronze"
+    },
+    "rules": [
+      "punch_last",
+      "hit_not_last",
+      "bend_not_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/black_bronze"
+    },
+    "result": {
+      "item": "tfc:metal/javelin_head/black_bronze"
+    },
+    "rules": [
+      "hit_last",
+      "hit_second_last",
+      "draw_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/black_bronze"
+    },
+    "result": {
+      "item": "tfc:metal/knife_blade/black_bronze"
+    },
+    "rules": [
+      "hit_last",
+      "draw_second_last",
+      "draw_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/black_bronze"
+    },
+    "result": {
+      "item": "tfc:metal/lamp/black_bronze"
+    },
+    "rules": [
+      "bend_last",
+      "bend_second_last",
+      "draw_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_ingots/black_bronze"
+    },
+    "result": {
+      "item": "tfc:metal/mace_head/black_bronze"
+    },
+    "rules": [
+      "hit_last",
+      "shrink_not_last",
+      "bend_not_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/black_bronze"
+    },
+    "result": {
+      "item": "tfc:metal/pickaxe_head/black_bronze"
+    },
+    "rules": [
+      "punch_last",
+      "bend_not_last",
+      "draw_not_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/black_bronze"
+    },
+    "result": {
+      "item": "tfc:metal/propick_head/black_bronze"
+    },
+    "rules": [
+      "punch_last",
+      "draw_not_last",
+      "bend_not_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/black_bronze"
+    },
+    "result": {
+      "item": "tfc:metal/rod/black_bronze",
+      "count": 2
+    },
+    "rules": [
+      "bend_last",
+      "draw_second_last",
+      "draw_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/black_bronze"
+    },
+    "result": {
+      "item": "tfc:metal/saw_blade/black_bronze"
+    },
+    "rules": [
+      "hit_last",
+      "hit_second_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/black_bronze"
+    },
+    "result": {
+      "item": "tfc:metal/scythe_blade/black_bronze"
+    },
+    "rules": [
+      "hit_last",
+      "draw_second_last",
+      "bend_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_ingots/black_bronze"
+    },
+    "result": {
+      "item": "tfc:metal/sheet/black_bronze"
+    },
+    "rules": [
+      "hit_last",
+      "hit_second_last",
+      "hit_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_sheets/black_bronze"
+    },
+    "result": {
+      "item": "tfc:metal/shield/black_bronze"
+    },
+    "rules": [
+      "upset_last",
+      "bend_second_last",
+      "bend_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/black_bronze"
+    },
+    "result": {
+      "item": "tfc:metal/shovel_head/black_bronze"
+    },
+    "rules": [
+      "punch_last",
+      "hit_not_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_ingots/black_bronze"
+    },
+    "result": {
+      "item": "tfc:metal/sword_blade/black_bronze"
+    },
+    "rules": [
+      "hit_last",
+      "bend_second_last",
+      "bend_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:sheets/black_bronze"
+    },
+    "result": {
+      "item": "tfc:metal/trapdoor/black_bronze"
+    },
+    "rules": [
+      "bend_last",
+      "draw_second_last",
+      "draw_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_sheets/black_bronze"
+    },
+    "result": {
+      "item": "tfc:metal/tuyere/black_bronze"
+    },
+    "rules": [
+      "bend_last",
+      "bend_second_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:sheets/black_bronze"
+    },
+    "result": {
+      "item": "tfc:metal/unfinished_boots/black_bronze"
+    },
+    "rules": [
+      "bend_last",
+      "bend_second_last",
+      "shrink_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_sheets/black_bronze"
+    },
+    "result": {
+      "item": "tfc:metal/unfinished_chestplate/black_bronze"
+    },
+    "rules": [
+      "hit_last",
+      "hit_second_last",
+      "upset_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_sheets/black_bronze"
+    },
+    "result": {
+      "item": "tfc:metal/unfinished_greaves/black_bronze"
+    },
+    "rules": [
+      "bend_any",
+      "draw_any",
+      "hit_any"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_sheets/black_bronze"
+    },
+    "result": {
+      "item": "tfc:metal/unfinished_helmet/black_bronze"
+    },
+    "rules": [
+      "hit_last",
+      "bend_second_last",
+      "bend_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/black_steel"
+    },
+    "result": {
+      "item": "tfc:metal/axe_head/black_steel"
+    },
+    "rules": [
+      "punch_last",
+      "hit_second_last",
+      "upset_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:sheets/black_steel"
+    },
+    "result": {
+      "item": "tfc:black_steel_bars",
+      "count": 8
+    },
+    "rules": [
+      "upset_last",
+      "punch_second_last",
+      "punch_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_sheets/black_steel"
+    },
+    "result": {
+      "item": "tfc:black_steel_bars",
+      "count": 16
+    },
+    "rules": [
+      "upset_last",
+      "punch_second_last",
+      "punch_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/black_steel"
+    },
+    "result": {
+      "item": "tfc:metal/chain/black_steel",
+      "count": 16
+    },
+    "rules": [
+      "hit_any",
+      "hit_any",
+      "draw_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/black_steel"
+    },
+    "result": {
+      "item": "tfc:metal/chisel_head/black_steel"
+    },
+    "rules": [
+      "hit_last",
+      "hit_not_last",
+      "draw_not_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:sheets/black_steel"
+    },
+    "result": {
+      "item": "tfc:metal/fish_hook/black_steel"
+    },
+    "rules": [
+      "draw_not_last",
+      "bend_any",
+      "hit_any"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/black_steel"
+    },
+    "result": {
+      "item": "tfc:metal/hammer_head/black_steel"
+    },
+    "rules": [
+      "punch_last",
+      "shrink_not_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/black_steel"
+    },
+    "result": {
+      "item": "tfc:metal/hoe_head/black_steel"
+    },
+    "rules": [
+      "punch_last",
+      "hit_not_last",
+      "bend_not_last"
+    ]
+  },
+  {
+    "input": {
+      "item": "tfc:metal/ingot/high_carbon_black_steel"
+    },
+    "result": {
+      "item": "tfc:metal/ingot/black_steel"
+    },
+    "rules": [
+      "hit_last",
+      "hit_second_last",
+      "hit_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/black_steel"
+    },
+    "result": {
+      "item": "tfc:metal/javelin_head/black_steel"
+    },
+    "rules": [
+      "hit_last",
+      "hit_second_last",
+      "draw_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/black_steel"
+    },
+    "result": {
+      "item": "tfc:metal/knife_blade/black_steel"
+    },
+    "rules": [
+      "hit_last",
+      "draw_second_last",
+      "draw_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/black_steel"
+    },
+    "result": {
+      "item": "tfc:metal/lamp/black_steel"
+    },
+    "rules": [
+      "bend_last",
+      "bend_second_last",
+      "draw_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_ingots/black_steel"
+    },
+    "result": {
+      "item": "tfc:metal/mace_head/black_steel"
+    },
+    "rules": [
+      "hit_last",
+      "shrink_not_last",
+      "bend_not_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/black_steel"
+    },
+    "result": {
+      "item": "tfc:metal/pickaxe_head/black_steel"
+    },
+    "rules": [
+      "punch_last",
+      "bend_not_last",
+      "draw_not_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/black_steel"
+    },
+    "result": {
+      "item": "tfc:metal/propick_head/black_steel"
+    },
+    "rules": [
+      "punch_last",
+      "draw_not_last",
+      "bend_not_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/black_steel"
+    },
+    "result": {
+      "item": "tfc:metal/rod/black_steel",
+      "count": 2
+    },
+    "rules": [
+      "bend_last",
+      "draw_second_last",
+      "draw_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/black_steel"
+    },
+    "result": {
+      "item": "tfc:metal/saw_blade/black_steel"
+    },
+    "rules": [
+      "hit_last",
+      "hit_second_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/black_steel"
+    },
+    "result": {
+      "item": "tfc:metal/scythe_blade/black_steel"
+    },
+    "rules": [
+      "hit_last",
+      "draw_second_last",
+      "bend_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_ingots/black_steel"
+    },
+    "result": {
+      "item": "tfc:metal/sheet/black_steel"
+    },
+    "rules": [
+      "hit_last",
+      "hit_second_last",
+      "hit_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_sheets/black_steel"
+    },
+    "result": {
+      "item": "tfc:metal/shield/black_steel"
+    },
+    "rules": [
+      "upset_last",
+      "bend_second_last",
+      "bend_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/black_steel"
+    },
+    "result": {
+      "item": "tfc:metal/shovel_head/black_steel"
+    },
+    "rules": [
+      "punch_last",
+      "hit_not_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_ingots/black_steel"
+    },
+    "result": {
+      "item": "tfc:metal/sword_blade/black_steel"
+    },
+    "rules": [
+      "hit_last",
+      "bend_second_last",
+      "bend_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:sheets/black_steel"
+    },
+    "result": {
+      "item": "tfc:metal/trapdoor/black_steel"
+    },
+    "rules": [
+      "bend_last",
+      "draw_second_last",
+      "draw_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_sheets/black_steel"
+    },
+    "result": {
+      "item": "tfc:metal/tuyere/black_steel"
+    },
+    "rules": [
+      "bend_last",
+      "bend_second_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:sheets/black_steel"
+    },
+    "result": {
+      "item": "tfc:metal/unfinished_boots/black_steel"
+    },
+    "rules": [
+      "bend_last",
+      "bend_second_last",
+      "shrink_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_sheets/black_steel"
+    },
+    "result": {
+      "item": "tfc:metal/unfinished_chestplate/black_steel"
+    },
+    "rules": [
+      "hit_last",
+      "hit_second_last",
+      "upset_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_sheets/black_steel"
+    },
+    "result": {
+      "item": "tfc:metal/unfinished_greaves/black_steel"
+    },
+    "rules": [
+      "bend_any",
+      "draw_any",
+      "hit_any"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_sheets/black_steel"
+    },
+    "result": {
+      "item": "tfc:metal/unfinished_helmet/black_steel"
+    },
+    "rules": [
+      "hit_last",
+      "bend_second_last",
+      "bend_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/blue_steel"
+    },
+    "result": {
+      "item": "tfc:metal/axe_head/blue_steel"
+    },
+    "rules": [
+      "punch_last",
+      "hit_second_last",
+      "upset_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:sheets/blue_steel"
+    },
+    "result": {
+      "item": "tfc:blue_steel_bars",
+      "count": 8
+    },
+    "rules": [
+      "upset_last",
+      "punch_second_last",
+      "punch_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_sheets/blue_steel"
+    },
+    "result": {
+      "item": "tfc:blue_steel_bars",
+      "count": 16
+    },
+    "rules": [
+      "upset_last",
+      "punch_second_last",
+      "punch_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:sheets/blue_steel"
+    },
+    "result": {
+      "item": "tfc:metal/bucket/blue_steel"
+    },
+    "rules": [
+      "bend_last",
+      "bend_second_last",
+      "bend_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/blue_steel"
+    },
+    "result": {
+      "item": "tfc:metal/chain/blue_steel",
+      "count": 16
+    },
+    "rules": [
+      "hit_any",
+      "hit_any",
+      "draw_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/blue_steel"
+    },
+    "result": {
+      "item": "tfc:metal/chisel_head/blue_steel"
+    },
+    "rules": [
+      "hit_last",
+      "hit_not_last",
+      "draw_not_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:sheets/blue_steel"
+    },
+    "result": {
+      "item": "tfc:metal/fish_hook/blue_steel"
+    },
+    "rules": [
+      "draw_not_last",
+      "bend_any",
+      "hit_any"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/blue_steel"
+    },
+    "result": {
+      "item": "tfc:metal/hammer_head/blue_steel"
+    },
+    "rules": [
+      "punch_last",
+      "shrink_not_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/blue_steel"
+    },
+    "result": {
+      "item": "tfc:metal/hoe_head/blue_steel"
+    },
+    "rules": [
+      "punch_last",
+      "hit_not_last",
+      "bend_not_last"
+    ]
+  },
+  {
+    "input": {
+      "item": "tfc:metal/ingot/high_carbon_blue_steel"
+    },
+    "result": {
+      "item": "tfc:metal/ingot/blue_steel"
+    },
+    "rules": [
+      "hit_last",
+      "hit_second_last",
+      "hit_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/blue_steel"
+    },
+    "result": {
+      "item": "tfc:metal/javelin_head/blue_steel"
+    },
+    "rules": [
+      "hit_last",
+      "hit_second_last",
+      "draw_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/blue_steel"
+    },
+    "result": {
+      "item": "tfc:metal/knife_blade/blue_steel"
+    },
+    "rules": [
+      "hit_last",
+      "draw_second_last",
+      "draw_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/blue_steel"
+    },
+    "result": {
+      "item": "tfc:metal/lamp/blue_steel"
+    },
+    "rules": [
+      "bend_last",
+      "bend_second_last",
+      "draw_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_ingots/blue_steel"
+    },
+    "result": {
+      "item": "tfc:metal/mace_head/blue_steel"
+    },
+    "rules": [
+      "hit_last",
+      "shrink_not_last",
+      "bend_not_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/blue_steel"
+    },
+    "result": {
+      "item": "tfc:metal/pickaxe_head/blue_steel"
+    },
+    "rules": [
+      "punch_last",
+      "bend_not_last",
+      "draw_not_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/blue_steel"
+    },
+    "result": {
+      "item": "tfc:metal/propick_head/blue_steel"
+    },
+    "rules": [
+      "punch_last",
+      "draw_not_last",
+      "bend_not_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/blue_steel"
+    },
+    "result": {
+      "item": "tfc:metal/rod/blue_steel",
+      "count": 2
+    },
+    "rules": [
+      "bend_last",
+      "draw_second_last",
+      "draw_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/blue_steel"
+    },
+    "result": {
+      "item": "tfc:metal/saw_blade/blue_steel"
+    },
+    "rules": [
+      "hit_last",
+      "hit_second_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/blue_steel"
+    },
+    "result": {
+      "item": "tfc:metal/scythe_blade/blue_steel"
+    },
+    "rules": [
+      "hit_last",
+      "draw_second_last",
+      "bend_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_ingots/blue_steel"
+    },
+    "result": {
+      "item": "tfc:metal/sheet/blue_steel"
+    },
+    "rules": [
+      "hit_last",
+      "hit_second_last",
+      "hit_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_sheets/blue_steel"
+    },
+    "result": {
+      "item": "tfc:metal/shield/blue_steel"
+    },
+    "rules": [
+      "upset_last",
+      "bend_second_last",
+      "bend_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/blue_steel"
+    },
+    "result": {
+      "item": "tfc:metal/shovel_head/blue_steel"
+    },
+    "rules": [
+      "punch_last",
+      "hit_not_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_ingots/blue_steel"
+    },
+    "result": {
+      "item": "tfc:metal/sword_blade/blue_steel"
+    },
+    "rules": [
+      "hit_last",
+      "bend_second_last",
+      "bend_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:sheets/blue_steel"
+    },
+    "result": {
+      "item": "tfc:metal/trapdoor/blue_steel"
+    },
+    "rules": [
+      "bend_last",
+      "draw_second_last",
+      "draw_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_sheets/blue_steel"
+    },
+    "result": {
+      "item": "tfc:metal/tuyere/blue_steel"
+    },
+    "rules": [
+      "bend_last",
+      "bend_second_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:sheets/blue_steel"
+    },
+    "result": {
+      "item": "tfc:metal/unfinished_boots/blue_steel"
+    },
+    "rules": [
+      "bend_last",
+      "bend_second_last",
+      "shrink_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_sheets/blue_steel"
+    },
+    "result": {
+      "item": "tfc:metal/unfinished_chestplate/blue_steel"
+    },
+    "rules": [
+      "hit_last",
+      "hit_second_last",
+      "upset_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_sheets/blue_steel"
+    },
+    "result": {
+      "item": "tfc:metal/unfinished_greaves/blue_steel"
+    },
+    "rules": [
+      "bend_any",
+      "draw_any",
+      "hit_any"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_sheets/blue_steel"
+    },
+    "result": {
+      "item": "tfc:metal/unfinished_helmet/blue_steel"
+    },
+    "rules": [
+      "hit_last",
+      "bend_second_last",
+      "bend_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/brass"
+    },
+    "result": {
+      "item": "tfc:brass_mechanisms",
+      "count": 2
+    },
+    "rules": [
+      "punch_last",
+      "hit_second_last",
+      "punch_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/brass"
+    },
+    "result": {
+      "item": "tfc:metal/rod/brass",
+      "count": 2
+    },
+    "rules": [
+      "bend_last",
+      "draw_second_last",
+      "draw_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_ingots/brass"
+    },
+    "result": {
+      "item": "tfc:metal/sheet/brass"
+    },
+    "rules": [
+      "hit_last",
+      "hit_second_last",
+      "hit_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/bronze"
+    },
+    "result": {
+      "item": "tfc:metal/axe_head/bronze"
+    },
+    "rules": [
+      "punch_last",
+      "hit_second_last",
+      "upset_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/bronze"
+    },
+    "result": {
+      "item": "tfc:metal/chain/bronze",
+      "count": 16
+    },
+    "rules": [
+      "hit_any",
+      "hit_any",
+      "draw_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/bronze"
+    },
+    "result": {
+      "item": "tfc:metal/chisel_head/bronze"
+    },
+    "rules": [
+      "hit_last",
+      "hit_not_last",
+      "draw_not_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:sheets/bronze"
+    },
+    "result": {
+      "item": "tfc:metal/fish_hook/bronze"
+    },
+    "rules": [
+      "draw_not_last",
+      "bend_any",
+      "hit_any"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/bronze"
+    },
+    "result": {
+      "item": "tfc:metal/hammer_head/bronze"
+    },
+    "rules": [
+      "punch_last",
+      "shrink_not_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/bronze"
+    },
+    "result": {
+      "item": "tfc:metal/hoe_head/bronze"
+    },
+    "rules": [
+      "punch_last",
+      "hit_not_last",
+      "bend_not_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/bronze"
+    },
+    "result": {
+      "item": "tfc:metal/javelin_head/bronze"
+    },
+    "rules": [
+      "hit_last",
+      "hit_second_last",
+      "draw_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/bronze"
+    },
+    "result": {
+      "item": "tfc:metal/knife_blade/bronze"
+    },
+    "rules": [
+      "hit_last",
+      "draw_second_last",
+      "draw_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/bronze"
+    },
+    "result": {
+      "item": "tfc:metal/lamp/bronze"
+    },
+    "rules": [
+      "bend_last",
+      "bend_second_last",
+      "draw_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_ingots/bronze"
+    },
+    "result": {
+      "item": "tfc:metal/mace_head/bronze"
+    },
+    "rules": [
+      "hit_last",
+      "shrink_not_last",
+      "bend_not_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/bronze"
+    },
+    "result": {
+      "item": "tfc:metal/pickaxe_head/bronze"
+    },
+    "rules": [
+      "punch_last",
+      "bend_not_last",
+      "draw_not_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/bronze"
+    },
+    "result": {
+      "item": "tfc:metal/propick_head/bronze"
+    },
+    "rules": [
+      "punch_last",
+      "draw_not_last",
+      "bend_not_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/bronze"
+    },
+    "result": {
+      "item": "tfc:metal/rod/bronze",
+      "count": 2
+    },
+    "rules": [
+      "bend_last",
+      "draw_second_last",
+      "draw_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/bronze"
+    },
+    "result": {
+      "item": "tfc:metal/saw_blade/bronze"
+    },
+    "rules": [
+      "hit_last",
+      "hit_second_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/bronze"
+    },
+    "result": {
+      "item": "tfc:metal/scythe_blade/bronze"
+    },
+    "rules": [
+      "hit_last",
+      "draw_second_last",
+      "bend_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_ingots/bronze"
+    },
+    "result": {
+      "item": "tfc:metal/sheet/bronze"
+    },
+    "rules": [
+      "hit_last",
+      "hit_second_last",
+      "hit_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_sheets/bronze"
+    },
+    "result": {
+      "item": "tfc:metal/shield/bronze"
+    },
+    "rules": [
+      "upset_last",
+      "bend_second_last",
+      "bend_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/bronze"
+    },
+    "result": {
+      "item": "tfc:metal/shovel_head/bronze"
+    },
+    "rules": [
+      "punch_last",
+      "hit_not_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_ingots/bronze"
+    },
+    "result": {
+      "item": "tfc:metal/sword_blade/bronze"
+    },
+    "rules": [
+      "hit_last",
+      "bend_second_last",
+      "bend_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:sheets/bronze"
+    },
+    "result": {
+      "item": "tfc:metal/trapdoor/bronze"
+    },
+    "rules": [
+      "bend_last",
+      "draw_second_last",
+      "draw_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_sheets/bronze"
+    },
+    "result": {
+      "item": "tfc:metal/tuyere/bronze"
+    },
+    "rules": [
+      "bend_last",
+      "bend_second_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:sheets/bronze"
+    },
+    "result": {
+      "item": "tfc:metal/unfinished_boots/bronze"
+    },
+    "rules": [
+      "bend_last",
+      "bend_second_last",
+      "shrink_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_sheets/bronze"
+    },
+    "result": {
+      "item": "tfc:metal/unfinished_chestplate/bronze"
+    },
+    "rules": [
+      "hit_last",
+      "hit_second_last",
+      "upset_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_sheets/bronze"
+    },
+    "result": {
+      "item": "tfc:metal/unfinished_greaves/bronze"
+    },
+    "rules": [
+      "bend_any",
+      "draw_any",
+      "hit_any"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_sheets/bronze"
+    },
+    "result": {
+      "item": "tfc:metal/unfinished_helmet/bronze"
+    },
+    "rules": [
+      "hit_last",
+      "bend_second_last",
+      "bend_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/cast_iron"
+    },
+    "result": {
+      "item": "tfc:metal/rod/cast_iron",
+      "count": 2
+    },
+    "rules": [
+      "bend_last",
+      "draw_second_last",
+      "draw_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_ingots/cast_iron"
+    },
+    "result": {
+      "item": "tfc:metal/sheet/cast_iron"
+    },
+    "rules": [
+      "hit_last",
+      "hit_second_last",
+      "hit_third_last"
+    ]
+  },
+  {
+    "input": {
+      "item": "firmalife:metal/ingot/chromium"
+    },
+    "result": {
+      "item": "firmalife:metal/rod/chromium",
+      "count": 2
+    },
+    "rules": [
+      "bend_last",
+      "draw_second_last",
+      "draw_third_last"
+    ]
+  },
+  {
+    "input": {
+      "item": "firmalife:metal/double_ingot/chromium"
+    },
+    "result": {
+      "item": "firmalife:metal/sheet/chromium"
+    },
+    "rules": [
+      "hit_last",
+      "hit_second_last",
+      "hit_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/copper"
+    },
+    "result": {
+      "item": "tfc:metal/axe_head/copper"
+    },
+    "rules": [
+      "punch_last",
+      "hit_second_last",
+      "upset_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/copper"
+    },
+    "result": {
+      "item": "tfc:metal/chain/copper",
+      "count": 16
+    },
+    "rules": [
+      "hit_any",
+      "hit_any",
+      "draw_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/copper"
+    },
+    "result": {
+      "item": "tfc:metal/chisel_head/copper"
+    },
+    "rules": [
+      "hit_last",
+      "hit_not_last",
+      "draw_not_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:sheets/copper"
+    },
+    "result": {
+      "item": "tfc:metal/fish_hook/copper"
+    },
+    "rules": [
+      "draw_not_last",
+      "bend_any",
+      "hit_any"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/copper"
+    },
+    "result": {
+      "item": "tfc:metal/hammer_head/copper"
+    },
+    "rules": [
+      "punch_last",
+      "shrink_not_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/copper"
+    },
+    "result": {
+      "item": "tfc:metal/hoe_head/copper"
+    },
+    "rules": [
+      "punch_last",
+      "hit_not_last",
+      "bend_not_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/copper"
+    },
+    "result": {
+      "item": "tfc:metal/javelin_head/copper"
+    },
+    "rules": [
+      "hit_last",
+      "hit_second_last",
+      "draw_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/copper"
+    },
+    "result": {
+      "item": "tfc:metal/knife_blade/copper"
+    },
+    "rules": [
+      "hit_last",
+      "draw_second_last",
+      "draw_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/copper"
+    },
+    "result": {
+      "item": "tfc:metal/lamp/copper"
+    },
+    "rules": [
+      "bend_last",
+      "bend_second_last",
+      "draw_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_ingots/copper"
+    },
+    "result": {
+      "item": "tfc:metal/mace_head/copper"
+    },
+    "rules": [
+      "hit_last",
+      "shrink_not_last",
+      "bend_not_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/copper"
+    },
+    "result": {
+      "item": "tfc:metal/pickaxe_head/copper"
+    },
+    "rules": [
+      "punch_last",
+      "bend_not_last",
+      "draw_not_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/copper"
+    },
+    "result": {
+      "item": "tfc:metal/propick_head/copper"
+    },
+    "rules": [
+      "punch_last",
+      "draw_not_last",
+      "bend_not_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/copper"
+    },
+    "result": {
+      "item": "tfc:metal/rod/copper",
+      "count": 2
+    },
+    "rules": [
+      "bend_last",
+      "draw_second_last",
+      "draw_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/copper"
+    },
+    "result": {
+      "item": "tfc:metal/saw_blade/copper"
+    },
+    "rules": [
+      "hit_last",
+      "hit_second_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/copper"
+    },
+    "result": {
+      "item": "tfc:metal/scythe_blade/copper"
+    },
+    "rules": [
+      "hit_last",
+      "draw_second_last",
+      "bend_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_ingots/copper"
+    },
+    "result": {
+      "item": "tfc:metal/sheet/copper"
+    },
+    "rules": [
+      "hit_last",
+      "hit_second_last",
+      "hit_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_sheets/copper"
+    },
+    "result": {
+      "item": "tfc:metal/shield/copper"
+    },
+    "rules": [
+      "upset_last",
+      "bend_second_last",
+      "bend_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/copper"
+    },
+    "result": {
+      "item": "tfc:metal/shovel_head/copper"
+    },
+    "rules": [
+      "punch_last",
+      "hit_not_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_ingots/copper"
+    },
+    "result": {
+      "item": "tfc:metal/sword_blade/copper"
+    },
+    "rules": [
+      "hit_last",
+      "bend_second_last",
+      "bend_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:sheets/copper"
+    },
+    "result": {
+      "item": "tfc:metal/trapdoor/copper"
+    },
+    "rules": [
+      "bend_last",
+      "draw_second_last",
+      "draw_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_sheets/copper"
+    },
+    "result": {
+      "item": "tfc:metal/tuyere/copper"
+    },
+    "rules": [
+      "bend_last",
+      "bend_second_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:sheets/copper"
+    },
+    "result": {
+      "item": "tfc:metal/unfinished_boots/copper"
+    },
+    "rules": [
+      "bend_last",
+      "bend_second_last",
+      "shrink_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_sheets/copper"
+    },
+    "result": {
+      "item": "tfc:metal/unfinished_chestplate/copper"
+    },
+    "rules": [
+      "hit_last",
+      "hit_second_last",
+      "upset_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_sheets/copper"
+    },
+    "result": {
+      "item": "tfc:metal/unfinished_greaves/copper"
+    },
+    "rules": [
+      "bend_any",
+      "draw_any",
+      "hit_any"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_sheets/copper"
+    },
+    "result": {
+      "item": "tfc:metal/unfinished_helmet/copper"
+    },
+    "rules": [
+      "hit_last",
+      "bend_second_last",
+      "bend_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:sheets/stainless_steel"
+    },
+    "result": {
+      "item": "firmalife:dribbler"
+    },
+    "rules": [
+      "bend_last",
+      "punch_second_last",
+      "shrink_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/gold"
+    },
+    "result": {
+      "item": "tfc:metal/rod/gold",
+      "count": 2
+    },
+    "rules": [
+      "bend_last",
+      "draw_second_last",
+      "draw_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_ingots/gold"
+    },
+    "result": {
+      "item": "tfc:metal/sheet/gold"
+    },
+    "rules": [
+      "hit_last",
+      "hit_second_last",
+      "hit_third_last"
+    ]
+  },
+  {
+    "input": {
+      "item": "tfc:metal/ingot/pig_iron"
+    },
+    "result": {
+      "item": "tfc:metal/ingot/high_carbon_steel"
+    },
+    "rules": [
+      "hit_last",
+      "hit_second_last",
+      "hit_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:sheets/wrought_iron"
+    },
+    "result": {
+      "item": "minecraft:iron_bars",
+      "count": 8
+    },
+    "rules": [
+      "upset_last",
+      "punch_second_last",
+      "punch_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_sheets/wrought_iron"
+    },
+    "result": {
+      "item": "minecraft:iron_bars",
+      "count": 16
+    },
+    "rules": [
+      "upset_last",
+      "punch_second_last",
+      "punch_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:sheets/wrought_iron"
+    },
+    "result": {
+      "item": "minecraft:iron_door"
+    },
+    "rules": [
+      "hit_last",
+      "draw_not_last",
+      "punch_not_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/nickel"
+    },
+    "result": {
+      "item": "tfc:metal/rod/nickel",
+      "count": 2
+    },
+    "rules": [
+      "bend_last",
+      "draw_second_last",
+      "draw_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_ingots/nickel"
+    },
+    "result": {
+      "item": "tfc:metal/sheet/nickel"
+    },
+    "rules": [
+      "hit_last",
+      "hit_second_last",
+      "hit_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:sheets/cast_iron"
+    },
+    "result": {
+      "item": "firmalife:pie_pan",
+      "count": 4
+    },
+    "rules": [
+      "hit_last",
+      "hit_second_last",
+      "draw_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/red_steel"
+    },
+    "result": {
+      "item": "tfc:metal/axe_head/red_steel"
+    },
+    "rules": [
+      "punch_last",
+      "hit_second_last",
+      "upset_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:sheets/red_steel"
+    },
+    "result": {
+      "item": "tfc:red_steel_bars",
+      "count": 8
+    },
+    "rules": [
+      "upset_last",
+      "punch_second_last",
+      "punch_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_sheets/red_steel"
+    },
+    "result": {
+      "item": "tfc:red_steel_bars",
+      "count": 16
+    },
+    "rules": [
+      "upset_last",
+      "punch_second_last",
+      "punch_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:sheets/red_steel"
+    },
+    "result": {
+      "item": "tfc:metal/bucket/red_steel"
+    },
+    "rules": [
+      "bend_last",
+      "bend_second_last",
+      "bend_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/red_steel"
+    },
+    "result": {
+      "item": "tfc:metal/chain/red_steel",
+      "count": 16
+    },
+    "rules": [
+      "hit_any",
+      "hit_any",
+      "draw_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/red_steel"
+    },
+    "result": {
+      "item": "tfc:metal/chisel_head/red_steel"
+    },
+    "rules": [
+      "hit_last",
+      "hit_not_last",
+      "draw_not_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:sheets/red_steel"
+    },
+    "result": {
+      "item": "tfc:metal/fish_hook/red_steel"
+    },
+    "rules": [
+      "draw_not_last",
+      "bend_any",
+      "hit_any"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/red_steel"
+    },
+    "result": {
+      "item": "tfc:metal/hammer_head/red_steel"
+    },
+    "rules": [
+      "punch_last",
+      "shrink_not_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/red_steel"
+    },
+    "result": {
+      "item": "tfc:metal/hoe_head/red_steel"
+    },
+    "rules": [
+      "punch_last",
+      "hit_not_last",
+      "bend_not_last"
+    ]
+  },
+  {
+    "input": {
+      "item": "tfc:metal/ingot/high_carbon_red_steel"
+    },
+    "result": {
+      "item": "tfc:metal/ingot/red_steel"
+    },
+    "rules": [
+      "hit_last",
+      "hit_second_last",
+      "hit_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/red_steel"
+    },
+    "result": {
+      "item": "tfc:metal/javelin_head/red_steel"
+    },
+    "rules": [
+      "hit_last",
+      "hit_second_last",
+      "draw_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/red_steel"
+    },
+    "result": {
+      "item": "tfc:metal/knife_blade/red_steel"
+    },
+    "rules": [
+      "hit_last",
+      "draw_second_last",
+      "draw_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/red_steel"
+    },
+    "result": {
+      "item": "tfc:metal/lamp/red_steel"
+    },
+    "rules": [
+      "bend_last",
+      "bend_second_last",
+      "draw_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_ingots/red_steel"
+    },
+    "result": {
+      "item": "tfc:metal/mace_head/red_steel"
+    },
+    "rules": [
+      "hit_last",
+      "shrink_not_last",
+      "bend_not_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/red_steel"
+    },
+    "result": {
+      "item": "tfc:metal/pickaxe_head/red_steel"
+    },
+    "rules": [
+      "punch_last",
+      "bend_not_last",
+      "draw_not_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/red_steel"
+    },
+    "result": {
+      "item": "tfc:metal/propick_head/red_steel"
+    },
+    "rules": [
+      "punch_last",
+      "draw_not_last",
+      "bend_not_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/red_steel"
+    },
+    "result": {
+      "item": "tfc:metal/rod/red_steel",
+      "count": 2
+    },
+    "rules": [
+      "bend_last",
+      "draw_second_last",
+      "draw_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/red_steel"
+    },
+    "result": {
+      "item": "tfc:metal/saw_blade/red_steel"
+    },
+    "rules": [
+      "hit_last",
+      "hit_second_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/red_steel"
+    },
+    "result": {
+      "item": "tfc:metal/scythe_blade/red_steel"
+    },
+    "rules": [
+      "hit_last",
+      "draw_second_last",
+      "bend_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_ingots/red_steel"
+    },
+    "result": {
+      "item": "tfc:metal/sheet/red_steel"
+    },
+    "rules": [
+      "hit_last",
+      "hit_second_last",
+      "hit_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_sheets/red_steel"
+    },
+    "result": {
+      "item": "tfc:metal/shield/red_steel"
+    },
+    "rules": [
+      "upset_last",
+      "bend_second_last",
+      "bend_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/red_steel"
+    },
+    "result": {
+      "item": "tfc:metal/shovel_head/red_steel"
+    },
+    "rules": [
+      "punch_last",
+      "hit_not_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_ingots/red_steel"
+    },
+    "result": {
+      "item": "tfc:metal/sword_blade/red_steel"
+    },
+    "rules": [
+      "hit_last",
+      "bend_second_last",
+      "bend_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:sheets/red_steel"
+    },
+    "result": {
+      "item": "tfc:metal/trapdoor/red_steel"
+    },
+    "rules": [
+      "bend_last",
+      "draw_second_last",
+      "draw_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_sheets/red_steel"
+    },
+    "result": {
+      "item": "tfc:metal/tuyere/red_steel"
+    },
+    "rules": [
+      "bend_last",
+      "bend_second_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:sheets/red_steel"
+    },
+    "result": {
+      "item": "tfc:metal/unfinished_boots/red_steel"
+    },
+    "rules": [
+      "bend_last",
+      "bend_second_last",
+      "shrink_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_sheets/red_steel"
+    },
+    "result": {
+      "item": "tfc:metal/unfinished_chestplate/red_steel"
+    },
+    "rules": [
+      "hit_last",
+      "hit_second_last",
+      "upset_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_sheets/red_steel"
+    },
+    "result": {
+      "item": "tfc:metal/unfinished_greaves/red_steel"
+    },
+    "rules": [
+      "bend_any",
+      "draw_any",
+      "hit_any"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_sheets/red_steel"
+    },
+    "result": {
+      "item": "tfc:metal/unfinished_helmet/red_steel"
+    },
+    "rules": [
+      "hit_last",
+      "bend_second_last",
+      "bend_third_last"
+    ]
+  },
+  {
+    "input": {
+      "item": "tfc:raw_iron_bloom"
+    },
+    "result": {
+      "item": "tfc:refined_iron_bloom"
+    },
+    "rules": [
+      "hit_last",
+      "hit_second_last",
+      "hit_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/rose_gold"
+    },
+    "result": {
+      "item": "tfc:metal/rod/rose_gold",
+      "count": 2
+    },
+    "rules": [
+      "bend_last",
+      "draw_second_last",
+      "draw_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_ingots/rose_gold"
+    },
+    "result": {
+      "item": "tfc:metal/sheet/rose_gold"
+    },
+    "rules": [
+      "hit_last",
+      "hit_second_last",
+      "hit_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/silver"
+    },
+    "result": {
+      "item": "tfc:metal/rod/silver",
+      "count": 2
+    },
+    "rules": [
+      "bend_last",
+      "draw_second_last",
+      "draw_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_ingots/silver"
+    },
+    "result": {
+      "item": "tfc:metal/sheet/silver"
+    },
+    "rules": [
+      "hit_last",
+      "hit_second_last",
+      "hit_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:sheets/red_steel"
+    },
+    "result": {
+      "item": "firmalife:sprinkler"
+    },
+    "rules": [
+      "bend_last",
+      "punch_second_last",
+      "shrink_third_last"
+    ]
+  },
+  {
+    "input": {
+      "item": "firmalife:metal/ingot/stainless_steel"
+    },
+    "result": {
+      "item": "firmalife:metal/rod/stainless_steel",
+      "count": 2
+    },
+    "rules": [
+      "bend_last",
+      "draw_second_last",
+      "draw_third_last"
+    ]
+  },
+  {
+    "input": {
+      "item": "firmalife:metal/double_ingot/stainless_steel"
+    },
+    "result": {
+      "item": "firmalife:metal/sheet/stainless_steel"
+    },
+    "rules": [
+      "hit_last",
+      "hit_second_last",
+      "hit_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/steel"
+    },
+    "result": {
+      "item": "tfc:metal/axe_head/steel"
+    },
+    "rules": [
+      "punch_last",
+      "hit_second_last",
+      "upset_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:sheets/steel"
+    },
+    "result": {
+      "item": "tfc:steel_bars",
+      "count": 8
+    },
+    "rules": [
+      "upset_last",
+      "punch_second_last",
+      "punch_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_sheets/steel"
+    },
+    "result": {
+      "item": "tfc:steel_bars",
+      "count": 16
+    },
+    "rules": [
+      "upset_last",
+      "punch_second_last",
+      "punch_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/steel"
+    },
+    "result": {
+      "item": "tfc:metal/chain/steel",
+      "count": 16
+    },
+    "rules": [
+      "hit_any",
+      "hit_any",
+      "draw_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/steel"
+    },
+    "result": {
+      "item": "tfc:metal/chisel_head/steel"
+    },
+    "rules": [
+      "hit_last",
+      "hit_not_last",
+      "draw_not_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:sheets/steel"
+    },
+    "result": {
+      "item": "tfc:metal/fish_hook/steel"
+    },
+    "rules": [
+      "draw_not_last",
+      "bend_any",
+      "hit_any"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/steel"
+    },
+    "result": {
+      "item": "tfc:metal/hammer_head/steel"
+    },
+    "rules": [
+      "punch_last",
+      "shrink_not_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/steel"
+    },
+    "result": {
+      "item": "tfc:metal/hoe_head/steel"
+    },
+    "rules": [
+      "punch_last",
+      "hit_not_last",
+      "bend_not_last"
+    ]
+  },
+  {
+    "input": {
+      "item": "tfc:metal/ingot/high_carbon_steel"
+    },
+    "result": {
+      "item": "tfc:metal/ingot/steel"
+    },
+    "rules": [
+      "hit_last",
+      "hit_second_last",
+      "hit_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/steel"
+    },
+    "result": {
+      "item": "tfc:metal/javelin_head/steel"
+    },
+    "rules": [
+      "hit_last",
+      "hit_second_last",
+      "draw_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/steel"
+    },
+    "result": {
+      "item": "tfc:metal/knife_blade/steel"
+    },
+    "rules": [
+      "hit_last",
+      "draw_second_last",
+      "draw_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/steel"
+    },
+    "result": {
+      "item": "tfc:metal/lamp/steel"
+    },
+    "rules": [
+      "bend_last",
+      "bend_second_last",
+      "draw_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_ingots/steel"
+    },
+    "result": {
+      "item": "tfc:metal/mace_head/steel"
+    },
+    "rules": [
+      "hit_last",
+      "shrink_not_last",
+      "bend_not_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/steel"
+    },
+    "result": {
+      "item": "tfc:metal/pickaxe_head/steel"
+    },
+    "rules": [
+      "punch_last",
+      "bend_not_last",
+      "draw_not_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/steel"
+    },
+    "result": {
+      "item": "tfc:metal/propick_head/steel"
+    },
+    "rules": [
+      "punch_last",
+      "draw_not_last",
+      "bend_not_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/steel"
+    },
+    "result": {
+      "item": "tfc:metal/rod/steel",
+      "count": 2
+    },
+    "rules": [
+      "bend_last",
+      "draw_second_last",
+      "draw_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/steel"
+    },
+    "result": {
+      "item": "tfc:metal/saw_blade/steel"
+    },
+    "rules": [
+      "hit_last",
+      "hit_second_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/steel"
+    },
+    "result": {
+      "item": "tfc:metal/scythe_blade/steel"
+    },
+    "rules": [
+      "hit_last",
+      "draw_second_last",
+      "bend_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_ingots/steel"
+    },
+    "result": {
+      "item": "tfc:metal/sheet/steel"
+    },
+    "rules": [
+      "hit_last",
+      "hit_second_last",
+      "hit_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_sheets/steel"
+    },
+    "result": {
+      "item": "tfc:metal/shield/steel"
+    },
+    "rules": [
+      "upset_last",
+      "bend_second_last",
+      "bend_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/steel"
+    },
+    "result": {
+      "item": "tfc:metal/shovel_head/steel"
+    },
+    "rules": [
+      "punch_last",
+      "hit_not_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_ingots/steel"
+    },
+    "result": {
+      "item": "tfc:metal/sword_blade/steel"
+    },
+    "rules": [
+      "hit_last",
+      "bend_second_last",
+      "bend_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:sheets/steel"
+    },
+    "result": {
+      "item": "tfc:metal/trapdoor/steel"
+    },
+    "rules": [
+      "bend_last",
+      "draw_second_last",
+      "draw_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_sheets/steel"
+    },
+    "result": {
+      "item": "tfc:metal/tuyere/steel"
+    },
+    "rules": [
+      "bend_last",
+      "bend_second_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:sheets/steel"
+    },
+    "result": {
+      "item": "tfc:metal/unfinished_boots/steel"
+    },
+    "rules": [
+      "bend_last",
+      "bend_second_last",
+      "shrink_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_sheets/steel"
+    },
+    "result": {
+      "item": "tfc:metal/unfinished_chestplate/steel"
+    },
+    "rules": [
+      "hit_last",
+      "hit_second_last",
+      "upset_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_sheets/steel"
+    },
+    "result": {
+      "item": "tfc:metal/unfinished_greaves/steel"
+    },
+    "rules": [
+      "bend_any",
+      "draw_any",
+      "hit_any"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_sheets/steel"
+    },
+    "result": {
+      "item": "tfc:metal/unfinished_helmet/steel"
+    },
+    "rules": [
+      "hit_last",
+      "bend_second_last",
+      "bend_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/sterling_silver"
+    },
+    "result": {
+      "item": "tfc:metal/rod/sterling_silver",
+      "count": 2
+    },
+    "rules": [
+      "bend_last",
+      "draw_second_last",
+      "draw_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_ingots/sterling_silver"
+    },
+    "result": {
+      "item": "tfc:metal/sheet/sterling_silver"
+    },
+    "rules": [
+      "hit_last",
+      "hit_second_last",
+      "hit_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/tin"
+    },
+    "result": {
+      "item": "tfc:metal/rod/tin",
+      "count": 2
+    },
+    "rules": [
+      "bend_last",
+      "draw_second_last",
+      "draw_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_ingots/tin"
+    },
+    "result": {
+      "item": "tfc:metal/sheet/tin"
+    },
+    "rules": [
+      "hit_last",
+      "hit_second_last",
+      "hit_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:sheets/wrought_iron"
+    },
+    "result": {
+      "item": "waterflasks:unfinished_iron_flask"
+    },
+    "rules": [
+      "punch_last",
+      "bend_second_last",
+      "bend_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/wrought_iron"
+    },
+    "result": {
+      "item": "tfc:metal/axe_head/wrought_iron"
+    },
+    "rules": [
+      "punch_last",
+      "hit_second_last",
+      "upset_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/wrought_iron"
+    },
+    "result": {
+      "item": "tfc:metal/chain/wrought_iron",
+      "count": 16
+    },
+    "rules": [
+      "hit_any",
+      "hit_any",
+      "draw_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/wrought_iron"
+    },
+    "result": {
+      "item": "tfc:metal/chisel_head/wrought_iron"
+    },
+    "rules": [
+      "hit_last",
+      "hit_not_last",
+      "draw_not_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:sheets/wrought_iron"
+    },
+    "result": {
+      "item": "tfc:metal/fish_hook/wrought_iron"
+    },
+    "rules": [
+      "draw_not_last",
+      "bend_any",
+      "hit_any"
+    ]
+  },
+  {
+    "input": {
+      "item": "tfc:refined_iron_bloom"
+    },
+    "result": {
+      "item": "tfc:metal/ingot/wrought_iron"
+    },
+    "rules": [
+      "hit_last",
+      "hit_second_last",
+      "hit_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_sheets/wrought_iron"
+    },
+    "result": {
+      "item": "tfc:wrought_iron_grill"
+    },
+    "rules": [
+      "draw_any",
+      "punch_last",
+      "punch_not_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/wrought_iron"
+    },
+    "result": {
+      "item": "tfc:metal/hammer_head/wrought_iron"
+    },
+    "rules": [
+      "punch_last",
+      "shrink_not_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/wrought_iron"
+    },
+    "result": {
+      "item": "tfc:metal/hoe_head/wrought_iron"
+    },
+    "rules": [
+      "punch_last",
+      "hit_not_last",
+      "bend_not_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/wrought_iron"
+    },
+    "result": {
+      "item": "tfc:metal/javelin_head/wrought_iron"
+    },
+    "rules": [
+      "hit_last",
+      "hit_second_last",
+      "draw_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/wrought_iron"
+    },
+    "result": {
+      "item": "tfc:metal/knife_blade/wrought_iron"
+    },
+    "rules": [
+      "hit_last",
+      "draw_second_last",
+      "draw_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/wrought_iron"
+    },
+    "result": {
+      "item": "tfc:metal/lamp/wrought_iron"
+    },
+    "rules": [
+      "bend_last",
+      "bend_second_last",
+      "draw_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_ingots/wrought_iron"
+    },
+    "result": {
+      "item": "tfc:metal/mace_head/wrought_iron"
+    },
+    "rules": [
+      "hit_last",
+      "shrink_not_last",
+      "bend_not_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/wrought_iron"
+    },
+    "result": {
+      "item": "tfc:metal/pickaxe_head/wrought_iron"
+    },
+    "rules": [
+      "punch_last",
+      "bend_not_last",
+      "draw_not_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/wrought_iron"
+    },
+    "result": {
+      "item": "tfc:metal/propick_head/wrought_iron"
+    },
+    "rules": [
+      "punch_last",
+      "draw_not_last",
+      "bend_not_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/wrought_iron"
+    },
+    "result": {
+      "item": "tfc:metal/rod/wrought_iron",
+      "count": 2
+    },
+    "rules": [
+      "bend_last",
+      "draw_second_last",
+      "draw_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/wrought_iron"
+    },
+    "result": {
+      "item": "tfc:metal/saw_blade/wrought_iron"
+    },
+    "rules": [
+      "hit_last",
+      "hit_second_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/wrought_iron"
+    },
+    "result": {
+      "item": "tfc:metal/scythe_blade/wrought_iron"
+    },
+    "rules": [
+      "hit_last",
+      "draw_second_last",
+      "bend_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_ingots/wrought_iron"
+    },
+    "result": {
+      "item": "tfc:metal/sheet/wrought_iron"
+    },
+    "rules": [
+      "hit_last",
+      "hit_second_last",
+      "hit_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_sheets/wrought_iron"
+    },
+    "result": {
+      "item": "tfc:metal/shield/wrought_iron"
+    },
+    "rules": [
+      "upset_last",
+      "bend_second_last",
+      "bend_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/wrought_iron"
+    },
+    "result": {
+      "item": "tfc:metal/shovel_head/wrought_iron"
+    },
+    "rules": [
+      "punch_last",
+      "hit_not_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_ingots/wrought_iron"
+    },
+    "result": {
+      "item": "tfc:metal/sword_blade/wrought_iron"
+    },
+    "rules": [
+      "hit_last",
+      "bend_second_last",
+      "bend_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:sheets/wrought_iron"
+    },
+    "result": {
+      "item": "tfc:metal/trapdoor/wrought_iron"
+    },
+    "rules": [
+      "bend_last",
+      "draw_second_last",
+      "draw_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_sheets/wrought_iron"
+    },
+    "result": {
+      "item": "tfc:metal/tuyere/wrought_iron"
+    },
+    "rules": [
+      "bend_last",
+      "bend_second_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:sheets/wrought_iron"
+    },
+    "result": {
+      "item": "tfc:metal/unfinished_boots/wrought_iron"
+    },
+    "rules": [
+      "bend_last",
+      "bend_second_last",
+      "shrink_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_sheets/wrought_iron"
+    },
+    "result": {
+      "item": "tfc:metal/unfinished_chestplate/wrought_iron"
+    },
+    "rules": [
+      "hit_last",
+      "hit_second_last",
+      "upset_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_sheets/wrought_iron"
+    },
+    "result": {
+      "item": "tfc:metal/unfinished_greaves/wrought_iron"
+    },
+    "rules": [
+      "bend_any",
+      "draw_any",
+      "hit_any"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_sheets/wrought_iron"
+    },
+    "result": {
+      "item": "tfc:metal/unfinished_helmet/wrought_iron"
+    },
+    "rules": [
+      "hit_last",
+      "bend_second_last",
+      "bend_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:ingots/zinc"
+    },
+    "result": {
+      "item": "tfc:metal/rod/zinc",
+      "count": 2
+    },
+    "rules": [
+      "bend_last",
+      "draw_second_last",
+      "draw_third_last"
+    ]
+  },
+  {
+    "input": {
+      "tag": "forge:double_ingots/zinc"
+    },
+    "result": {
+      "item": "tfc:metal/sheet/zinc"
+    },
+    "rules": [
+      "hit_last",
+      "hit_second_last",
+      "hit_third_last"
+    ]
+  }
+]

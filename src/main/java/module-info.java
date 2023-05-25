@@ -1,0 +1,15 @@
+module com.github.thelittlestone.tfc_forge_solver {
+    requires javafx.controls;
+    requires javafx.fxml;
+    requires javafx.web;
+
+    requires org.controlsfx.controls;
+    requires com.dlsc.formsfx;
+    requires org.kordamp.ikonli.javafx;
+    requires org.kordamp.bootstrapfx.core;
+    requires eu.hansolo.tilesfx;
+    requires com.alibaba.fastjson2;
+
+    opens com.github.thelittlestone to javafx.fxml;
+    exports com.github.thelittlestone;
+}
