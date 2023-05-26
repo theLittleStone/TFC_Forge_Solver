@@ -11,7 +11,7 @@ import java.util.ArrayList;
  */
 public class TestMain {
     public static void main(String[] args) {
-        ArrayList<String> strings = FileLoader.getOutPackageFilesAbsPathContains("^((?i)w)orld_(.*).json");
+        ArrayList<String> strings = FileLoader.getOutPackageFileNamesContains("^((?i)w)orld_(.*).json");
         for (String string : strings) {
             System.out.println(string);
         }
