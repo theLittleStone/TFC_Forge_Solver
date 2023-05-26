@@ -1,6 +1,6 @@
 package com.github.thelittlestone.logic;
 
-import com.github.thelittlestone.components.*;
+import com.github.thelittlestone.logic.components.*;
 
 import java.util.ArrayList;
 import java.util.Comparator;

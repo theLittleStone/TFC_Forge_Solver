@@ -1,19 +1,20 @@
 package com.github.thelittlestone;
 
 
-import com.github.thelittlestone.components.*;
-import com.github.thelittlestone.logic.MainLogic;
+import com.github.thelittlestone.dataController.FileLoader;
+
+import java.io.File;
+import java.util.ArrayList;
 
 /**
  * Created by theLittleStone on 2023/5/22.
  */
 public class TestMain {
     public static void main(String[] args) {
-        ActionCombination result = MainLogic.solve(65, new RequirementCombination(
-                new Requirement(ActionEnum.Upset, RequirementEnum.First_Last),
-                new Requirement(ActionEnum.LightHit, RequirementEnum.Second_Last),
-                null));
+        ArrayList<String> strings = FileLoader.getOutPackageFilesAbsPathContains("^((?i)w)orld_(.*).json");
+        for (String string : strings) {
+            System.out.println(string);
+        }
 
-        System.out.println(result);
     }
 }

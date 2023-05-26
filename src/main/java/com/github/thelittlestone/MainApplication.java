@@ -1,6 +1,6 @@
 package com.github.thelittlestone;
 
-import com.github.thelittlestone.dataController.ConfigLoader;
+import com.github.thelittlestone.dataController.FileLoader;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -23,6 +23,6 @@ public class MainApplication extends Application {
 
     public static void main(String[] args) {
         launch();
-        System.out.println(ConfigLoader.PackagePath);
+        System.out.println(FileLoader.PackagePath);
     }
 }

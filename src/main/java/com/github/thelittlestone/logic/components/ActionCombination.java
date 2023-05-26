@@ -1,4 +1,4 @@
-package com.github.thelittlestone.components;
+package com.github.thelittlestone.logic.components;
 
 import java.util.ArrayList;
 import java.util.Arrays;

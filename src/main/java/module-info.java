@@ -8,8 +8,10 @@ module com.github.thelittlestone.tfc_forge_solver {
     requires org.kordamp.ikonli.javafx;
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
-    requires com.alibaba.fastjson2;
+    requires com.fasterxml.jackson.databind;
 
     opens com.github.thelittlestone to javafx.fxml;
     exports com.github.thelittlestone;
+    exports com.github.thelittlestone.logic.json;
+    opens com.github.thelittlestone.logic.json to javafx.fxml;
 }

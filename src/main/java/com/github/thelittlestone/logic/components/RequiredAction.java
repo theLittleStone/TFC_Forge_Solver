@@ -1,4 +1,4 @@
-package com.github.thelittlestone.components;
+package com.github.thelittlestone.logic.components;
 
 /**
  * Created by theLittleStone on 2023/5/14.
