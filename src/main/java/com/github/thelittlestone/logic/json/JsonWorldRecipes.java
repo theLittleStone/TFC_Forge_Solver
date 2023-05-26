@@ -3,6 +3,7 @@ package com.github.thelittlestone.logic.json;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.SerializationFeature;
 
 import java.util.ArrayList;
 
@@ -17,8 +18,7 @@ public class JsonWorldRecipes {
         ObjectMapper objectMapper = new ObjectMapper();
         this.worldName = worldName;
         try {
-            this.recipes = objectMapper.readValue(jsonContent, new TypeReference<>() {
-            });
+            this.recipes = objectMapper.readValue(jsonContent, new TypeReference<>() {});
         } catch (JsonProcessingException e) {
             this.recipes = new ArrayList<>();
             throw new RuntimeException(e);
@@ -28,10 +28,14 @@ public class JsonWorldRecipes {
         this.worldName = worldName;
         this.recipes = new ArrayList<>();
     }
+    public JsonWorldRecipes(){
+        this("");
+    }
 
 
     public String generateJsonText() throws JsonProcessingException {
         ObjectMapper objectMapper = new ObjectMapper();
+        objectMapper.enable(SerializationFeature.INDENT_OUTPUT);
         return objectMapper.writeValueAsString(this);
     }
 }

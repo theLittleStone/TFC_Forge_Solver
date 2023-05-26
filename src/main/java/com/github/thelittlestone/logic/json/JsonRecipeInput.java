@@ -4,7 +4,7 @@ public class JsonRecipeInput {
     public String tag = "";
     public String item = "";
 
-    public String getStr(){
+    public String toStr(){
         if (!tag.equals("")){
             return tag;
         }else if (!item.equals("")){
