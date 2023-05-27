@@ -1,5 +1,9 @@
 package com.github.thelittlestone.logic.json;
 
+
+/**
+ * Created by theLittleStone on 2023/5/26.
+ */
 public class JsonRecipeResult {
     public String item;
     public int count;

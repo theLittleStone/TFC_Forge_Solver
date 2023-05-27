@@ -13,6 +13,8 @@ module com.github.thelittlestone.tfc_forge_solver {
     opens com.github.thelittlestone to javafx.fxml;
     exports com.github.thelittlestone;
     exports com.github.thelittlestone.logic.json;
+    exports com.github.thelittlestone.logic.components;
     exports com.github.thelittlestone.config;
+    exports com.github.thelittlestone.exception;
     opens com.github.thelittlestone.logic.json to javafx.fxml;
 }

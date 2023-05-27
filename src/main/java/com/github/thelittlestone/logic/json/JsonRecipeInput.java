@@ -1,5 +1,10 @@
 package com.github.thelittlestone.logic.json;
 
+
+/**
+ * Created by theLittleStone on 2023/5/26.
+ */
+
 public class JsonRecipeInput {
     public String tag = "";
     public String item = "";
