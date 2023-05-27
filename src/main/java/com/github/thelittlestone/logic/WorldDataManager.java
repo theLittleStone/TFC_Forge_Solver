@@ -1,13 +1,11 @@
 package com.github.thelittlestone.logic;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.github.thelittlestone.dataController.FileLoader;
 import com.github.thelittlestone.logic.json.JsonWorldRecipes;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
 
 /**
@@ -17,6 +15,7 @@ public class WorldDataManager {
     public static boolean hasNoWorld = true;
     public static HashMap<String, String> nameMap = new HashMap<>(); //世界名, 文件名
     public static HashMap<String, JsonWorldRecipes> worldMap = new HashMap<>(); //世界名, 世界类
+
     //初始化, 将所有的world文件加载到程序中,
     static {
         ArrayList<String> fileNames = FileLoader.getOutPackageFileNamesContains("^((?i)w)orld_(.*).json");
@@ -25,20 +24,19 @@ public class WorldDataManager {
             for (String fileName : fileNames) {
                 try {
                     String fileContent = FileLoader.getFileContent(fileName, false);
-                    //这里需要对空文件做处理
                     ObjectMapper objectMapper = new ObjectMapper();
                     JsonWorldRecipes jwr = objectMapper.readValue(fileContent, JsonWorldRecipes.class);
                     nameMap.put(jwr.worldName, fileName);
                     worldMap.put(jwr.worldName, jwr);
                 } catch (IOException e) {
-                    e.printStackTrace();
+                    continue;
                 }
             }
         }
     }
 
     //根据世界名读取世界配置
-    public static JsonWorldRecipes getjsonWorldRecipes(String worldName){
+    public static JsonWorldRecipes getJsonWorldRecipes(String worldName){
         return worldMap.get(worldName);
     }
 
@@ -65,7 +63,6 @@ public class WorldDataManager {
         }else {
             updateWorld(worldRecipes, filename);
         }
-
     }
 
     //将所有程序内的世界配置全部重新写入文件中
@@ -78,8 +75,6 @@ public class WorldDataManager {
 
     public static JsonWorldRecipes createWorldFromRecipe(String worldName, String fileName) throws IOException {
         JsonWorldRecipes jwr = new JsonWorldRecipes(worldName, RecipeLoader.recipeContent);
-        nameMap.put(worldName, fileName);
-        worldMap.put(worldName, jwr);
         updateWorld(jwr, fileName);
         return jwr;
     }
