@@ -15,7 +15,7 @@ import java.util.stream.Collectors;
  * Created by theLittleStone on 2023/5/10.
  */
 public class FileLoader {
-    public static final String[] InPackageConfigFileArray = {"Recipes.json", "Worlds.json"};
+    public static final String[] InPackageFileArray = {"Recipes.json", "World_1.json", "Config.json"};
 //    public static String PackagePath = MainApplication.class.getProtectionDomain().getCodeSource().getLocation().getPath()
 //            .replace("TFC_Forge_Solver.jar", "").replaceFirst("/", "");
     //包所在的路径
@@ -46,7 +46,7 @@ public class FileLoader {
         }
         //如果config中不存在配置文件, 则向其中释放默认配置文件
         try {
-            for (String s : InPackageConfigFileArray) {
+            for (String s : InPackageFileArray) {
                 URI u = new URI(PackagePath + OutPackageResourcePath + s);
                 if (!(new File(u.getPath()).exists())){
                     copyFile(InPackageResourcePath + s, u.getPath());
