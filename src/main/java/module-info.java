@@ -7,7 +7,6 @@ module com.github.thelittlestone.tfc_forge_solver {
     requires com.dlsc.formsfx;
     requires org.kordamp.ikonli.javafx;
     requires org.kordamp.bootstrapfx.core;
-    requires eu.hansolo.tilesfx;
     requires com.fasterxml.jackson.databind;
 
     opens com.github.thelittlestone to javafx.fxml;
@@ -16,5 +15,6 @@ module com.github.thelittlestone.tfc_forge_solver {
     exports com.github.thelittlestone.logic.components;
     exports com.github.thelittlestone.config;
     exports com.github.thelittlestone.exception;
+    exports com.github.thelittlestone.gui;
     opens com.github.thelittlestone.logic.json to javafx.fxml;
 }
