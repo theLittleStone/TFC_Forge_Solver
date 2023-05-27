@@ -64,7 +64,6 @@ public class WorldDataManager {
             updateWorld(worldRecipes, filename);
         }
     }
-
     //将所有程序内的世界配置全部重新写入文件中
     public static void updateAllWorld() throws IOException {
         ArrayList<String> allWorldName = getAllWorldName();

@@ -2,6 +2,7 @@ package com.github.thelittlestone.config;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.SerializationFeature;
 import com.github.thelittlestone.dataController.FileLoader;
 
 import java.io.IOException;
@@ -29,6 +30,13 @@ public class ConfigLoader {
             }
         }
         config = config1;
+    }
+
+    public static void saveConfig() throws IOException {
+        ObjectMapper objectMapper = new ObjectMapper();
+        objectMapper.enable(SerializationFeature.INDENT_OUTPUT);
+        String content = objectMapper.writeValueAsString(config);
+        FileLoader.writeToFile("Config.json", content);
     }
 
 }

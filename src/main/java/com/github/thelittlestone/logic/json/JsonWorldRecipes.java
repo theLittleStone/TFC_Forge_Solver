@@ -6,6 +6,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 
 /**
  * Created by theLittleStone on 2023/5/26.
@@ -37,5 +38,32 @@ public class JsonWorldRecipes {
         ObjectMapper objectMapper = new ObjectMapper();
         objectMapper.enable(SerializationFeature.INDENT_OUTPUT);
         return objectMapper.writeValueAsString(this);
+    }
+
+    public ArrayList<String> allInputs(){
+        HashSet<String> re = new HashSet<>();
+        for (JsonRecipe recipe : recipes) {
+            re.add(recipe.input.toStr());
+        }
+        return new ArrayList<>(re);
+    }
+
+    public ArrayList<JsonRecipeResult> allResults(String input){
+        HashSet<JsonRecipeResult> re = new HashSet<>();
+        for (JsonRecipe recipe : recipes) {
+            if (input.equals(recipe.input.toStr())){
+                re.add(recipe.result);
+            }
+        }
+        return new ArrayList<>(re);
+    }
+
+    public JsonRecipe recipe(String input, String result){
+        for (JsonRecipe recipe : recipes) {
+            if (recipe.input.toStr().equals(input) && recipe.result.item.equals(result)){
+                return recipe;
+            }
+        }
+        return null;
     }
 }
