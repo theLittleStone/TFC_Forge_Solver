@@ -39,6 +39,6 @@ public enum ActionEnum {
                 return ActionEnum.Shrink;
             }
         }
-        throw new RequirementConvertException("转换actionEnum时出错");
+        throw new RequirementConvertException("转换actionEnum时出错 转换内容: " + content);
     }
 }

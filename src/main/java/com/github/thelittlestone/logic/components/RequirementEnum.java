@@ -28,6 +28,6 @@ public enum RequirementEnum {
                 return RequirementEnum.First_Last;
             }
         }
-        throw new RequirementConvertException("转换requirement出错");
+        throw new RequirementConvertException("转换requirement出错, 转换内容" + content);
     }
 }

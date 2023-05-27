@@ -22,7 +22,7 @@ public class FileLoader {
     public static String PackagePath = MainApplication.class.getProtectionDomain().getCodeSource().getLocation()
         .getPath().replaceFirst("/", "");
     //包内的资源路径
-    public static String InPackageResourcePath = "/com/github/thelittlestone/";
+    public static String InPackageResourcePath = "/com/github/thelittlestone/files/";
     //包外的配置文件存放文件夹
     public static String OutPackageResourcePath = "TFC_Forge_solver_config/";
 

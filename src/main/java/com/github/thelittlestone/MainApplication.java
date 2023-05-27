@@ -1,6 +1,8 @@
 package com.github.thelittlestone;
 
+import com.github.thelittlestone.config.ConfigLoader;
 import com.github.thelittlestone.dataController.FileLoader;
+import com.github.thelittlestone.logic.WorldDataManager;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -14,7 +16,7 @@ public class MainApplication extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("main-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("gui/main-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), WIDTH, HEIGHT);
         stage.setTitle("Hello!");
         stage.setScene(scene);
@@ -29,7 +31,8 @@ public class MainApplication extends Application {
     @Override
     public void stop() throws Exception {
         super.stop();
-
+        ConfigLoader.saveConfig();
+        WorldDataManager.updateAllWorld();
     }
 
     public static void main(String[] args) {
