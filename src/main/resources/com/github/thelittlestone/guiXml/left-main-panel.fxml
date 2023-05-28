@@ -17,7 +17,7 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                  <AnchorPane>
                      <children>
                         <Label alignment="CENTER" text="Select a world" textAlignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                            <font>
@@ -25,19 +25,19 @@
                            </font></Label>
                      </children>
                   </AnchorPane>
-                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+                  <AnchorPane GridPane.rowIndex="1">
                      <children>
-                        <HBox prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                        <HBox alignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                            <children>
                               <Button fx:id="addButton" mnemonicParsing="false" onAction="#addButtonOnAction" text="+">
                                  <font>
                                     <Font size="14.0" />
                                  </font></Button>
-                              <TextField fx:id="newWorldTextField">
+                              <TextField fx:id="newWorldTextField" onAction="#newWorldTextFieldOnAction">
                                  <font>
                                     <Font size="14.0" />
                                  </font></TextField>
-                              <Button fx:id="deleteButton" mnemonicParsing="false" text="-">
+                              <Button fx:id="deleteButton" mnemonicParsing="false" onAction="#deleteButtonOnAction" text="-">
                                  <font>
                                     <Font size="14.0" />
                                  </font></Button>
@@ -52,14 +52,7 @@
    <center>
       <AnchorPane BorderPane.alignment="CENTER">
          <children>
-            <ScrollPane layoutX="21.0" layoutY="104.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-              <content>
-                <AnchorPane >
-                     <children>
-                        <ListView fx:id="worldListView" layoutX="-31.0" layoutY="-21.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
-                     </children></AnchorPane>
-              </content>
-            </ScrollPane>
+            <ListView fx:id="worldListView" fixedCellSize="32.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
          </children></AnchorPane>
    </center>
 </BorderPane>

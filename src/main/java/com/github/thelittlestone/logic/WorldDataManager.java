@@ -80,4 +80,18 @@ public class WorldDataManager {
     public static JsonWorldRecipes createWorldFromRecipe(String worldName) throws IOException {
         return createWorldFromRecipe(worldName, "world_" + worldName + ".json");
     }
+
+    //寻找索引中的世界配置文件名并删除之
+    public static void deleteWorldRecipe(String worldName) throws IOException {
+
+        String fileName = nameMap.get(worldName);
+        if (fileName != null){
+            FileLoader.deleteFile(fileName);
+        }else {
+            throw new IOException("找不到世界"+ worldName +"对应的文件");
+        }
+
+        nameMap.remove(worldName);
+        worldMap.remove(worldName);
+    }
 }

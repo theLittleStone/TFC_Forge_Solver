@@ -6,6 +6,8 @@ import com.github.thelittlestone.MainApplication;
 import java.io.*;
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -58,6 +60,7 @@ public class FileLoader {
         }
     }
 
+    //复制文件, 两个参数都需要完整路径名
     public static void copyFile(String sourcePath, String targetPath) throws IOException {
         InputStream ins = MainApplication.class.getResourceAsStream(sourcePath);
         if (null != ins){
@@ -74,6 +77,7 @@ public class FileLoader {
         }
     }
 
+    //读取配置文件, 只要求文件名, 不含路径, 可选择读取包外文件或是包内默认文件
     public static String getFileContent(String fileName, boolean readInPackageConfigFile) throws IOException {
         if (!InitResult && !readInPackageConfigFile){
             throw new IOException("无法读取指定文件" + fileName);
@@ -105,6 +109,7 @@ public class FileLoader {
         return content.toString();
     }
 
+    //将字符串写入文件, fileName只要求文件名, 不带路径
     public static void writeToFile(String fileName, String content) throws IOException {
         if (!InitResult){
             throw new IOException("初始化配置文件夹失败");
@@ -115,6 +120,13 @@ public class FileLoader {
         }
     }
 
+    //删掉配置文件, fileName只要求文件名, 不带路径
+    public static void deleteFile(String fileName) throws IOException {
+        String pathName = PackagePath + OutPackageResourcePath + fileName;
+        Files.delete(Path.of(pathName));
+    }
+
+    //根据正则表达式返回符合条件的文件名
     public static ArrayList<String> getOutPackageFileNamesContains(String regex){
         ArrayList<String> target = new ArrayList<>();
         File file = new File(PackagePath + OutPackageResourcePath);

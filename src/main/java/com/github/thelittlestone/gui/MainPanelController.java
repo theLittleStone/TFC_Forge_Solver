@@ -9,4 +9,6 @@ import javafx.scene.control.SplitPane;
 public class MainPanelController {
     @FXML
     public SplitPane mainPane;
+
+
 }
