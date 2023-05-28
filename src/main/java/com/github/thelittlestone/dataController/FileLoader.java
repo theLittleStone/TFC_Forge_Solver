@@ -82,7 +82,11 @@ public class FileLoader {
             //读取包内配置
             InputStream is = MainApplication.class.getResourceAsStream(InPackageResourcePath + fileName);
             assert is != null;
-            return new BufferedReader(new InputStreamReader(is)).lines().collect(Collectors.joining(System.lineSeparator()));
+            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(is));
+            String result =  bufferedReader.lines().collect(Collectors.joining(System.lineSeparator()));
+            bufferedReader.close();
+            is.close();
+            return result;
         }
         //包外配置
         URI u;
@@ -97,6 +101,7 @@ public class FileLoader {
         while (scanner.hasNext()) {
             content.append(scanner.nextLine());
         }
+        scanner.close();
         return content.toString();
     }
 
