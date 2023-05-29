@@ -1,7 +1,6 @@
 package com.github.thelittlestone;
 
 import com.github.thelittlestone.config.ConfigLoader;
-import com.github.thelittlestone.dataController.FileLoader;
 import com.github.thelittlestone.logic.WorldDataManager;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

@@ -1,6 +1,6 @@
 package com.github.thelittlestone.logic;
 
-import com.github.thelittlestone.dataController.FileLoader;
+import com.github.thelittlestone.util.FileLoader;
 
 import java.io.IOException;
 
