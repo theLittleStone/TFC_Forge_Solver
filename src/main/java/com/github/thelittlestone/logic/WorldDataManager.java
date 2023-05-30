@@ -12,15 +12,16 @@ import java.util.HashMap;
  * Created by theLittleStone on 2023/5/10.
  */
 public class WorldDataManager {
-    public static boolean hasNoWorld = true;
     public static HashMap<String, String> nameMap = new HashMap<>(); //世界名, 文件名
     public static HashMap<String, JsonWorldRecipes> worldMap = new HashMap<>(); //世界名, 世界类
+
+    //显示当前页面展示的是哪个世界, 很重要
+    public static JsonWorldRecipes currentWorld;
 
     //初始化, 将所有的world文件加载到程序中,
     static {
         ArrayList<String> fileNames = FileLoader.getOutPackageFileNamesContains("^((?i)w)orld_(.*).json");
         if (fileNames != null) {
-            hasNoWorld = false;
             for (String fileName : fileNames) {
                 try {
                     String fileContent = FileLoader.getFileContent(fileName, false);

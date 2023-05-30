@@ -36,7 +36,7 @@ public class MainPanelController implements Initializable {
 
 
     public boolean isOperating = false;
-    public JsonWorldRecipes currentWorld;
+
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -45,7 +45,7 @@ public class MainPanelController implements Initializable {
         worldListView.setItems(ol);
         //设置初始右面板世界
         String focusedItem = worldListView.getFocusModel().getFocusedItem();
-        currentWorld = WorldDataManager.getJsonWorldRecipes(deFormatWorldName(focusedItem));
+        WorldDataManager.currentWorld = WorldDataManager.getJsonWorldRecipes(deFormatWorldName(focusedItem));
 
         //为listView选项改变添加监听器
         worldListView.getSelectionModel().selectedItemProperty().addListener(
@@ -54,7 +54,7 @@ public class MainPanelController implements Initializable {
                     if (!isOperating) {
                         System.out.println(worldListView.getFocusModel().getFocusedItem());
                         String focus = worldListView.getFocusModel().getFocusedItem();
-                        currentWorld = WorldDataManager.getJsonWorldRecipes(deFormatWorldName(focus));
+                        WorldDataManager.currentWorld = WorldDataManager.getJsonWorldRecipes(deFormatWorldName(focus));
                     }
                     //添加改变右侧页面的代码
                 });
@@ -90,7 +90,6 @@ public class MainPanelController implements Initializable {
                 unKnownAlert.setContentText("无法新建世界");
                 unKnownAlert.show();
                 e.printStackTrace();
-                isOperating = false;
             }
         }
 
