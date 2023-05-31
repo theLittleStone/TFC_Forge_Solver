@@ -1,5 +1,7 @@
 package com.github.thelittlestone.gui;
 
+import com.github.thelittlestone.config.Config;
+import com.github.thelittlestone.config.ConfigLoader;
 import com.github.thelittlestone.logic.WorldDataManager;
 import com.github.thelittlestone.logic.json.JsonWorldRecipes;
 import com.github.thelittlestone.util.ForbiddenChars;
@@ -44,8 +46,10 @@ public class MainPanelController implements Initializable {
         ObservableList<String> ol = FXCollections.observableArrayList(getReFormatWorldNameList());
         worldListView.setItems(ol);
         //设置初始右面板世界
+
         String focusedItem = worldListView.getFocusModel().getFocusedItem();
         WorldDataManager.currentWorld = WorldDataManager.getJsonWorldRecipes(deFormatWorldName(focusedItem));
+
 
         //为listView选项改变添加监听器
         worldListView.getSelectionModel().selectedItemProperty().addListener(

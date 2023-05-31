@@ -33,6 +33,7 @@
                               <Font size="16.0" />
                            </font>
                         </Label>
+                        <Label />
                         <ChoiceBox fx:id="materialChoiceBox" />
                      </children></VBox>
                   <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
@@ -42,6 +43,7 @@
                               <Font size="16.0" />
                            </font>
                         </Label>
+                        <Label />
                         <ChoiceBox fx:id="targetChoiceBox" />
                      </children></VBox>
                </children>
@@ -62,7 +64,7 @@
                      <children>
                         <VBox alignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                            <children>
-                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                              <VBox alignment="CENTER">
                                  <children>
                                     <Label lineSpacing="1.0" text="Enter the forge value">
                                        <font>
@@ -74,9 +76,10 @@
                                           <Font size="16.0" />
                                        </font>
                                     </Label>
+                                    <Label />
                                  </children>
                               </VBox>
-                              <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
+                              <VBox alignment="TOP_CENTER">
                                  <children>
                                     <GridPane>
                                       <columnConstraints>
@@ -88,11 +91,20 @@
                                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                       </rowConstraints>
                                        <children>
-                                          <TextField fx:id="valueTextField" alignment="CENTER" GridPane.columnIndex="1">
-                                             <font>
-                                                <Font size="16.0" />
-                                             </font>
-                                          </TextField>
+                                          <HBox alignment="CENTER" GridPane.columnIndex="1">
+                                             <children>
+                                                <TextField fx:id="valueTextField" alignment="CENTER">
+                                                   <font>
+                                                      <Font size="16.0" />
+                                                   </font>
+                                                </TextField>
+                                                <Button maxHeight="200.0" maxWidth="200.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="33.6" prefWidth="48.0" text="Set">
+                                                   <font>
+                                                      <Font size="16.0" />
+                                                   </font>
+                                                </Button>
+                                             </children>
+                                          </HBox>
                                        </children>
                                     </GridPane>
                                  </children>

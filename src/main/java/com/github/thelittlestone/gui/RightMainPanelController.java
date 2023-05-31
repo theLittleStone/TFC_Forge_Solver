@@ -1,5 +1,6 @@
 package com.github.thelittlestone.gui;
 
+import com.github.thelittlestone.logic.json.JsonWorldRecipes;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -28,6 +29,10 @@ public class RightMainPanelController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+
+    }
+    public void refresh(JsonWorldRecipes newWorld){
+
 
     }
 }
