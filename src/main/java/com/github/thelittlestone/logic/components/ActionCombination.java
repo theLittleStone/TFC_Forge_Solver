@@ -52,7 +52,7 @@ public class ActionCombination extends ArrayList<ActionEnum> {
     public String toString() {
         StringBuilder stringBuilder = new StringBuilder();
         for (ActionEnum actionEnum : this) {
-            stringBuilder.append(actionEnum.toString()).append(",  ");
+            stringBuilder.append(actionEnum.zh()).append(",  ");
         }
         return stringBuilder.toString();
     }

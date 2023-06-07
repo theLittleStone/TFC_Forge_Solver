@@ -23,7 +23,7 @@
                   <children>
                     <AnchorPane>
                       <children>
-                        <Label alignment="CENTER" text="Select a world" textAlignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                        <Label alignment="CENTER" text="选择一个世界" textAlignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                           <font>
                             <Font size="14.0" />
                           </font></Label>

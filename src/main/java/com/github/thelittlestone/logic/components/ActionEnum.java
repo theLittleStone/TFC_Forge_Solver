@@ -41,4 +41,33 @@ public enum ActionEnum {
         }
         throw new RequirementConvertException("转换actionEnum时出错 转换内容: " + content);
     }
+    public String zh(){
+        switch (this){
+            case LightHit -> {
+                return "轻击";
+            }
+            case MediumHit -> {
+                return "击打";
+            }
+            case HeavyHit -> {
+                return "重击";
+            }
+            case Draw -> {
+                return "牵拉";
+            }
+            case Punch -> {
+                return "冲压";
+            }
+            case Bend -> {
+                return "弯曲";
+            }
+            case Upset -> {
+                return "镦锻";
+            }
+            case Shrink -> {
+                return "收缩";
+            }
+        }
+        return null;
+    }
 }

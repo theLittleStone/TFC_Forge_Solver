@@ -28,7 +28,7 @@
                <children>
                   <VBox alignment="CENTER">
                      <children>
-                        <Label lineSpacing="2.0" text="Choose the material: " textAlignment="CENTER">
+                        <Label lineSpacing="2.0" text="选择一种原料: " textAlignment="CENTER">
                            <font>
                               <Font size="16.0" />
                            </font>
@@ -38,7 +38,7 @@
                      </children></VBox>
                   <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
                      <children>
-                        <Label lineSpacing="2.0" text="Choose the target: ">
+                        <Label lineSpacing="2.0" text="选择目标: ">
                            <font>
                               <Font size="16.0" />
                            </font>
@@ -66,12 +66,12 @@
                            <children>
                               <VBox alignment="CENTER">
                                  <children>
-                                    <Label lineSpacing="1.0" text="Enter the forge value">
+                                    <Label lineSpacing="1.0" text="输入锻造值">
                                        <font>
                                           <Font size="16.0" />
                                        </font>
                                     </Label>
-                                    <Label lineSpacing="1.0" text="(Need to have a try in game)">
+                                    <Label lineSpacing="1.0" text="(需要你在游戏中测试)">
                                        <font>
                                           <Font size="16.0" />
                                        </font>
@@ -113,7 +113,7 @@
                      <children>
                         <VBox alignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                            <children>
-                              <Button fx:id="startButton" contentDisplay="CENTER" lineSpacing="2.0" mnemonicParsing="false" onAction="#startButtonOnAction" text="Start! " textAlignment="CENTER">
+                              <Button fx:id="startButton" contentDisplay="CENTER" lineSpacing="2.0" mnemonicParsing="false" onAction="#startButtonOnAction" text="开始! " textAlignment="CENTER">
                                  <font>
                                     <Font size="24.0" />
                                  </font>
