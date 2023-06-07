@@ -1,7 +1,10 @@
 package com.github.thelittlestone;
 
 
+import com.github.thelittlestone.logic.WorldDataManager;
+
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
@@ -9,7 +12,6 @@ import java.util.Scanner;
  */
 public class TestMain {
     public static void main(String[] args) throws IOException {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println(scanner.nextLine());
+        System.out.println(WorldDataManager.currentWorld);
     }
 }

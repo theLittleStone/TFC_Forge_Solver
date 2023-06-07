@@ -17,7 +17,7 @@ import java.util.stream.Collectors;
  * Created by theLittleStone on 2023/5/10.
  */
 public class FileLoader {
-    public static final String[] InPackageFileArray = {"Recipes.json", "World_1.json", "Config.json"};
+    public static final String[] InPackageFileArray = {"Recipes.json", "Config.json"};
 //    public static String PackagePath = MainApplication.class.getProtectionDomain().getCodeSource().getLocation().getPath()
 //            .replace("TFC_Forge_Solver.jar", "").replaceFirst("/", "");
     //包所在的路径

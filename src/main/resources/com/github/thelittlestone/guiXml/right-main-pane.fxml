@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<GridPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.github.thelittlestone.gui.RightMainPanelController">
+<GridPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.github.thelittlestone.gui.RightMainPaneController">
   <columnConstraints>
     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
   </columnConstraints>
@@ -93,12 +93,8 @@
                                        <children>
                                           <HBox alignment="CENTER" GridPane.columnIndex="1">
                                              <children>
-                                                <TextField fx:id="valueTextField" alignment="CENTER">
-                                                   <font>
-                                                      <Font size="16.0" />
-                                                   </font>
-                                                </TextField>
-                                                <Button maxHeight="200.0" maxWidth="200.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="33.6" prefWidth="48.0" text="Set">
+                                                <Spinner fx:id="valueSpinner" editable="true" maxHeight="200.0" maxWidth="200.0" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#valueSpinnerOnKeyPressed" prefHeight="33.6" prefWidth="72.0" />
+                                                <Button fx:id="setButton" maxHeight="200.0" maxWidth="200.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#setButtonOnAction" prefHeight="33.6" prefWidth="48.0" text="Set">
                                                    <font>
                                                       <Font size="16.0" />
                                                    </font>
@@ -117,7 +113,7 @@
                      <children>
                         <VBox alignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                            <children>
-                              <Button fx:id="startButton" contentDisplay="CENTER" lineSpacing="2.0" mnemonicParsing="false" text="Start! " textAlignment="CENTER">
+                              <Button fx:id="startButton" contentDisplay="CENTER" lineSpacing="2.0" mnemonicParsing="false" onAction="#startButtonOnAction" text="Start! " textAlignment="CENTER">
                                  <font>
                                     <Font size="24.0" />
                                  </font>
@@ -135,7 +131,7 @@
                   <Separator prefWidth="200.0" />
                   <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
                      <children>
-                        <Label fx:id="showStepLabel" text="Label">
+                        <Label fx:id="showStepLabel">
                            <font>
                               <Font size="16.0" />
                            </font>

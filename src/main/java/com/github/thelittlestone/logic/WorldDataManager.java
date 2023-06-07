@@ -21,7 +21,7 @@ public class WorldDataManager {
     //初始化, 将所有的world文件加载到程序中,
     static {
         ArrayList<String> fileNames = FileLoader.getOutPackageFileNamesContains("^((?i)w)orld_(.*).json");
-        if (fileNames != null) {
+        if (fileNames != null &&!fileNames.isEmpty()) {
             for (String fileName : fileNames) {
                 try {
                     String fileContent = FileLoader.getFileContent(fileName, false);
@@ -33,6 +33,8 @@ public class WorldDataManager {
                     continue;
                 }
             }
+            currentWorld = getJsonWorldRecipes(getAllWorldName().get(0));
+
         }
     }
 
@@ -58,6 +60,9 @@ public class WorldDataManager {
     }
     //把一个世界配置写到文件中, 同时也会更新本地的世界库, 如果保存有文件名, 使用原文件名, 否则使用默认文件名
     public static void updateWorld(JsonWorldRecipes worldRecipes) throws IOException {
+        if (worldRecipes == null){
+            return;
+        }
         String filename = nameMap.get(worldRecipes.worldName);
         if (filename == null) {
             updateWorld(worldRecipes, "world_" + worldRecipes.worldName + ".json");

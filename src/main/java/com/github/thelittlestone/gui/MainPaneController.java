@@ -1,7 +1,5 @@
 package com.github.thelittlestone.gui;
 
-import com.github.thelittlestone.config.Config;
-import com.github.thelittlestone.config.ConfigLoader;
 import com.github.thelittlestone.logic.WorldDataManager;
 import com.github.thelittlestone.logic.json.JsonWorldRecipes;
 import com.github.thelittlestone.util.ForbiddenChars;
@@ -9,9 +7,12 @@ import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
 import javafx.scene.control.*;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.GridPane;
 
 import java.io.IOException;
 import java.net.URL;
@@ -22,7 +23,7 @@ import java.util.ResourceBundle;
 /**
  * Created by theLittleStone on 2023/5/28.
  */
-public class MainPanelController implements Initializable {
+public class MainPaneController implements Initializable {
     @FXML
     public SplitPane mainPane;
     @FXML
@@ -37,19 +38,29 @@ public class MainPanelController implements Initializable {
     public ListView<String> worldListView;
 
 
+
+
     public boolean isOperating = false;
+
 
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        //初始化worldList
-        ObservableList<String> ol = FXCollections.observableArrayList(getReFormatWorldNameList());
-        worldListView.setItems(ol);
-        //设置初始右面板世界
+        if (WorldDataManager.getAllWorldName().isEmpty()) {
+            //初始化worldList
+            ObservableList<String> ol = FXCollections.observableArrayList();
+            worldListView.setItems(ol);
 
-        String focusedItem = worldListView.getFocusModel().getFocusedItem();
-        WorldDataManager.currentWorld = WorldDataManager.getJsonWorldRecipes(deFormatWorldName(focusedItem));
+            //不设置初始右面板世界
+        }else {
+            //初始化worldList
+            ObservableList<String> ol = FXCollections.observableArrayList(getReFormatWorldNameList());
+            worldListView.setItems(ol);
 
+            //设置初始右面板世界
+            String focusedItem = worldListView.getFocusModel().getFocusedItem();
+            WorldDataManager.currentWorld = WorldDataManager.getJsonWorldRecipes(deFormatWorldName(focusedItem));
+        }
 
         //为listView选项改变添加监听器
         worldListView.getSelectionModel().selectedItemProperty().addListener(
@@ -59,9 +70,14 @@ public class MainPanelController implements Initializable {
                         System.out.println(worldListView.getFocusModel().getFocusedItem());
                         String focus = worldListView.getFocusModel().getFocusedItem();
                         WorldDataManager.currentWorld = WorldDataManager.getJsonWorldRecipes(deFormatWorldName(focus));
+                        ComponentBoard.rightMainPaneController.refresh();
                     }
-                    //添加改变右侧页面的代码
+
                 });
+
+        //注册到展板上
+        ComponentBoard.mainPaneController = this;
+
     }
 
     public void addButtonOnAction(){
@@ -89,6 +105,13 @@ public class MainPanelController implements Initializable {
 //                worldListView.scrollTo(index);
                 worldListView.getSelectionModel().select(index);
 
+                //刷新右面板
+                if (WorldDataManager.currentWorld != null) {
+                    WorldDataManager.updateWorld(WorldDataManager.currentWorld);
+                }
+                WorldDataManager.currentWorld = newWorld;
+                ComponentBoard.rightMainPaneController.refresh();
+
             } catch (IOException e) {
                 Alert unKnownAlert = new Alert(Alert.AlertType.ERROR);
                 unKnownAlert.setContentText("无法新建世界");
@@ -98,6 +121,7 @@ public class MainPanelController implements Initializable {
         }
 
         // 记得添加切换右边窗口的功能
+
 
 
         isOperating = false;
@@ -129,6 +153,8 @@ public class MainPanelController implements Initializable {
             ObservableList<String> ol = FXCollections.observableArrayList(getReFormatWorldNameList());
             worldListView.setItems(ol);
             // 添加删除右边窗口界面的代码
+            WorldDataManager.currentWorld = null;
+            ComponentBoard.rightMainPaneController.refresh();
         }
         isOperating = false;
     }
@@ -149,5 +175,6 @@ public class MainPanelController implements Initializable {
     private String formatWorldName(String name){
         return "世界: " + name;
     }
+
 
 }

@@ -52,8 +52,7 @@ public class ActionCombination extends ArrayList<ActionEnum> {
     public String toString() {
         StringBuilder stringBuilder = new StringBuilder();
         for (ActionEnum actionEnum : this) {
-            stringBuilder.append(actionEnum.toString()).append("  ");
-            stringBuilder.append(actionEnum.value).append("\r\n");
+            stringBuilder.append(actionEnum.toString()).append(",  ");
         }
         return stringBuilder.toString();
     }
