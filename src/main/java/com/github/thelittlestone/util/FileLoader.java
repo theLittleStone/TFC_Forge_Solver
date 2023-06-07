@@ -21,12 +21,15 @@ public class FileLoader {
 //    public static String PackagePath = MainApplication.class.getProtectionDomain().getCodeSource().getLocation().getPath()
 //            .replace("TFC_Forge_Solver.jar", "").replaceFirst("/", "");
     //包所在的路径
-    public static String PackagePath = MainApplication.class.getProtectionDomain().getCodeSource().getLocation()
+    public static final String PackagePath = MainApplication.class.getProtectionDomain().getCodeSource().getLocation()
         .getPath().replaceFirst("/", "");
     //包内的资源路径
-    public static String InPackageResourcePath = "/com/github/thelittlestone/files/";
+    public static final String InPackageResourcePath = "/com/github/thelittlestone/files/";
     //包外的配置文件存放文件夹
-    public static String OutPackageResourcePath = "TFC_Forge_solver_config/";
+    public static final String OutPackageResourcePath = "TFC_Forge_solver_config/";
+
+    //包外配置文件路径, 此项可更换(根据开发流程选择打包前还是打包后)
+    public static final String OutPath = OutPackageResourcePath; //PackagePath + OutPackageResourcePath
 
     public static boolean InitResult = false;
     static {
@@ -38,7 +41,7 @@ public class FileLoader {
     }
 
     public static void init() throws URISyntaxException, IOException {
-        URI targetURI = new URI(PackagePath + OutPackageResourcePath);
+        URI targetURI = new URI(OutPath);
         File f = new File(targetURI.getPath());
         //创建外部配置文件夹(如果不存在)
         if (!f.exists() || !f.isDirectory()){
@@ -49,7 +52,7 @@ public class FileLoader {
         //如果config中不存在配置文件, 则向其中释放默认配置文件
         try {
             for (String s : InPackageFileArray) {
-                URI u = new URI(PackagePath + OutPackageResourcePath + s);
+                URI u = new URI(OutPath + s);
                 if (!(new File(u.getPath()).exists())){
                     copyFile(InPackageResourcePath + s, u.getPath());
                 }
@@ -95,7 +98,7 @@ public class FileLoader {
         //包外配置
         URI u;
         try {
-            u = new URI(PackagePath + OutPackageResourcePath + fileName);
+            u = new URI(OutPath + fileName);
         }catch (URISyntaxException e) {
             e.printStackTrace();
             throw new RuntimeException("无法读取包外配置文件");
@@ -114,7 +117,7 @@ public class FileLoader {
         if (!InitResult){
             throw new IOException("初始化配置文件夹失败");
         }
-        String targetPath = PackagePath + OutPackageResourcePath + fileName;
+        String targetPath = OutPath + fileName;
         try (FileWriter fileWriter = new FileWriter(targetPath, false)){
             fileWriter.write(content);
         }
@@ -122,20 +125,20 @@ public class FileLoader {
 
     //删掉配置文件, fileName只要求文件名, 不带路径
     public static void deleteFile(String fileName) throws IOException {
-        String pathName = PackagePath + OutPackageResourcePath + fileName;
+        String pathName = OutPath + fileName;
         Files.delete(Path.of(pathName));
     }
 
     //根据正则表达式返回符合条件的文件名
     public static ArrayList<String> getOutPackageFileNamesContains(String regex){
         ArrayList<String> target = new ArrayList<>();
-        File file = new File(PackagePath + OutPackageResourcePath);
+        File file = new File(OutPath);
         String[] fileNameList = file.list();
         if (fileNameList == null) {
             return null;
         }
         for (String fileName : fileNameList) {
-            File f = new File(PackagePath + OutPackageResourcePath + fileName);
+            File f = new File(OutPath + fileName);
             if (f.isDirectory()){
                 continue;
             }if (fileName.matches(regex)){
