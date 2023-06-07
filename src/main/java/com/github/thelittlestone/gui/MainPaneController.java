@@ -7,12 +7,9 @@ import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Parent;
 import javafx.scene.control.*;
 import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.GridPane;
 
 import java.io.IOException;
 import java.net.URL;
@@ -70,7 +67,7 @@ public class MainPaneController implements Initializable {
                         System.out.println(worldListView.getFocusModel().getFocusedItem());
                         String focus = worldListView.getFocusModel().getFocusedItem();
                         WorldDataManager.currentWorld = WorldDataManager.getJsonWorldRecipes(deFormatWorldName(focus));
-                        ComponentBoard.rightMainPaneController.refresh();
+                        ComponentBoard.middlePaneController.refresh();
                     }
 
                 });
@@ -110,7 +107,7 @@ public class MainPaneController implements Initializable {
                     WorldDataManager.updateWorld(WorldDataManager.currentWorld);
                 }
                 WorldDataManager.currentWorld = newWorld;
-                ComponentBoard.rightMainPaneController.refresh();
+                ComponentBoard.middlePaneController.refresh();
 
             } catch (IOException e) {
                 Alert unKnownAlert = new Alert(Alert.AlertType.ERROR);
@@ -154,7 +151,7 @@ public class MainPaneController implements Initializable {
             worldListView.setItems(ol);
             // 添加删除右边窗口界面的代码
             WorldDataManager.currentWorld = null;
-            ComponentBoard.rightMainPaneController.refresh();
+            ComponentBoard.middlePaneController.refresh();
         }
         isOperating = false;
     }

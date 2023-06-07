@@ -4,16 +4,12 @@ import com.github.thelittlestone.logic.WorldDataManager;
 import com.github.thelittlestone.logic.components.ActionCombination;
 import com.github.thelittlestone.logic.json.JsonRecipe;
 import com.github.thelittlestone.logic.json.JsonRecipeResult;
-import com.github.thelittlestone.logic.json.JsonWorldRecipes;
-import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.input.KeyEvent;
 
-import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
@@ -21,7 +17,7 @@ import java.util.ResourceBundle;
 /**
  * Created by theLittleStone on 2023/5/28.
  */
-public class RightMainPaneController implements Initializable {
+public class MiddlePaneController implements Initializable {
     @FXML
     public ChoiceBox<String> materialChoiceBox;
     @FXML
@@ -40,7 +36,7 @@ public class RightMainPaneController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         //将自身注册到面板中供调用
-        ComponentBoard.rightMainPaneController = this;
+        ComponentBoard.middlePaneController = this;
 
         //初始化数字选项框
         valueSpinner.setValueFactory(new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 1000, 1));

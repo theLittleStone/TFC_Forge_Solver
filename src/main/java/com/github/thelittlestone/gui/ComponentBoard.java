@@ -5,5 +5,5 @@ package com.github.thelittlestone.gui;
  */
 public class ComponentBoard {
     public static MainPaneController mainPaneController;
-    public static RightMainPaneController rightMainPaneController;
+    public static MiddlePaneController middlePaneController;
 }
