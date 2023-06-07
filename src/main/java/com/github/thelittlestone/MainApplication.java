@@ -5,9 +5,12 @@ import com.github.thelittlestone.logic.WorldDataManager;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
+import java.io.FileInputStream;
 import java.io.IOException;
+import java.util.Objects;
 
 public class MainApplication extends Application {
     public static final int WIDTH = 960;
@@ -17,7 +20,9 @@ public class MainApplication extends Application {
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("guiXml/main-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), WIDTH, HEIGHT);
-        stage.setTitle("Hello!");
+        stage.setTitle("TFC Forge Solver!");
+        Image image = new Image(Objects.requireNonNull(Main.class.getResourceAsStream("icon.png")));
+        stage.getIcons().add(image);
         stage.setScene(scene);
         stage.show();
     }
