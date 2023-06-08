@@ -112,7 +112,7 @@ public class FileLoader {
         return content.toString();
     }
 
-    //将字符串写入文件, fileName只要求文件名, 不带路径
+    //将字符串写入包外文件, fileName只要求文件名, 不带路径
     public static void writeToFile(String fileName, String content) throws IOException {
         if (!InitResult){
             throw new IOException("初始化配置文件夹失败");

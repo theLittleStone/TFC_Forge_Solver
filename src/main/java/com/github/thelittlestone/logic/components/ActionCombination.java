@@ -69,6 +69,7 @@ public class ActionCombination extends ArrayList<ActionEnum> {
         for (ActionEnum actionEnum : this) {
             stringBuilder.append(actionEnum.zh()).append(",  ");
         }
-        return stringBuilder.toString();
+        String target = stringBuilder.toString();
+        return target.substring(0, target.length() - 3);
     }
 }

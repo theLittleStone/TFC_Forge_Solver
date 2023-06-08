@@ -17,4 +17,5 @@ module com.github.thelittlestone.tfc_forge_solver {
     exports com.github.thelittlestone.exception;
     exports com.github.thelittlestone.gui;
     opens com.github.thelittlestone.logic.json to javafx.fxml;
+    exports com.github.thelittlestone.translate;
 }

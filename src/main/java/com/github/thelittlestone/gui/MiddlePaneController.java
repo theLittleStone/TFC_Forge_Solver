@@ -4,6 +4,7 @@ import com.github.thelittlestone.logic.WorldDataManager;
 import com.github.thelittlestone.logic.components.ActionCombination;
 import com.github.thelittlestone.logic.json.JsonRecipe;
 import com.github.thelittlestone.logic.json.JsonRecipeResult;
+import com.github.thelittlestone.translate.NameMappingTableLoader;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -47,12 +48,10 @@ public class MiddlePaneController implements Initializable {
             isCleaning = true;
             targetChoiceBox.getItems().clear();
 
-            String selected = materialChoiceBox.getSelectionModel().getSelectedItem();
-            ArrayList<JsonRecipeResult> recipeResults = WorldDataManager.currentWorld.allResults(selected);
+            String selected = NameMappingTableLoader.original(materialChoiceBox.getSelectionModel().getSelectedItem());
             //对targetChoiceBox添加内容
-            for (JsonRecipeResult recipeResult : recipeResults) {
-                targetChoiceBox.getItems().add(recipeResult.item);
-            }
+            targetChoiceBox.getItems().addAll(WorldDataManager.currentWorld.allResultsSZH(selected));
+
             //其他元素清零
             valueSpinner.getValueFactory().setValue(0);
             showStepLabel.setText("");
@@ -66,8 +65,8 @@ public class MiddlePaneController implements Initializable {
         targetChoiceBox.getSelectionModel().selectedItemProperty().addListener((observableValue, s, t1) -> {
             //防止误判
             if (!isCleaning) {
-                String material = materialChoiceBox.getSelectionModel().getSelectedItem();
-                String target = targetChoiceBox.getSelectionModel().getSelectedItem();
+                String material = NameMappingTableLoader.original(materialChoiceBox.getSelectionModel().getSelectedItem());
+                String target = NameMappingTableLoader.original(targetChoiceBox.getSelectionModel().getSelectedItem());
                 JsonRecipe recipe = WorldDataManager.currentWorld.recipe(material, target);
                 //设置其余组件内容
                 valueSpinner.getValueFactory().setValue(recipe.value);
@@ -95,9 +94,8 @@ public class MiddlePaneController implements Initializable {
         if (!isCertain){
             return;
         }
-        System.out.println(111);
-        String material = materialChoiceBox.getSelectionModel().getSelectedItem();
-        String target = targetChoiceBox.getSelectionModel().getSelectedItem();
+        String material = NameMappingTableLoader.original(materialChoiceBox.getSelectionModel().getSelectedItem());
+        String target = NameMappingTableLoader.original(targetChoiceBox.getSelectionModel().getSelectedItem());
         JsonRecipe recipe = WorldDataManager.currentWorld.recipe(material, target);
         recipe.value = valueSpinner.getValue();
     }
@@ -108,22 +106,24 @@ public class MiddlePaneController implements Initializable {
         }
         //先保存value值
         setButtonOnAction(new ActionEvent());
-        String material = materialChoiceBox.getSelectionModel().getSelectedItem();
-        String target = targetChoiceBox.getSelectionModel().getSelectedItem();
+        String material = NameMappingTableLoader.original(materialChoiceBox.getSelectionModel().getSelectedItem());
+        String target = NameMappingTableLoader.original(targetChoiceBox.getSelectionModel().getSelectedItem());
         JsonRecipe recipe = WorldDataManager.currentWorld.recipe(material, target);
         ActionCombination actionCombination = recipe.solve();
         showStepLabel.setText(actionCombination.toString());
     }
 
     public void refresh(){
+        isCertain = false;
         if (WorldDataManager.currentWorld != null) {
-            materialChoiceBox.getItems().addAll(WorldDataManager.currentWorld.allInputs());
+            materialChoiceBox.getItems().addAll(WorldDataManager.currentWorld.allInputsZH());
         }else {
             materialChoiceBox.getItems().clear();
         }
         targetChoiceBox.getItems().clear();
         valueSpinner.getValueFactory().setValue(0);
         showStepLabel.setText("");
+
     }
 
 
