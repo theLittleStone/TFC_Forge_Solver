@@ -14,7 +14,7 @@ public class NameMappingTable extends ArrayList<NameMappingUnit> {
                 return unit.transName;
             }
         }
-        return null;
+        return original;
     }
 
     public String original(String translate){
@@ -23,7 +23,7 @@ public class NameMappingTable extends ArrayList<NameMappingUnit> {
                 return unit.origName;
             }
         }
-        return null;
+        return translate;
     }
 
     //检查重复元素
