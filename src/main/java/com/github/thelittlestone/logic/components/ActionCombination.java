@@ -47,9 +47,24 @@ public class ActionCombination extends ArrayList<ActionEnum> {
         sort((a1, a2) -> Math.abs(a2.value) - Math.abs(a1.value));
     }
 
+    public String labelContent(){
+        if (this.isEmpty()){
+            return "";
+        }
+        StringBuilder stringBuilder = new StringBuilder();
+        for (ActionEnum actionEnum : this) {
+            stringBuilder.append(actionEnum.zh()).append("+");
+        }
+        int i = stringBuilder.lastIndexOf("+");
+        stringBuilder.replace(i, i+1, "");
+        return stringBuilder.toString();
+    }
 
     @Override
     public String toString() {
+        if (this.isEmpty()){
+            return "";
+        }
         StringBuilder stringBuilder = new StringBuilder();
         for (ActionEnum actionEnum : this) {
             stringBuilder.append(actionEnum.zh()).append(",  ");

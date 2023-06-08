@@ -2,6 +2,8 @@ package com.github.thelittlestone;
 
 
 import com.github.thelittlestone.logic.WorldDataManager;
+import com.github.thelittlestone.logic.components.ActionCombination;
+import com.github.thelittlestone.logic.components.ActionEnum;
 
 import java.io.IOException;
 

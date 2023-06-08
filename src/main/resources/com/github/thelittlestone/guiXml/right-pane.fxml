@@ -42,12 +42,12 @@
                         </VBox>
                         <VBox alignment="CENTER" GridPane.rowIndex="1">
                            <children>
-                              <Label text="Label" />
+                              <Label fx:id="stepLabel" text="Label" />
                            </children>
                         </VBox>
                         <VBox alignment="CENTER" GridPane.rowIndex="2">
                            <children>
-                              <Label text="= 56">
+                              <Label fx:id="valueLabel" text="= 0">
                                  <font>
                                     <Font size="19.0" />
                                  </font></Label>
@@ -74,70 +74,70 @@
                      <children>
                        <AnchorPane>
                            <children>
-                              <Button mnemonicParsing="false" text="轻击" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+                              <Button fx:id="lightHitButton" mnemonicParsing="false" onAction="#lightHitButtonOnAction" text="轻击" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
                                  <font>
                                     <Font size="16.0" />
                                  </font></Button>
                            </children></AnchorPane>
                        <AnchorPane GridPane.rowIndex="1">
                            <children>
-                              <Button mnemonicParsing="false" text="击打" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+                              <Button fx:id="mediumHitButton" mnemonicParsing="false" onAction="#mediumHitButtonOnAction" text="击打" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
                                  <font>
                                     <Font size="16.0" />
                                  </font></Button>
                            </children></AnchorPane>
                        <AnchorPane GridPane.rowIndex="2">
                            <children>
-                              <Button mnemonicParsing="false" text="重击" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+                              <Button fx:id="heavyHitButton" mnemonicParsing="false" onAction="#heavyHitButtonOnAction" text="重击" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
                                  <font>
                                     <Font size="16.0" />
                                  </font></Button>
                            </children></AnchorPane>
                        <AnchorPane GridPane.rowIndex="3">
                            <children>
-                              <Button mnemonicParsing="false" text="牵拉" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+                              <Button fx:id="drawButton" mnemonicParsing="false" onAction="#drawButtonOnAction" text="牵拉" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
                                  <font>
                                     <Font size="16.0" />
                                  </font></Button>
                            </children></AnchorPane>
                        <AnchorPane GridPane.rowIndex="4">
                            <children>
-                              <Button mnemonicParsing="false" text="&lt;-" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+                              <Button fx:id="backButton" mnemonicParsing="false" onAction="#backButtonOnAction" text="&lt;-" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
                                  <font>
                                     <Font size="16.0" />
                                  </font></Button>
                            </children></AnchorPane>
                        <AnchorPane GridPane.columnIndex="1">
                            <children>
-                              <Button mnemonicParsing="false" text="冲压" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="2.0">
+                              <Button fx:id="punchButton" mnemonicParsing="false" onAction="#punchButtonOnAction" text="冲压" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="2.0">
                                  <font>
                                     <Font size="16.0" />
                                  </font></Button>
                            </children></AnchorPane>
                        <AnchorPane GridPane.columnIndex="1" GridPane.rowIndex="1">
                            <children>
-                              <Button mnemonicParsing="false" text="弯曲" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="2.0">
+                              <Button fx:id="bendButton" mnemonicParsing="false" onAction="#bendButtonOnAction" text="弯曲" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="2.0">
                                  <font>
                                     <Font size="16.0" />
                                  </font></Button>
                            </children></AnchorPane>
                        <AnchorPane GridPane.columnIndex="1" GridPane.rowIndex="2">
                            <children>
-                              <Button mnemonicParsing="false" text="镦锻" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="2.0">
+                              <Button fx:id="upsetButton" mnemonicParsing="false" onAction="#upsetButtonOnAction" text="镦锻" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="2.0">
                                  <font>
                                     <Font size="16.0" />
                                  </font></Button>
                            </children></AnchorPane>
                        <AnchorPane GridPane.columnIndex="1" GridPane.rowIndex="3">
                            <children>
-                              <Button mnemonicParsing="false" text="收缩" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="2.0">
+                              <Button fx:id="shrinkButton" mnemonicParsing="false" onAction="#shrinkButtonOnAction" text="收缩" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="2.0">
                                  <font>
                                     <Font size="16.0" />
                                  </font></Button>
                            </children></AnchorPane>
                        <AnchorPane GridPane.columnIndex="1" GridPane.rowIndex="4">
                            <children>
-                              <Button mnemonicParsing="false" text="C" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="2.0">
+                              <Button fx:id="cleanButton" mnemonicParsing="false" onAction="#cleanButtonOnAction" text="C" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="2.0">
                                  <font>
                                     <Font size="16.0" />
                                  </font></Button>
@@ -147,7 +147,7 @@
                </children></AnchorPane>
             <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="4">
                <children>
-                  <Button mnemonicParsing="false" text="对, 锻造值就是这个!" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="10.0" />
+                  <Button fx:id="saveButton" mnemonicParsing="false" onAction="#saveButtonOnAction" text="对, 锻造值就是这个!" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="10.0" />
                </children>
             </AnchorPane>
          </children>

@@ -32,6 +32,7 @@ public class MiddlePaneController implements Initializable {
     public Label showStepLabel;
 
     private boolean isCleaning = false;
+    public boolean isCertain = false;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -55,7 +56,10 @@ public class MiddlePaneController implements Initializable {
             //其他元素清零
             valueSpinner.getValueFactory().setValue(0);
             showStepLabel.setText("");
+            isCertain = false;
             isCleaning = false;
+            //让右侧面板也清零
+            ComponentBoard.rightPaneController.clean();
         });
 
         //为目标选择框添加事件
@@ -65,8 +69,12 @@ public class MiddlePaneController implements Initializable {
                 String material = materialChoiceBox.getSelectionModel().getSelectedItem();
                 String target = targetChoiceBox.getSelectionModel().getSelectedItem();
                 JsonRecipe recipe = WorldDataManager.currentWorld.recipe(material, target);
-                //对valueSpinner组件设置内容
+                //设置其余组件内容
                 valueSpinner.getValueFactory().setValue(recipe.value);
+                showStepLabel.setText("");
+                isCertain = true;
+                //让右侧面板也清零
+                ComponentBoard.rightPaneController.clean();
             }
         });
         //为valueSpinner添加失去焦点时的事件
@@ -84,6 +92,9 @@ public class MiddlePaneController implements Initializable {
     }
 
     public void setButtonOnAction(ActionEvent actionEvent) {
+        if (!isCertain){
+            return;
+        }
         System.out.println(111);
         String material = materialChoiceBox.getSelectionModel().getSelectedItem();
         String target = targetChoiceBox.getSelectionModel().getSelectedItem();
@@ -92,6 +103,9 @@ public class MiddlePaneController implements Initializable {
     }
 
     public void startButtonOnAction(ActionEvent actionEvent) {
+        if (!isCertain){
+            return;
+        }
         //先保存value值
         setButtonOnAction(new ActionEvent());
         String material = materialChoiceBox.getSelectionModel().getSelectedItem();
