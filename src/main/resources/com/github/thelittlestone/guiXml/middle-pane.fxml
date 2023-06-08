@@ -131,7 +131,7 @@
                   <Separator prefWidth="200.0" />
                   <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
                      <children>
-                        <Label fx:id="showStepLabel">
+                        <Label fx:id="showStepLabel" wrapText="true">
                            <font>
                               <Font size="16.0" />
                            </font>
