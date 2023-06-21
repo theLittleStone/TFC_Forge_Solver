@@ -6,4 +6,9 @@ package com.github.thelittlestone.translate;
 public class NameMappingUnit {
     public String origName;
     public String transName;
+
+    @Override
+    public String toString() {
+        return transName;
+    }
 }

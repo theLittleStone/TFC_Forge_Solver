@@ -42,7 +42,7 @@
                         </VBox>
                         <VBox alignment="CENTER" GridPane.rowIndex="1">
                            <children>
-                              <Label fx:id="stepLabel" text="Label" wrapText="true" />
+                              <Label fx:id="stepLabel" wrapText="true" />
                            </children>
                         </VBox>
                         <VBox alignment="CENTER" GridPane.rowIndex="2">

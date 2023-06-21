@@ -22,6 +22,7 @@ import java.util.HashSet;
  */
 public class Main {
     public static void main(String[] args) throws IOException {
+        System.setProperty("file.encoding", "UTF-8");
         MainApplication.launch(MainApplication.class, args);
 
     }

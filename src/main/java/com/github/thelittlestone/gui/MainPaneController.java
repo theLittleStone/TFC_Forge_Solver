@@ -64,7 +64,6 @@ public class MainPaneController implements Initializable {
                 (ObservableValue<? extends String> ov, String old_val, String new_val) -> {
                     //排除系统对列表操作产生的误触发
                     if (!isOperating) {
-                        System.out.println(worldListView.getFocusModel().getFocusedItem());
                         String focus = worldListView.getFocusModel().getFocusedItem();
                         WorldDataManager.currentWorld = WorldDataManager.getJsonWorldRecipes(deFormatWorldName(focus));
                         ComponentBoard.middlePaneController.refresh();
