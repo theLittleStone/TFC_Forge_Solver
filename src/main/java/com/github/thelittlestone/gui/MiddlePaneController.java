@@ -5,6 +5,7 @@ import com.github.thelittlestone.logic.components.ActionCombination;
 import com.github.thelittlestone.logic.json.JsonRecipe;
 import com.github.thelittlestone.logic.json.JsonRecipeResult;
 import com.github.thelittlestone.translate.NameMappingTableLoader;
+import com.github.thelittlestone.translate.NameMappingUnit;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -20,9 +21,9 @@ import java.util.ResourceBundle;
  */
 public class MiddlePaneController implements Initializable {
     @FXML
-    public ChoiceBox<String> materialChoiceBox;
+    public ChoiceBox<NameMappingUnit> materialChoiceBox;
     @FXML
-    public ChoiceBox<String> targetChoiceBox;
+    public ChoiceBox<NameMappingUnit> targetChoiceBox;
     @FXML
     public Spinner<Integer> valueSpinner;
     @FXML
@@ -48,9 +49,9 @@ public class MiddlePaneController implements Initializable {
             isCleaning = true;
             targetChoiceBox.getItems().clear();
 
-            String selected = NameMappingTableLoader.original(materialChoiceBox.getSelectionModel().getSelectedItem());
+            NameMappingUnit selected = materialChoiceBox.getSelectionModel().getSelectedItem();
             //对targetChoiceBox添加内容
-            targetChoiceBox.getItems().addAll(WorldDataManager.currentWorld.allResultsSZH(selected));
+            targetChoiceBox.getItems().addAll(WorldDataManager.currentWorld.allResults(selected.origName));
 
             //其他元素清零
             valueSpinner.getValueFactory().setValue(0);
@@ -65,8 +66,8 @@ public class MiddlePaneController implements Initializable {
         targetChoiceBox.getSelectionModel().selectedItemProperty().addListener((observableValue, s, t1) -> {
             //防止误判
             if (!isCleaning) {
-                String material = NameMappingTableLoader.original(materialChoiceBox.getSelectionModel().getSelectedItem());
-                String target = NameMappingTableLoader.original(targetChoiceBox.getSelectionModel().getSelectedItem());
+                String material = materialChoiceBox.getSelectionModel().getSelectedItem().origName;
+                String target = targetChoiceBox.getSelectionModel().getSelectedItem().origName;
                 JsonRecipe recipe = WorldDataManager.currentWorld.recipe(material, target);
                 //设置其余组件内容
                 valueSpinner.getValueFactory().setValue(recipe.value);
@@ -94,8 +95,8 @@ public class MiddlePaneController implements Initializable {
         if (!isCertain){
             return;
         }
-        String material = NameMappingTableLoader.original(materialChoiceBox.getSelectionModel().getSelectedItem());
-        String target = NameMappingTableLoader.original(targetChoiceBox.getSelectionModel().getSelectedItem());
+        String material = materialChoiceBox.getSelectionModel().getSelectedItem().origName;
+        String target = targetChoiceBox.getSelectionModel().getSelectedItem().origName;
         JsonRecipe recipe = WorldDataManager.currentWorld.recipe(material, target);
         recipe.value = valueSpinner.getValue();
     }
@@ -106,8 +107,8 @@ public class MiddlePaneController implements Initializable {
         }
         //先保存value值
         setButtonOnAction(new ActionEvent());
-        String material = NameMappingTableLoader.original(materialChoiceBox.getSelectionModel().getSelectedItem());
-        String target = NameMappingTableLoader.original(targetChoiceBox.getSelectionModel().getSelectedItem());
+        String material = materialChoiceBox.getSelectionModel().getSelectedItem().origName;
+        String target = targetChoiceBox.getSelectionModel().getSelectedItem().origName;
         JsonRecipe recipe = WorldDataManager.currentWorld.recipe(material, target);
         ActionCombination actionCombination = recipe.solve();
         showStepLabel.setText(actionCombination.toString());
@@ -116,7 +117,7 @@ public class MiddlePaneController implements Initializable {
     public void refresh(){
         isCertain = false;
         if (WorldDataManager.currentWorld != null) {
-            materialChoiceBox.getItems().addAll(WorldDataManager.currentWorld.allInputsZH());
+            materialChoiceBox.getItems().addAll(WorldDataManager.currentWorld.allInputs());
         }else {
             materialChoiceBox.getItems().clear();
         }

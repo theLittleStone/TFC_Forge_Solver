@@ -8,24 +8,6 @@ import java.util.HashSet;
  */
 public class NameMappingTable extends ArrayList<NameMappingUnit> {
 
-    public String translate(String original){
-        for (NameMappingUnit unit : this) {
-            if (unit.origName.equals(original)){
-                return unit.transName;
-            }
-        }
-        return original;
-    }
-
-    public String original(String translate){
-        for (NameMappingUnit unit : this) {
-            if (unit.transName.equals(translate)){
-                return unit.origName;
-            }
-        }
-        return translate;
-    }
-
     //检查重复元素
     public boolean check(){
         ArrayList<String> stringArrayList = new ArrayList<>();

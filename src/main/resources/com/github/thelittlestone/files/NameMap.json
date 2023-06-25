@@ -390,34 +390,34 @@
   "transName" : "锻铁锄头"
 }, {
   "origName" : "tfc:metal/ingot/black_steel",
-  "transName" : "黑钢锭 "
+  "transName" : "黑钢锭"
 }, {
   "origName" : "tfc:metal/ingot/blue_steel",
-  "transName" : "蓝钢锭 "
+  "transName" : "蓝钢锭"
 }, {
   "origName" : "tfc:metal/ingot/high_carbon_black_steel",
-  "transName" : "高碳黑钢锭 "
+  "transName" : "高碳黑钢锭"
 }, {
   "origName" : "tfc:metal/ingot/high_carbon_blue_steel",
-  "transName" : "高碳蓝钢锭 "
+  "transName" : "高碳蓝钢锭"
 }, {
   "origName" : "tfc:metal/ingot/high_carbon_red_steel",
-  "transName" : "高碳红钢锭 "
+  "transName" : "高碳红钢锭"
 }, {
   "origName" : "tfc:metal/ingot/high_carbon_steel",
-  "transName" : "高碳钢锭 "
+  "transName" : "高碳钢锭"
 }, {
   "origName" : "tfc:metal/ingot/pig_iron",
-  "transName" : "生铁锭 "
+  "transName" : "生铁锭"
 }, {
   "origName" : "tfc:metal/ingot/red_steel",
-  "transName" : "红钢锭 "
+  "transName" : "红钢锭"
 }, {
   "origName" : "tfc:metal/ingot/steel",
-  "transName" : "钢锭 "
+  "transName" : "钢锭"
 }, {
   "origName" : "tfc:metal/ingot/wrought_iron",
-  "transName" : "锻铁锭 "
+  "transName" : "锻铁锭"
 }, {
   "origName" : "tfc:metal/javelin_head/bismuth_bronze",
   "transName" : "铋铜标枪头"
@@ -693,61 +693,61 @@
   "transName" : "锻铁镰刀刃"
 }, {
   "origName" : "tfc:metal/sheet/bismuth",
-  "transName" : "铋薄板 "
+  "transName" : "铋薄板"
 }, {
   "origName" : "tfc:metal/sheet/bismuth_bronze",
-  "transName" : "铋铜薄板 "
+  "transName" : "铋铜薄板"
 }, {
   "origName" : "tfc:metal/sheet/black_bronze",
-  "transName" : "黑铜薄板 "
+  "transName" : "黑铜薄板"
 }, {
   "origName" : "tfc:metal/sheet/black_steel",
-  "transName" : "黑钢薄板 "
+  "transName" : "黑钢薄板"
 }, {
   "origName" : "tfc:metal/sheet/blue_steel",
-  "transName" : "蓝钢薄板 "
+  "transName" : "蓝钢薄板"
 }, {
   "origName" : "tfc:metal/sheet/brass",
-  "transName" : "黄铜薄板 "
+  "transName" : "黄铜薄板"
 }, {
   "origName" : "tfc:metal/sheet/bronze",
-  "transName" : "青铜薄板 "
+  "transName" : "青铜薄板"
 }, {
   "origName" : "tfc:metal/sheet/cast_iron",
-  "transName" : "铸铁薄板 "
+  "transName" : "铸铁薄板"
 }, {
   "origName" : "tfc:metal/sheet/copper",
-  "transName" : "铜薄板 "
+  "transName" : "铜薄板"
 }, {
   "origName" : "tfc:metal/sheet/gold",
-  "transName" : "金薄板 "
+  "transName" : "金薄板"
 }, {
   "origName" : "tfc:metal/sheet/nickel",
-  "transName" : "镍薄板 "
+  "transName" : "镍薄板"
 }, {
   "origName" : "tfc:metal/sheet/red_steel",
-  "transName" : "红钢薄板 "
+  "transName" : "红钢薄板"
 }, {
   "origName" : "tfc:metal/sheet/rose_gold",
-  "transName" : "玫瑰金薄板 "
+  "transName" : "玫瑰金薄板"
 }, {
   "origName" : "tfc:metal/sheet/silver",
-  "transName" : "银薄板 "
+  "transName" : "银薄板"
 }, {
   "origName" : "tfc:metal/sheet/steel",
-  "transName" : "钢薄板 "
+  "transName" : "钢薄板"
 }, {
   "origName" : "tfc:metal/sheet/sterling_silver",
-  "transName" : "纯银薄板 "
+  "transName" : "纯银薄板"
 }, {
   "origName" : "tfc:metal/sheet/tin",
-  "transName" : "锡薄板 "
+  "transName" : "锡薄板"
 }, {
   "origName" : "tfc:metal/sheet/wrought_iron",
-  "transName" : "锻铁薄板 "
+  "transName" : "锻铁薄板"
 }, {
   "origName" : "tfc:metal/sheet/zinc",
-  "transName" : "锌薄板 "
+  "transName" : "锌薄板"
 }, {
   "origName" : "tfc:metal/shield/bismuth_bronze",
   "transName" : "铋铜盾"

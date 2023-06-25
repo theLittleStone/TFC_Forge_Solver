@@ -1,14 +1,10 @@
 package com.github.thelittlestone;
 
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.github.thelittlestone.logic.WorldDataManager;
-import com.github.thelittlestone.logic.components.ActionCombination;
-import com.github.thelittlestone.logic.components.ActionEnum;
 import com.github.thelittlestone.translate.NameMappingTable;
-import com.github.thelittlestone.translate.NameMappingTableLoader;
 import com.github.thelittlestone.translate.NameMappingUnit;
 import com.github.thelittlestone.util.FileLoader;
 
@@ -30,9 +26,15 @@ public class Main {
     public static void generateNameMap() throws IOException {
         WorldDataManager.currentWorld = WorldDataManager.worldMap.get(WorldDataManager.getAllWorldName().get(0));
         HashSet<String> stringHashSet2 = new HashSet<>();
-        HashSet<String> stringHashSet1 = new HashSet<>(WorldDataManager.currentWorld.allInputs());
+        HashSet<String> stringHashSet1 = new HashSet<>();
+        for (NameMappingUnit allInput : WorldDataManager.currentWorld.allInputs()) {
+            stringHashSet1.add(allInput.origName);
+        }
         for (String s : stringHashSet1) {
-            stringHashSet2.addAll(WorldDataManager.currentWorld.allResultsS(s));
+            ArrayList<NameMappingUnit> nameMappingUnits = WorldDataManager.currentWorld.allResults(s);
+            for (NameMappingUnit nameMappingUnit : nameMappingUnits) {
+                stringHashSet2.add(nameMappingUnit.origName);
+            }
         }
         stringHashSet1.addAll(stringHashSet2);
         ArrayList<String> stringArrayList = new ArrayList<>(stringHashSet1);

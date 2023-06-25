@@ -5,6 +5,7 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.github.thelittlestone.translate.NameMappingTableLoader;
+import com.github.thelittlestone.translate.NameMappingUnit;
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -42,50 +43,40 @@ public class JsonWorldRecipes {
         return objectMapper.writeValueAsString(this);
     }
 
-    //获取所有输入, 默认字典排序
-    public ArrayList<String> allInputs(){
-        HashSet<String> re = new HashSet<>();
+    //获取所有输入, 默认中文字典排序
+    public ArrayList<NameMappingUnit> allInputs(){
+        HashSet<NameMappingUnit> re = new HashSet<>();
         for (JsonRecipe recipe : recipes) {
-            re.add(recipe.input.toStr());
+            re.add(NameMappingTableLoader.get(recipe.input.toStr()));
         }
-        ArrayList<String> target = new ArrayList<>(re);
-        target.sort(Comparator.naturalOrder());
-        return target;
-    }
-    //获取所有输入, 默认字典排序, 中文, 传入的还要是原格式
-    public ArrayList<String> allInputsZH(){
-        HashSet<String> re = new HashSet<>();
-        for (JsonRecipe recipe : recipes) {
-            re.add(NameMappingTableLoader.translate(recipe.input.toStr()));
-        }
-        ArrayList<String> target = new ArrayList<>(re);
-        target.sort(Comparator.naturalOrder());
-        return target;
-    }
-    //获取输入的所有对应输出, 默认字典排序
-    public ArrayList<String> allResultsS(String input){
-        ArrayList<JsonRecipeResult> results = allResults(input);
-        HashSet<String> re = new HashSet<>();
-        for (JsonRecipeResult result : results) {
-            re.add(result.item);
-        }
-        ArrayList<String> target = new ArrayList<>(re);
-        target.sort(Comparator.naturalOrder());
-        return target;
-    }
-    //获取输入的所有对应输出, 默认字典排序, 中文, 传入的还要是原格式
-    public ArrayList<String> allResultsSZH(String input){
-        ArrayList<JsonRecipeResult> results = allResults(input);
-        HashSet<String> re = new HashSet<>();
-        for (JsonRecipeResult result : results) {
-            re.add(NameMappingTableLoader.translate(result.item));
-        }
-        ArrayList<String> target = new ArrayList<>(re);
-        target.sort(Comparator.naturalOrder());
+        ArrayList<NameMappingUnit> target = new ArrayList<>(re);
+        target.sort((o1, o2) -> {
+            Comparator<String> tComparator = Comparator.naturalOrder();
+            return tComparator.compare(o1.toString(), o2.toString());
+        });
         return target;
     }
 
-    public ArrayList<JsonRecipeResult> allResults(String input){
+    //获取输入的所有对应输出, 默认中文字典排序
+    public ArrayList<NameMappingUnit> allResults(String input){
+        ArrayList<JsonRecipeResult> results = allJsonRecipeResults(input);
+        HashSet<NameMappingUnit> re = new HashSet<>();
+        for (JsonRecipeResult result : results) {
+            re.add(NameMappingTableLoader.get(result.item));
+        }
+        ArrayList<NameMappingUnit> target = new ArrayList<>(re);
+        target.sort(new Comparator<NameMappingUnit>() {
+            @Override
+            public int compare(NameMappingUnit o1, NameMappingUnit o2) {
+                Comparator<String> tComparator = Comparator.naturalOrder();
+                return tComparator.compare(o1.toString(), o2.toString());
+            }
+        });
+        return target;
+    }
+
+
+    public ArrayList<JsonRecipeResult> allJsonRecipeResults(String input){
         HashSet<JsonRecipeResult> re = new HashSet<>();
         for (JsonRecipe recipe : recipes) {
             if (input.equals(recipe.input.toStr())){
@@ -95,6 +86,7 @@ public class JsonWorldRecipes {
         return new ArrayList<>(re);
     }
 
+    //全部使用注册名
     public JsonRecipe recipe(String input, String result){
         for (JsonRecipe recipe : recipes) {
             if (recipe.input.toStr().equals(input) && recipe.result.item.equals(result)){

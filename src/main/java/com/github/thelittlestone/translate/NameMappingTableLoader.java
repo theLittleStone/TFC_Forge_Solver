@@ -6,6 +6,7 @@ import com.github.thelittlestone.translate.NameMappingTable;
 import com.github.thelittlestone.util.FileLoader;
 
 import java.io.IOException;
+import java.util.Objects;
 
 /**
  * Created by theLittleStone on 2023/6/8.
@@ -35,11 +36,12 @@ public class NameMappingTableLoader {
         }
     }
 
-    public static String translate(String original){
-        return nameMappingTable.translate(original);
-    }
-
-    public static String original(String translate){
-        return nameMappingTable.original(translate);
+    public static NameMappingUnit get(String original){
+        for (NameMappingUnit nameMappingUnit : nameMappingTable) {
+            if (Objects.equals(nameMappingUnit.origName, original)){
+                return nameMappingUnit;
+            }
+        }
+        return null;
     }
 }
