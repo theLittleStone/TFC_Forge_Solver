@@ -68,6 +68,7 @@ public class MainPaneController implements Initializable {
         MenuItem deleteMenuItem = new MenuItem("删除");
         renameMenuItem.setOnAction(e -> {
             isOperating = true;//防止右面板误更新
+
             TextInputDialog textInputDialog = new TextInputDialog("name");
             textInputDialog.setTitle("重命名");
             textInputDialog.setHeaderText("输入新的世界名");
@@ -94,7 +95,7 @@ public class MainPaneController implements Initializable {
                     Alert forbiddenAlert = new Alert(Alert.AlertType.ERROR);
                     forbiddenAlert.setX(StageLocation.getStageCenterX() - 280);
                     forbiddenAlert.setY(StageLocation.getStageCenterY() - 180);
-                    forbiddenAlert.setContentText("名称包含非法字符");
+                    forbiddenAlert.setContentText("世界名含有非法的字符, 建议只使用字母, 数字和'-'");
                     forbiddenAlert.show();
                 }
                 else {
@@ -122,8 +123,15 @@ public class MainPaneController implements Initializable {
                     WorldDataManager.worldMap.remove(oldName);
                     WorldDataManager.worldMap.put(newName, worldRecipes);
 
+                    //取消世界选择, 重命名后需要重新选择
+                    WorldDataManager.currentWorld = null;
+
+                    //重置世界列表
                     ObservableList<String> ol = FXCollections.observableArrayList(getReFormatWorldNameList());
                     worldListView.setItems(ol);
+
+                    //重置右面板, 不如可能会报玄学错
+                    ComponentBoard.middlePaneController.refresh();
                 }
             }
             isOperating = false;
@@ -166,7 +174,7 @@ public class MainPaneController implements Initializable {
             Alert forbiddenAlert = new Alert(Alert.AlertType.ERROR);
             forbiddenAlert.setX(100);
             forbiddenAlert.setY(100);
-            forbiddenAlert.setContentText("世界名含有不允许的字符, 建议只使用字母, 数字和'-'");
+            forbiddenAlert.setContentText("世界名含有非法的字符, 建议只使用字母, 数字和'-'");
             forbiddenAlert.show();
         }else {
             try {

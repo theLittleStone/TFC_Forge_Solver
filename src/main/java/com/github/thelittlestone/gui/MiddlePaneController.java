@@ -51,8 +51,11 @@ public class MiddlePaneController implements Initializable {
 
             NameMappingUnit selected = materialChoiceBox.getSelectionModel().getSelectedItem();
             //对targetChoiceBox添加内容
-            targetChoiceBox.getItems().addAll(WorldDataManager.currentWorld.allResults(selected.origName));
-
+            if (selected != null) {
+                targetChoiceBox.getItems().addAll(WorldDataManager.currentWorld.allResults(selected.origName));
+            }else {
+                targetChoiceBox.getItems().clear();
+            }
             //其他元素清零
             valueSpinner.getValueFactory().setValue(0);
             showStepLabel.setText("");
@@ -116,15 +119,20 @@ public class MiddlePaneController implements Initializable {
 
     public void refresh(){
         isCertain = false;
-        if (WorldDataManager.currentWorld != null) {
-            materialChoiceBox.getItems().addAll(WorldDataManager.currentWorld.allInputs());
-        }else {
-            materialChoiceBox.getItems().clear();
-        }
+        isCleaning = true;
+
         targetChoiceBox.getItems().clear();
         valueSpinner.getValueFactory().setValue(0);
         showStepLabel.setText("");
 
+        if (WorldDataManager.currentWorld != null) {
+            materialChoiceBox.getItems().clear();
+            materialChoiceBox.getItems().addAll(WorldDataManager.currentWorld.allInputs());
+        }else {
+            materialChoiceBox.getItems().clear();
+        }
+
+        isCleaning = false;
     }
 
 
