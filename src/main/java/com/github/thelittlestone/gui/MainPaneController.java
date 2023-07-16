@@ -3,6 +3,7 @@ package com.github.thelittlestone.gui;
 import com.github.thelittlestone.logic.WorldDataManager;
 import com.github.thelittlestone.logic.json.JsonWorldRecipes;
 import com.github.thelittlestone.util.ForbiddenChars;
+import com.github.thelittlestone.util.StageLocation;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -33,6 +34,8 @@ public class MainPaneController implements Initializable {
     public Button deleteButton;
     @FXML
     public ListView<String> worldListView;
+    @FXML
+    public ContextMenu renameMenu;
 
 
 
@@ -58,6 +61,80 @@ public class MainPaneController implements Initializable {
             String focusedItem = worldListView.getFocusModel().getFocusedItem();
             WorldDataManager.currentWorld = WorldDataManager.getJsonWorldRecipes(deFormatWorldName(focusedItem));
         }
+
+
+        //添加右键菜单
+        MenuItem renameMenuItem = new MenuItem("重命名");
+        MenuItem deleteMenuItem = new MenuItem("删除");
+        renameMenuItem.setOnAction(e -> {
+            isOperating = true;//防止右面板误更新
+            TextInputDialog textInputDialog = new TextInputDialog("name");
+            textInputDialog.setTitle("重命名");
+            textInputDialog.setHeaderText("输入新的世界名");
+            //硬编码
+            textInputDialog.setX(StageLocation.getStageCenterX() - 260);
+            textInputDialog.setY(StageLocation.getStageCenterY() - 150);
+
+            Optional<String> result = textInputDialog.showAndWait();
+            if (result.isPresent()){
+                String newName = result.get();
+                if (WorldDataManager.nameMap.containsKey(newName)) {
+                    Alert forbiddenAlert = new Alert(Alert.AlertType.ERROR);
+                    forbiddenAlert.setX(StageLocation.getStageCenterX() - 280);
+                    forbiddenAlert.setY(StageLocation.getStageCenterY() - 180);
+                    forbiddenAlert.setContentText("名称已经存在");
+                    forbiddenAlert.show();
+                }else if (result.get().isEmpty()){
+                    Alert forbiddenAlert = new Alert(Alert.AlertType.ERROR);
+                    forbiddenAlert.setX(StageLocation.getStageCenterX() - 280);
+                    forbiddenAlert.setY(StageLocation.getStageCenterY() - 180);
+                    forbiddenAlert.setContentText("名称不能为空");
+                    forbiddenAlert.show();
+                }else if (ForbiddenChars.hasForbiddenChars(result.get())){
+                    Alert forbiddenAlert = new Alert(Alert.AlertType.ERROR);
+                    forbiddenAlert.setX(StageLocation.getStageCenterX() - 280);
+                    forbiddenAlert.setY(StageLocation.getStageCenterY() - 180);
+                    forbiddenAlert.setContentText("名称包含非法字符");
+                    forbiddenAlert.show();
+                }
+                else {
+                    String oldName = deFormatWorldName(worldListView.getFocusModel().getFocusedItem());
+
+                    String newWorldFileName = WorldDataManager.defaultRecipeFileName(newName);
+                    JsonWorldRecipes worldRecipes = WorldDataManager.worldMap.get(oldName);
+
+
+                    try {
+                        worldRecipes.worldName = newName;
+                        WorldDataManager.renameWorldRecipeFile(oldName, worldRecipes, newWorldFileName);
+                    } catch (IOException ex) {
+                        worldRecipes.worldName = oldName;
+                        Alert forbiddenAlert = new Alert(Alert.AlertType.ERROR);
+                        forbiddenAlert.setX(StageLocation.getStageCenterX() - 280);
+                        forbiddenAlert.setY(StageLocation.getStageCenterY() - 180);
+                        forbiddenAlert.setContentText("重命名失败, 检查文件问题");
+                        forbiddenAlert.show();
+                    }
+
+                    WorldDataManager.nameMap.remove(oldName);
+                    WorldDataManager.nameMap.put(newName, newWorldFileName);
+
+                    WorldDataManager.worldMap.remove(oldName);
+                    WorldDataManager.worldMap.put(newName, worldRecipes);
+
+                    ObservableList<String> ol = FXCollections.observableArrayList(getReFormatWorldNameList());
+                    worldListView.setItems(ol);
+                }
+            }
+            isOperating = false;
+        });
+        deleteMenuItem.setOnAction(e -> {
+            deleteButtonOnAction();
+        });
+
+        renameMenu = new ContextMenu(renameMenuItem, deleteMenuItem);
+        worldListView.setContextMenu(renameMenu);
+
 
         //为listView选项改变添加监听器
         worldListView.getSelectionModel().selectedItemProperty().addListener(
@@ -108,6 +185,9 @@ public class MainPaneController implements Initializable {
                 WorldDataManager.currentWorld = newWorld;
                 ComponentBoard.middlePaneController.refresh();
 
+                //文本框清空
+                newWorldTextField.setText("");
+
             } catch (IOException e) {
                 Alert unKnownAlert = new Alert(Alert.AlertType.ERROR);
                 unKnownAlert.setContentText("无法新建世界");
@@ -140,7 +220,7 @@ public class MainPaneController implements Initializable {
             //如果确认删除, 删除这个世界
             if (result.isPresent() && result.get().equals(yesButtonType)){
                 try {
-                    WorldDataManager.deleteWorldRecipe(deFormatWorldName(focusedWorld));
+                    WorldDataManager.deleteWorldRecipeFile(deFormatWorldName(focusedWorld));
                 } catch (IOException e) {
                     throw new RuntimeException(e);
                 }

@@ -1,6 +1,7 @@
 package com.github.thelittlestone;
 
 import com.github.thelittlestone.config.ConfigLoader;
+import com.github.thelittlestone.gui.ComponentBoard;
 import com.github.thelittlestone.logic.WorldDataManager;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -24,6 +25,7 @@ public class MainApplication extends Application {
         Image image = new Image(Objects.requireNonNull(Main.class.getResourceAsStream("icon.png")));
         stage.getIcons().add(image);
         stage.setScene(scene);
+        ComponentBoard.mainStage = stage;
         stage.show();
     }
 

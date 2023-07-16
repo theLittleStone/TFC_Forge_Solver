@@ -51,7 +51,7 @@ public class WorldDataManager {
     //把一个世界配置写到文件中, 同时也会更新本地的世界库
     public static void updateWorld(JsonWorldRecipes worldRecipes, String fileName) throws IOException {
         if(fileName == null){
-            fileName = "world_" + worldRecipes.worldName + ".json";
+            fileName = defaultRecipeFileName(worldRecipes.worldName);
         }
         String content = worldRecipes.generateJsonText();
         FileLoader.writeToFile(fileName, content);
@@ -65,7 +65,7 @@ public class WorldDataManager {
         }
         String filename = nameMap.get(worldRecipes.worldName);
         if (filename == null) {
-            updateWorld(worldRecipes, "world_" + worldRecipes.worldName + ".json");
+            updateWorld(worldRecipes, defaultRecipeFileName(worldRecipes.worldName));
         }else {
             updateWorld(worldRecipes, filename);
         }
@@ -84,11 +84,11 @@ public class WorldDataManager {
         return jwr;
     }
     public static JsonWorldRecipes createWorldFromRecipe(String worldName) throws IOException {
-        return createWorldFromRecipe(worldName, "world_" + worldName + ".json");
+        return createWorldFromRecipe(worldName, defaultRecipeFileName(worldName));
     }
 
     //寻找索引中的世界配置文件名并删除之
-    public static void deleteWorldRecipe(String worldName) throws IOException {
+    public static void deleteWorldRecipeFile(String worldName) throws IOException {
 
         String fileName = nameMap.get(worldName);
         if (fileName != null){
@@ -101,6 +101,19 @@ public class WorldDataManager {
         worldMap.remove(worldName);
     }
 
+    //根据世界名重命名世界配置文件, 这会删除旧文件, 然后创建新文件
+    public static void renameWorldRecipeFile(String worldName, String newFileName) throws IOException {
+        deleteWorldRecipeFile(worldName);
+        updateWorld(worldMap.get(worldName), newFileName);
+    }
+    public static void renameWorldRecipeFile(String worldName, JsonWorldRecipes recipes, String newFileName) throws IOException {
+        deleteWorldRecipeFile(worldName);
+        updateWorld(recipes, newFileName);
+    }
+
+    public static String defaultRecipeFileName(String worldName){
+        return "world_" + worldName + ".json";
+    }
 
 }
 
