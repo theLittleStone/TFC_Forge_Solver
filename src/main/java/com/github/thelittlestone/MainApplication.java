@@ -16,6 +16,7 @@ import java.util.Objects;
 public class MainApplication extends Application {
     public static final int WIDTH = 960;
     public static final int HEIGHT = 540;
+    public static final String VERSION = "1.0.0";
 
     @Override
     public void start(Stage stage) throws IOException {

@@ -4,6 +4,7 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
+import com.github.thelittlestone.MainApplication;
 import com.github.thelittlestone.translate.NameMappingTableLoader;
 import com.github.thelittlestone.translate.NameMappingUnit;
 
@@ -15,22 +16,19 @@ import java.util.HashSet;
  * Created by theLittleStone on 2023/5/26.
  */
 public class JsonWorldRecipes {
+    public String version;
     public String worldName;
-    public ArrayList<JsonRecipe> recipes;
+    public HashSet<JsonRecipe> recipes;
 
-    public JsonWorldRecipes(String worldName, String jsonContent) {
-        ObjectMapper objectMapper = new ObjectMapper();
-        this.worldName = worldName;
-        try {
-            this.recipes = objectMapper.readValue(jsonContent, new TypeReference<>() {});
-        } catch (JsonProcessingException e) {
-            this.recipes = new ArrayList<>();
-            throw new RuntimeException(e);
-        }
+
+    public JsonWorldRecipes(String worldName, JsonRawWorldRecipes rawWorldRecipes) {
+        this(worldName);
+        this.recipes = rawWorldRecipes.recipes;
     }
     public JsonWorldRecipes(String worldName){
+        this.version = MainApplication.VERSION;
         this.worldName = worldName;
-        this.recipes = new ArrayList<>();
+        this.recipes = new HashSet<>();
     }
     public JsonWorldRecipes(){
         this("");
@@ -94,5 +92,10 @@ public class JsonWorldRecipes {
             }
         }
         return null;
+    }
+
+    //合并配方, 名字采用&self的
+    public void merge(JsonWorldRecipes jwr){
+        this.recipes.addAll(jwr.recipes);
     }
 }

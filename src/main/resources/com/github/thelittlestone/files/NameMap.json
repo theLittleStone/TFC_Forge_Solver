@@ -1,1012 +1,1354 @@
-[ {
-  "origName" : "firmalife:dribbler",
-  "transName" : "滴灌器(firmalife)"
-}, {
-  "origName" : "firmalife:metal/double_ingot/chromium",
-  "transName" : "铬双层锭(firmalife)"
-}, {
-  "origName" : "firmalife:metal/double_ingot/stainless_steel",
-  "transName" : "不锈钢双层锭(firmalife)"
-}, {
-  "origName" : "firmalife:metal/ingot/chromium",
-  "transName" : "铬锭(firmalife)"
-}, {
-  "origName" : "firmalife:metal/ingot/stainless_steel",
-  "transName" : "不锈钢锭(firmalife)"
-}, {
-  "origName" : "firmalife:metal/rod/chromium",
-  "transName" : "铬棒(firmalife)"
-}, {
-  "origName" : "firmalife:metal/rod/stainless_steel",
-  "transName" : "不锈钢棒(firmalife)"
-}, {
-  "origName" : "firmalife:metal/sheet/chromium",
-  "transName" : "铬薄板(firmalife)"
-}, {
-  "origName" : "firmalife:metal/sheet/stainless_steel",
-  "transName" : "不锈钢薄板(firmalife)"
-}, {
-  "origName" : "firmalife:pie_pan",
-  "transName" : "馅饼盘(firmalife)"
-}, {
-  "origName" : "firmalife:sprinkler",
-  "transName" : "洒水器(firmalife)"
-}, {
-  "origName" : "forge:double_ingots/bismuth",
-  "transName" : "铋双层锭"
-}, {
-  "origName" : "forge:double_ingots/bismuth_bronze",
-  "transName" : "铋铜双层锭"
-}, {
-  "origName" : "forge:double_ingots/black_bronze",
-  "transName" : "黑铜双层锭"
-}, {
-  "origName" : "forge:double_ingots/black_steel",
-  "transName" : "黑钢双层锭"
-}, {
-  "origName" : "forge:double_ingots/blue_steel",
-  "transName" : "蓝钢双层锭"
-}, {
-  "origName" : "forge:double_ingots/brass",
-  "transName" : "黄铜双层锭"
-}, {
-  "origName" : "forge:double_ingots/bronze",
-  "transName" : "青铜双层锭"
-}, {
-  "origName" : "forge:double_ingots/cast_iron",
-  "transName" : "铸铁双层锭"
-}, {
-  "origName" : "forge:double_ingots/copper",
-  "transName" : "铜双层锭"
-}, {
-  "origName" : "forge:double_ingots/gold",
-  "transName" : "金双层锭"
-}, {
-  "origName" : "forge:double_ingots/nickel",
-  "transName" : "镍双层锭"
-}, {
-  "origName" : "forge:double_ingots/red_steel",
-  "transName" : "红钢双层锭"
-}, {
-  "origName" : "forge:double_ingots/rose_gold",
-  "transName" : "玫瑰金双层锭"
-}, {
-  "origName" : "forge:double_ingots/silver",
-  "transName" : "银双层锭"
-}, {
-  "origName" : "forge:double_ingots/steel",
-  "transName" : "钢双层锭"
-}, {
-  "origName" : "forge:double_ingots/sterling_silver",
-  "transName" : "纯银双层锭"
-}, {
-  "origName" : "forge:double_ingots/tin",
-  "transName" : "锡双层锭"
-}, {
-  "origName" : "forge:double_ingots/wrought_iron",
-  "transName" : "锻铁双层锭"
-}, {
-  "origName" : "forge:double_ingots/zinc",
-  "transName" : "锌双层锭"
-}, {
-  "origName" : "forge:double_sheets/bismuth_bronze",
-  "transName" : "铋铜双层薄板"
-}, {
-  "origName" : "forge:double_sheets/black_bronze",
-  "transName" : "黑铜双层薄板"
-}, {
-  "origName" : "forge:double_sheets/black_steel",
-  "transName" : "黑钢双层薄板"
-}, {
-  "origName" : "forge:double_sheets/blue_steel",
-  "transName" : "蓝钢双层薄板"
-}, {
-  "origName" : "forge:double_sheets/bronze",
-  "transName" : "青铜双层薄板"
-}, {
-  "origName" : "forge:double_sheets/copper",
-  "transName" : "铜双层薄板"
-}, {
-  "origName" : "forge:double_sheets/red_steel",
-  "transName" : "红钢双层薄板"
-}, {
-  "origName" : "forge:double_sheets/steel",
-  "transName" : "钢双层薄板"
-}, {
-  "origName" : "forge:double_sheets/wrought_iron",
-  "transName" : "锻铁双层薄板"
-}, {
-  "origName" : "forge:ingots/bismuth",
-  "transName" : "铋锭"
-}, {
-  "origName" : "forge:ingots/bismuth_bronze",
-  "transName" : "铋铜锭"
-}, {
-  "origName" : "forge:ingots/black_bronze",
-  "transName" : "黑铜锭"
-}, {
-  "origName" : "forge:ingots/black_steel",
-  "transName" : "黑钢锭"
-}, {
-  "origName" : "forge:ingots/blue_steel",
-  "transName" : "蓝钢锭"
-}, {
-  "origName" : "forge:ingots/brass",
-  "transName" : "黄铜锭"
-}, {
-  "origName" : "forge:ingots/bronze",
-  "transName" : "青铜锭"
-}, {
-  "origName" : "forge:ingots/cast_iron",
-  "transName" : "铸铁锭"
-}, {
-  "origName" : "forge:ingots/copper",
-  "transName" : "铜锭"
-}, {
-  "origName" : "forge:ingots/gold",
-  "transName" : "金锭"
-}, {
-  "origName" : "forge:ingots/nickel",
-  "transName" : "镍锭"
-}, {
-  "origName" : "forge:ingots/red_steel",
-  "transName" : "红钢锭"
-}, {
-  "origName" : "forge:ingots/rose_gold",
-  "transName" : "玫瑰金锭"
-}, {
-  "origName" : "forge:ingots/silver",
-  "transName" : "银锭"
-}, {
-  "origName" : "forge:ingots/steel",
-  "transName" : "钢锭"
-}, {
-  "origName" : "forge:ingots/sterling_silver",
-  "transName" : "纯银锭"
-}, {
-  "origName" : "forge:ingots/tin",
-  "transName" : "锡锭"
-}, {
-  "origName" : "forge:ingots/wrought_iron",
-  "transName" : "锻铁锭"
-}, {
-  "origName" : "forge:ingots/zinc",
-  "transName" : "锌锭"
-}, {
-  "origName" : "forge:sheets/bismuth_bronze",
-  "transName" : "铋铜薄板"
-}, {
-  "origName" : "forge:sheets/black_bronze",
-  "transName" : "黑铜薄板"
-}, {
-  "origName" : "forge:sheets/black_steel",
-  "transName" : "黑钢薄板"
-}, {
-  "origName" : "forge:sheets/blue_steel",
-  "transName" : "蓝钢薄板"
-}, {
-  "origName" : "forge:sheets/bronze",
-  "transName" : "青铜薄板"
-}, {
-  "origName" : "forge:sheets/cast_iron",
-  "transName" : "铸铁薄板"
-}, {
-  "origName" : "forge:sheets/copper",
-  "transName" : "铜薄板"
-}, {
-  "origName" : "forge:sheets/red_steel",
-  "transName" : "红钢薄板"
-}, {
-  "origName" : "forge:sheets/stainless_steel",
-  "transName" : "不锈钢薄板"
-}, {
-  "origName" : "forge:sheets/steel",
-  "transName" : "钢薄板"
-}, {
-  "origName" : "forge:sheets/wrought_iron",
-  "transName" : "锻铁薄板"
-}, {
-  "origName" : "minecraft:iron_bars",
-  "transName" : "铁栏杆"
-}, {
-  "origName" : "minecraft:iron_door",
-  "transName" : "铁门"
-}, {
-  "origName" : "tfc:black_steel_bars",
-  "transName" : "黑钢栏杆"
-}, {
-  "origName" : "tfc:blue_steel_bars",
-  "transName" : "蓝钢栏杆"
-}, {
-  "origName" : "tfc:brass_mechanisms",
-  "transName" : "黄铜机件"
-}, {
-  "origName" : "tfc:metal/axe_head/bismuth_bronze",
-  "transName" : "铋铜斧头"
-}, {
-  "origName" : "tfc:metal/axe_head/black_bronze",
-  "transName" : "黑铜斧头"
-}, {
-  "origName" : "tfc:metal/axe_head/black_steel",
-  "transName" : "黑钢斧头"
-}, {
-  "origName" : "tfc:metal/axe_head/blue_steel",
-  "transName" : "蓝钢斧头"
-}, {
-  "origName" : "tfc:metal/axe_head/bronze",
-  "transName" : "青铜斧头"
-}, {
-  "origName" : "tfc:metal/axe_head/copper",
-  "transName" : "铜斧头"
-}, {
-  "origName" : "tfc:metal/axe_head/red_steel",
-  "transName" : "红钢斧头"
-}, {
-  "origName" : "tfc:metal/axe_head/steel",
-  "transName" : "钢斧头"
-}, {
-  "origName" : "tfc:metal/axe_head/wrought_iron",
-  "transName" : "锻铁斧头"
-}, {
-  "origName" : "tfc:metal/bucket/blue_steel",
-  "transName" : "蓝钢桶"
-}, {
-  "origName" : "tfc:metal/bucket/red_steel",
-  "transName" : "红钢桶"
-}, {
-  "origName" : "tfc:metal/chain/bismuth_bronze",
-  "transName" : "铋铜锁链"
-}, {
-  "origName" : "tfc:metal/chain/black_bronze",
-  "transName" : "黑铜锁链"
-}, {
-  "origName" : "tfc:metal/chain/black_steel",
-  "transName" : "黑钢锁链"
-}, {
-  "origName" : "tfc:metal/chain/blue_steel",
-  "transName" : "蓝钢锁链"
-}, {
-  "origName" : "tfc:metal/chain/bronze",
-  "transName" : "青铜锁链"
-}, {
-  "origName" : "tfc:metal/chain/copper",
-  "transName" : "铜锁链"
-}, {
-  "origName" : "tfc:metal/chain/red_steel",
-  "transName" : "红钢锁链"
-}, {
-  "origName" : "tfc:metal/chain/steel",
-  "transName" : "钢锁链"
-}, {
-  "origName" : "tfc:metal/chain/wrought_iron",
-  "transName" : "锻铁锁链"
-}, {
-  "origName" : "tfc:metal/chisel_head/bismuth_bronze",
-  "transName" : "铋铜凿头"
-}, {
-  "origName" : "tfc:metal/chisel_head/black_bronze",
-  "transName" : "黑铜凿头"
-}, {
-  "origName" : "tfc:metal/chisel_head/black_steel",
-  "transName" : "黑钢凿头"
-}, {
-  "origName" : "tfc:metal/chisel_head/blue_steel",
-  "transName" : "蓝钢凿头"
-}, {
-  "origName" : "tfc:metal/chisel_head/bronze",
-  "transName" : "青铜凿头"
-}, {
-  "origName" : "tfc:metal/chisel_head/copper",
-  "transName" : "铜凿头"
-}, {
-  "origName" : "tfc:metal/chisel_head/red_steel",
-  "transName" : "红钢凿头"
-}, {
-  "origName" : "tfc:metal/chisel_head/steel",
-  "transName" : "钢凿头"
-}, {
-  "origName" : "tfc:metal/chisel_head/wrought_iron",
-  "transName" : "锻铁凿头"
-}, {
-  "origName" : "tfc:metal/fish_hook/bismuth_bronze",
-  "transName" : "铋铜鱼钩"
-}, {
-  "origName" : "tfc:metal/fish_hook/black_bronze",
-  "transName" : "黑铜鱼钩"
-}, {
-  "origName" : "tfc:metal/fish_hook/black_steel",
-  "transName" : "黑钢鱼钩"
-}, {
-  "origName" : "tfc:metal/fish_hook/blue_steel",
-  "transName" : "蓝钢鱼钩"
-}, {
-  "origName" : "tfc:metal/fish_hook/bronze",
-  "transName" : "青铜鱼钩"
-}, {
-  "origName" : "tfc:metal/fish_hook/copper",
-  "transName" : "铜鱼钩"
-}, {
-  "origName" : "tfc:metal/fish_hook/red_steel",
-  "transName" : "红钢鱼钩"
-}, {
-  "origName" : "tfc:metal/fish_hook/steel",
-  "transName" : "钢鱼钩"
-}, {
-  "origName" : "tfc:metal/fish_hook/wrought_iron",
-  "transName" : "锻铁鱼钩"
-}, {
-  "origName" : "tfc:metal/hammer_head/bismuth_bronze",
-  "transName" : "铋铜锤头"
-}, {
-  "origName" : "tfc:metal/hammer_head/black_bronze",
-  "transName" : "黑铜锤头"
-}, {
-  "origName" : "tfc:metal/hammer_head/black_steel",
-  "transName" : "黑钢锤头"
-}, {
-  "origName" : "tfc:metal/hammer_head/blue_steel",
-  "transName" : "蓝钢锤头"
-}, {
-  "origName" : "tfc:metal/hammer_head/bronze",
-  "transName" : "青铜锤头"
-}, {
-  "origName" : "tfc:metal/hammer_head/copper",
-  "transName" : "铜锤头"
-}, {
-  "origName" : "tfc:metal/hammer_head/red_steel",
-  "transName" : "红钢锤头"
-}, {
-  "origName" : "tfc:metal/hammer_head/steel",
-  "transName" : "钢锤头"
-}, {
-  "origName" : "tfc:metal/hammer_head/wrought_iron",
-  "transName" : "铸铁锤头"
-}, {
-  "origName" : "tfc:metal/hoe_head/bismuth_bronze",
-  "transName" : "铋铜锄头"
-}, {
-  "origName" : "tfc:metal/hoe_head/black_bronze",
-  "transName" : "黑铜锄头"
-}, {
-  "origName" : "tfc:metal/hoe_head/black_steel",
-  "transName" : "黑钢锄头"
-}, {
-  "origName" : "tfc:metal/hoe_head/blue_steel",
-  "transName" : "蓝钢锄头"
-}, {
-  "origName" : "tfc:metal/hoe_head/bronze",
-  "transName" : "青铜锄头"
-}, {
-  "origName" : "tfc:metal/hoe_head/copper",
-  "transName" : "铜锄头"
-}, {
-  "origName" : "tfc:metal/hoe_head/red_steel",
-  "transName" : "红钢锄头"
-}, {
-  "origName" : "tfc:metal/hoe_head/steel",
-  "transName" : "钢锄头"
-}, {
-  "origName" : "tfc:metal/hoe_head/wrought_iron",
-  "transName" : "锻铁锄头"
-}, {
-  "origName" : "tfc:metal/ingot/black_steel",
-  "transName" : "黑钢锭"
-}, {
-  "origName" : "tfc:metal/ingot/blue_steel",
-  "transName" : "蓝钢锭"
-}, {
-  "origName" : "tfc:metal/ingot/high_carbon_black_steel",
-  "transName" : "高碳黑钢锭"
-}, {
-  "origName" : "tfc:metal/ingot/high_carbon_blue_steel",
-  "transName" : "高碳蓝钢锭"
-}, {
-  "origName" : "tfc:metal/ingot/high_carbon_red_steel",
-  "transName" : "高碳红钢锭"
-}, {
-  "origName" : "tfc:metal/ingot/high_carbon_steel",
-  "transName" : "高碳钢锭"
-}, {
-  "origName" : "tfc:metal/ingot/pig_iron",
-  "transName" : "生铁锭"
-}, {
-  "origName" : "tfc:metal/ingot/red_steel",
-  "transName" : "红钢锭"
-}, {
-  "origName" : "tfc:metal/ingot/steel",
-  "transName" : "钢锭"
-}, {
-  "origName" : "tfc:metal/ingot/wrought_iron",
-  "transName" : "锻铁锭"
-}, {
-  "origName" : "tfc:metal/javelin_head/bismuth_bronze",
-  "transName" : "铋铜标枪头"
-}, {
-  "origName" : "tfc:metal/javelin_head/black_bronze",
-  "transName" : "黑铜标枪头"
-}, {
-  "origName" : "tfc:metal/javelin_head/black_steel",
-  "transName" : "黑钢标枪头"
-}, {
-  "origName" : "tfc:metal/javelin_head/blue_steel",
-  "transName" : "蓝钢标枪头"
-}, {
-  "origName" : "tfc:metal/javelin_head/bronze",
-  "transName" : "青铜标枪头"
-}, {
-  "origName" : "tfc:metal/javelin_head/copper",
-  "transName" : "铜标枪头"
-}, {
-  "origName" : "tfc:metal/javelin_head/red_steel",
-  "transName" : "红钢标枪头"
-}, {
-  "origName" : "tfc:metal/javelin_head/steel",
-  "transName" : "钢标枪头"
-}, {
-  "origName" : "tfc:metal/javelin_head/wrought_iron",
-  "transName" : "锻铁标枪头"
-}, {
-  "origName" : "tfc:metal/knife_blade/bismuth_bronze",
-  "transName" : "铋铜刀刃"
-}, {
-  "origName" : "tfc:metal/knife_blade/black_bronze",
-  "transName" : "黑铜刀刃"
-}, {
-  "origName" : "tfc:metal/knife_blade/black_steel",
-  "transName" : "黑钢刀刃"
-}, {
-  "origName" : "tfc:metal/knife_blade/blue_steel",
-  "transName" : "蓝钢刀刃"
-}, {
-  "origName" : "tfc:metal/knife_blade/bronze",
-  "transName" : "青铜刀刃"
-}, {
-  "origName" : "tfc:metal/knife_blade/copper",
-  "transName" : "铜刀刃"
-}, {
-  "origName" : "tfc:metal/knife_blade/red_steel",
-  "transName" : "红钢刀刃"
-}, {
-  "origName" : "tfc:metal/knife_blade/steel",
-  "transName" : "钢刀刃"
-}, {
-  "origName" : "tfc:metal/knife_blade/wrought_iron",
-  "transName" : "锻铁刀刃"
-}, {
-  "origName" : "tfc:metal/lamp/bismuth_bronze",
-  "transName" : "铋铜灯"
-}, {
-  "origName" : "tfc:metal/lamp/black_bronze",
-  "transName" : "黑铜灯"
-}, {
-  "origName" : "tfc:metal/lamp/black_steel",
-  "transName" : "黑钢灯"
-}, {
-  "origName" : "tfc:metal/lamp/blue_steel",
-  "transName" : "蓝钢灯"
-}, {
-  "origName" : "tfc:metal/lamp/bronze",
-  "transName" : "青铜灯"
-}, {
-  "origName" : "tfc:metal/lamp/copper",
-  "transName" : "铜灯"
-}, {
-  "origName" : "tfc:metal/lamp/red_steel",
-  "transName" : "红钢灯"
-}, {
-  "origName" : "tfc:metal/lamp/steel",
-  "transName" : "钢灯"
-}, {
-  "origName" : "tfc:metal/lamp/wrought_iron",
-  "transName" : "锻铁灯"
-}, {
-  "origName" : "tfc:metal/mace_head/bismuth_bronze",
-  "transName" : "铋铜狼牙棒头"
-}, {
-  "origName" : "tfc:metal/mace_head/black_bronze",
-  "transName" : "黑铜狼牙棒头"
-}, {
-  "origName" : "tfc:metal/mace_head/black_steel",
-  "transName" : "黑钢狼牙棒头"
-}, {
-  "origName" : "tfc:metal/mace_head/blue_steel",
-  "transName" : "蓝钢狼牙棒头"
-}, {
-  "origName" : "tfc:metal/mace_head/bronze",
-  "transName" : "青铜狼牙棒头"
-}, {
-  "origName" : "tfc:metal/mace_head/copper",
-  "transName" : "铜狼牙棒头"
-}, {
-  "origName" : "tfc:metal/mace_head/red_steel",
-  "transName" : "红钢狼牙棒头"
-}, {
-  "origName" : "tfc:metal/mace_head/steel",
-  "transName" : "钢狼牙棒头"
-}, {
-  "origName" : "tfc:metal/mace_head/wrought_iron",
-  "transName" : "锻铁狼牙棒头"
-}, {
-  "origName" : "tfc:metal/pickaxe_head/bismuth_bronze",
-  "transName" : "铋铜镐头"
-}, {
-  "origName" : "tfc:metal/pickaxe_head/black_bronze",
-  "transName" : "黑铜镐头"
-}, {
-  "origName" : "tfc:metal/pickaxe_head/black_steel",
-  "transName" : "黑钢镐头"
-}, {
-  "origName" : "tfc:metal/pickaxe_head/blue_steel",
-  "transName" : "蓝钢镐头"
-}, {
-  "origName" : "tfc:metal/pickaxe_head/bronze",
-  "transName" : "青铜镐头"
-}, {
-  "origName" : "tfc:metal/pickaxe_head/copper",
-  "transName" : "铜镐头"
-}, {
-  "origName" : "tfc:metal/pickaxe_head/red_steel",
-  "transName" : "红钢镐头"
-}, {
-  "origName" : "tfc:metal/pickaxe_head/steel",
-  "transName" : "钢镐头"
-}, {
-  "origName" : "tfc:metal/pickaxe_head/wrought_iron",
-  "transName" : "锻铁镐头"
-}, {
-  "origName" : "tfc:metal/propick_head/bismuth_bronze",
-  "transName" : "铋铜勘矿镐头"
-}, {
-  "origName" : "tfc:metal/propick_head/black_bronze",
-  "transName" : "黑铜勘矿镐头"
-}, {
-  "origName" : "tfc:metal/propick_head/black_steel",
-  "transName" : "黑钢勘矿镐头"
-}, {
-  "origName" : "tfc:metal/propick_head/blue_steel",
-  "transName" : "蓝钢勘矿镐头"
-}, {
-  "origName" : "tfc:metal/propick_head/bronze",
-  "transName" : "青铜勘矿镐头"
-}, {
-  "origName" : "tfc:metal/propick_head/copper",
-  "transName" : "铜勘矿镐头"
-}, {
-  "origName" : "tfc:metal/propick_head/red_steel",
-  "transName" : "红钢勘矿镐头"
-}, {
-  "origName" : "tfc:metal/propick_head/steel",
-  "transName" : "钢勘矿镐头"
-}, {
-  "origName" : "tfc:metal/propick_head/wrought_iron",
-  "transName" : "锻铁勘矿镐头"
-}, {
-  "origName" : "tfc:metal/rod/bismuth",
-  "transName" : "铋棒"
-}, {
-  "origName" : "tfc:metal/rod/bismuth_bronze",
-  "transName" : "铋铜棒"
-}, {
-  "origName" : "tfc:metal/rod/black_bronze",
-  "transName" : "黑铜棒"
-}, {
-  "origName" : "tfc:metal/rod/black_steel",
-  "transName" : "黑钢棒"
-}, {
-  "origName" : "tfc:metal/rod/blue_steel",
-  "transName" : "蓝钢棒"
-}, {
-  "origName" : "tfc:metal/rod/brass",
-  "transName" : "黄铜棒"
-}, {
-  "origName" : "tfc:metal/rod/bronze",
-  "transName" : "青铜棒"
-}, {
-  "origName" : "tfc:metal/rod/cast_iron",
-  "transName" : "铸铁棒"
-}, {
-  "origName" : "tfc:metal/rod/copper",
-  "transName" : "铜棒"
-}, {
-  "origName" : "tfc:metal/rod/gold",
-  "transName" : "金棒"
-}, {
-  "origName" : "tfc:metal/rod/nickel",
-  "transName" : "镍棒"
-}, {
-  "origName" : "tfc:metal/rod/red_steel",
-  "transName" : "红钢棒"
-}, {
-  "origName" : "tfc:metal/rod/rose_gold",
-  "transName" : "玫瑰金棒"
-}, {
-  "origName" : "tfc:metal/rod/silver",
-  "transName" : "银棒"
-}, {
-  "origName" : "tfc:metal/rod/steel",
-  "transName" : "钢棒"
-}, {
-  "origName" : "tfc:metal/rod/sterling_silver",
-  "transName" : "纯银棒"
-}, {
-  "origName" : "tfc:metal/rod/tin",
-  "transName" : "锡棒"
-}, {
-  "origName" : "tfc:metal/rod/wrought_iron",
-  "transName" : "锻铁棒"
-}, {
-  "origName" : "tfc:metal/rod/zinc",
-  "transName" : "锌棒"
-}, {
-  "origName" : "tfc:metal/saw_blade/bismuth_bronze",
-  "transName" : "铋铜锯片"
-}, {
-  "origName" : "tfc:metal/saw_blade/black_bronze",
-  "transName" : "黑铜锯片"
-}, {
-  "origName" : "tfc:metal/saw_blade/black_steel",
-  "transName" : "黑钢锯片"
-}, {
-  "origName" : "tfc:metal/saw_blade/blue_steel",
-  "transName" : "蓝钢锯片"
-}, {
-  "origName" : "tfc:metal/saw_blade/bronze",
-  "transName" : "青铜锯片"
-}, {
-  "origName" : "tfc:metal/saw_blade/copper",
-  "transName" : "铜锯片"
-}, {
-  "origName" : "tfc:metal/saw_blade/red_steel",
-  "transName" : "红钢锯片"
-}, {
-  "origName" : "tfc:metal/saw_blade/steel",
-  "transName" : "钢锯片"
-}, {
-  "origName" : "tfc:metal/saw_blade/wrought_iron",
-  "transName" : "锻铁锯片"
-}, {
-  "origName" : "tfc:metal/scythe_blade/bismuth_bronze",
-  "transName" : "铋铜镰刀刃"
-}, {
-  "origName" : "tfc:metal/scythe_blade/black_bronze",
-  "transName" : "黑铜镰刀刃"
-}, {
-  "origName" : "tfc:metal/scythe_blade/black_steel",
-  "transName" : "黑钢镰刀刃"
-}, {
-  "origName" : "tfc:metal/scythe_blade/blue_steel",
-  "transName" : "蓝钢镰刀刃"
-}, {
-  "origName" : "tfc:metal/scythe_blade/bronze",
-  "transName" : "青铜镰刀刃"
-}, {
-  "origName" : "tfc:metal/scythe_blade/copper",
-  "transName" : "铜镰刀刃"
-}, {
-  "origName" : "tfc:metal/scythe_blade/red_steel",
-  "transName" : "红钢镰刀刃"
-}, {
-  "origName" : "tfc:metal/scythe_blade/steel",
-  "transName" : "钢镰刀刃"
-}, {
-  "origName" : "tfc:metal/scythe_blade/wrought_iron",
-  "transName" : "锻铁镰刀刃"
-}, {
-  "origName" : "tfc:metal/sheet/bismuth",
-  "transName" : "铋薄板"
-}, {
-  "origName" : "tfc:metal/sheet/bismuth_bronze",
-  "transName" : "铋铜薄板"
-}, {
-  "origName" : "tfc:metal/sheet/black_bronze",
-  "transName" : "黑铜薄板"
-}, {
-  "origName" : "tfc:metal/sheet/black_steel",
-  "transName" : "黑钢薄板"
-}, {
-  "origName" : "tfc:metal/sheet/blue_steel",
-  "transName" : "蓝钢薄板"
-}, {
-  "origName" : "tfc:metal/sheet/brass",
-  "transName" : "黄铜薄板"
-}, {
-  "origName" : "tfc:metal/sheet/bronze",
-  "transName" : "青铜薄板"
-}, {
-  "origName" : "tfc:metal/sheet/cast_iron",
-  "transName" : "铸铁薄板"
-}, {
-  "origName" : "tfc:metal/sheet/copper",
-  "transName" : "铜薄板"
-}, {
-  "origName" : "tfc:metal/sheet/gold",
-  "transName" : "金薄板"
-}, {
-  "origName" : "tfc:metal/sheet/nickel",
-  "transName" : "镍薄板"
-}, {
-  "origName" : "tfc:metal/sheet/red_steel",
-  "transName" : "红钢薄板"
-}, {
-  "origName" : "tfc:metal/sheet/rose_gold",
-  "transName" : "玫瑰金薄板"
-}, {
-  "origName" : "tfc:metal/sheet/silver",
-  "transName" : "银薄板"
-}, {
-  "origName" : "tfc:metal/sheet/steel",
-  "transName" : "钢薄板"
-}, {
-  "origName" : "tfc:metal/sheet/sterling_silver",
-  "transName" : "纯银薄板"
-}, {
-  "origName" : "tfc:metal/sheet/tin",
-  "transName" : "锡薄板"
-}, {
-  "origName" : "tfc:metal/sheet/wrought_iron",
-  "transName" : "锻铁薄板"
-}, {
-  "origName" : "tfc:metal/sheet/zinc",
-  "transName" : "锌薄板"
-}, {
-  "origName" : "tfc:metal/shield/bismuth_bronze",
-  "transName" : "铋铜盾"
-}, {
-  "origName" : "tfc:metal/shield/black_bronze",
-  "transName" : "黑铜盾"
-}, {
-  "origName" : "tfc:metal/shield/black_steel",
-  "transName" : "黑钢盾"
-}, {
-  "origName" : "tfc:metal/shield/blue_steel",
-  "transName" : "蓝钢盾"
-}, {
-  "origName" : "tfc:metal/shield/bronze",
-  "transName" : "青铜盾"
-}, {
-  "origName" : "tfc:metal/shield/copper",
-  "transName" : "铜盾"
-}, {
-  "origName" : "tfc:metal/shield/red_steel",
-  "transName" : "红钢盾"
-}, {
-  "origName" : "tfc:metal/shield/steel",
-  "transName" : "钢盾"
-}, {
-  "origName" : "tfc:metal/shield/wrought_iron",
-  "transName" : "锻铁盾"
-}, {
-  "origName" : "tfc:metal/shovel_head/bismuth_bronze",
-  "transName" : "铋铜铲头"
-}, {
-  "origName" : "tfc:metal/shovel_head/black_bronze",
-  "transName" : "黑铜铲头"
-}, {
-  "origName" : "tfc:metal/shovel_head/black_steel",
-  "transName" : "黑钢铲头"
-}, {
-  "origName" : "tfc:metal/shovel_head/blue_steel",
-  "transName" : "蓝钢铲头"
-}, {
-  "origName" : "tfc:metal/shovel_head/bronze",
-  "transName" : "青铜铲头"
-}, {
-  "origName" : "tfc:metal/shovel_head/copper",
-  "transName" : "铜铲头"
-}, {
-  "origName" : "tfc:metal/shovel_head/red_steel",
-  "transName" : "红钢铲头"
-}, {
-  "origName" : "tfc:metal/shovel_head/steel",
-  "transName" : "钢铲头"
-}, {
-  "origName" : "tfc:metal/shovel_head/wrought_iron",
-  "transName" : "锻铁铲头"
-}, {
-  "origName" : "tfc:metal/sword_blade/bismuth_bronze",
-  "transName" : "铋铜剑刃"
-}, {
-  "origName" : "tfc:metal/sword_blade/black_bronze",
-  "transName" : "黑铜剑刃"
-}, {
-  "origName" : "tfc:metal/sword_blade/black_steel",
-  "transName" : "黑钢剑刃"
-}, {
-  "origName" : "tfc:metal/sword_blade/blue_steel",
-  "transName" : "蓝钢剑刃"
-}, {
-  "origName" : "tfc:metal/sword_blade/bronze",
-  "transName" : "青铜剑刃"
-}, {
-  "origName" : "tfc:metal/sword_blade/copper",
-  "transName" : "铜剑刃"
-}, {
-  "origName" : "tfc:metal/sword_blade/red_steel",
-  "transName" : "红钢剑刃"
-}, {
-  "origName" : "tfc:metal/sword_blade/steel",
-  "transName" : "钢剑刃"
-}, {
-  "origName" : "tfc:metal/sword_blade/wrought_iron",
-  "transName" : "锻铁剑刃"
-}, {
-  "origName" : "tfc:metal/trapdoor/bismuth_bronze",
-  "transName" : "铋铜活板门"
-}, {
-  "origName" : "tfc:metal/trapdoor/black_bronze",
-  "transName" : "黑铜活板门"
-}, {
-  "origName" : "tfc:metal/trapdoor/black_steel",
-  "transName" : "黑钢活板门"
-}, {
-  "origName" : "tfc:metal/trapdoor/blue_steel",
-  "transName" : "蓝钢活板门"
-}, {
-  "origName" : "tfc:metal/trapdoor/bronze",
-  "transName" : "青铜活板门"
-}, {
-  "origName" : "tfc:metal/trapdoor/copper",
-  "transName" : "铜活板门"
-}, {
-  "origName" : "tfc:metal/trapdoor/red_steel",
-  "transName" : "红钢活板门"
-}, {
-  "origName" : "tfc:metal/trapdoor/steel",
-  "transName" : "钢活板门"
-}, {
-  "origName" : "tfc:metal/trapdoor/wrought_iron",
-  "transName" : "锻铁活板门"
-}, {
-  "origName" : "tfc:metal/tuyere/bismuth_bronze",
-  "transName" : "铋铜鼓风口"
-}, {
-  "origName" : "tfc:metal/tuyere/black_bronze",
-  "transName" : "黑铜鼓风口"
-}, {
-  "origName" : "tfc:metal/tuyere/black_steel",
-  "transName" : "黑钢鼓风口"
-}, {
-  "origName" : "tfc:metal/tuyere/blue_steel",
-  "transName" : "蓝钢鼓风口"
-}, {
-  "origName" : "tfc:metal/tuyere/bronze",
-  "transName" : "青铜鼓风口"
-}, {
-  "origName" : "tfc:metal/tuyere/copper",
-  "transName" : "铜鼓风口"
-}, {
-  "origName" : "tfc:metal/tuyere/red_steel",
-  "transName" : "红钢鼓风口"
-}, {
-  "origName" : "tfc:metal/tuyere/steel",
-  "transName" : "钢鼓风口"
-}, {
-  "origName" : "tfc:metal/tuyere/wrought_iron",
-  "transName" : "锻铁鼓风口"
-}, {
-  "origName" : "tfc:metal/unfinished_boots/bismuth_bronze",
-  "transName" : "未完成的铋铜靴"
-}, {
-  "origName" : "tfc:metal/unfinished_boots/black_bronze",
-  "transName" : "未完成的黑铜靴"
-}, {
-  "origName" : "tfc:metal/unfinished_boots/black_steel",
-  "transName" : "未完成的黑钢靴"
-}, {
-  "origName" : "tfc:metal/unfinished_boots/blue_steel",
-  "transName" : "未完成的蓝钢靴"
-}, {
-  "origName" : "tfc:metal/unfinished_boots/bronze",
-  "transName" : "未完成的青铜靴"
-}, {
-  "origName" : "tfc:metal/unfinished_boots/copper",
-  "transName" : "未完成的铜靴"
-}, {
-  "origName" : "tfc:metal/unfinished_boots/red_steel",
-  "transName" : "未完成的红钢靴"
-}, {
-  "origName" : "tfc:metal/unfinished_boots/steel",
-  "transName" : "未完成的钢靴"
-}, {
-  "origName" : "tfc:metal/unfinished_boots/wrought_iron",
-  "transName" : "未完成的锻铁靴"
-}, {
-  "origName" : "tfc:metal/unfinished_chestplate/bismuth_bronze",
-  "transName" : "未完成的铋铜胸甲"
-}, {
-  "origName" : "tfc:metal/unfinished_chestplate/black_bronze",
-  "transName" : "未完成的黑铜胸甲"
-}, {
-  "origName" : "tfc:metal/unfinished_chestplate/black_steel",
-  "transName" : "未完成的黑钢胸甲"
-}, {
-  "origName" : "tfc:metal/unfinished_chestplate/blue_steel",
-  "transName" : "未完成的蓝钢胸甲"
-}, {
-  "origName" : "tfc:metal/unfinished_chestplate/bronze",
-  "transName" : "未完成的青铜胸甲"
-}, {
-  "origName" : "tfc:metal/unfinished_chestplate/copper",
-  "transName" : "未完成的铜胸甲"
-}, {
-  "origName" : "tfc:metal/unfinished_chestplate/red_steel",
-  "transName" : "未完成的红钢胸甲"
-}, {
-  "origName" : "tfc:metal/unfinished_chestplate/steel",
-  "transName" : "未完成的钢胸甲"
-}, {
-  "origName" : "tfc:metal/unfinished_chestplate/wrought_iron",
-  "transName" : "未完成的锻铁胸甲"
-}, {
-  "origName" : "tfc:metal/unfinished_greaves/bismuth_bronze",
-  "transName" : "未完成的铋铜护腿"
-}, {
-  "origName" : "tfc:metal/unfinished_greaves/black_bronze",
-  "transName" : "未完成的黑铜护腿"
-}, {
-  "origName" : "tfc:metal/unfinished_greaves/black_steel",
-  "transName" : "未完成的黑钢护腿"
-}, {
-  "origName" : "tfc:metal/unfinished_greaves/blue_steel",
-  "transName" : "未完成的蓝钢护腿"
-}, {
-  "origName" : "tfc:metal/unfinished_greaves/bronze",
-  "transName" : "未完成的青铜护腿"
-}, {
-  "origName" : "tfc:metal/unfinished_greaves/copper",
-  "transName" : "未完成的铜护腿"
-}, {
-  "origName" : "tfc:metal/unfinished_greaves/red_steel",
-  "transName" : "未完成的红钢护腿"
-}, {
-  "origName" : "tfc:metal/unfinished_greaves/steel",
-  "transName" : "未完成的钢护腿"
-}, {
-  "origName" : "tfc:metal/unfinished_greaves/wrought_iron",
-  "transName" : "未完成的锻铁护腿"
-}, {
-  "origName" : "tfc:metal/unfinished_helmet/bismuth_bronze",
-  "transName" : "未完成的铋铜头盔"
-}, {
-  "origName" : "tfc:metal/unfinished_helmet/black_bronze",
-  "transName" : "未完成的黑铜头盔"
-}, {
-  "origName" : "tfc:metal/unfinished_helmet/black_steel",
-  "transName" : "未完成的黑钢头盔"
-}, {
-  "origName" : "tfc:metal/unfinished_helmet/blue_steel",
-  "transName" : "未完成的蓝钢头盔"
-}, {
-  "origName" : "tfc:metal/unfinished_helmet/bronze",
-  "transName" : "未完成的青铜头盔"
-}, {
-  "origName" : "tfc:metal/unfinished_helmet/copper",
-  "transName" : "未完成的铜头盔"
-}, {
-  "origName" : "tfc:metal/unfinished_helmet/red_steel",
-  "transName" : "未完成的红钢头盔"
-}, {
-  "origName" : "tfc:metal/unfinished_helmet/steel",
-  "transName" : "未完成的钢头盔"
-}, {
-  "origName" : "tfc:metal/unfinished_helmet/wrought_iron",
-  "transName" : "未完成的锻铁头盔"
-}, {
-  "origName" : "tfc:raw_iron_bloom",
-  "transName" : "生铁方坯"
-}, {
-  "origName" : "tfc:red_steel_bars",
-  "transName" : "红钢栏杆"
-}, {
-  "origName" : "tfc:refined_iron_bloom",
-  "transName" : "精炼铁方坯"
-}, {
-  "origName" : "tfc:steel_bars",
-  "transName" : "钢栏杆"
-}, {
-  "origName" : "tfc:wrought_iron_grill",
-  "transName" : "锻铁烤架"
-}, {
-  "origName" : "waterflasks:unfinished_iron_flask",
-  "transName" : "未完成的铁瓶(waterflasks)"
-} ]
+{
+  "version": "1.0.0",
+  "mapUnits":
+[
+  {
+    "origName": "firmalife:dribbler",
+    "transName": "滴灌器(firmalife)"
+  },
+  {
+    "origName": "firmalife:metal/double_ingot/chromium",
+    "transName": "铬双层锭(firmalife)"
+  },
+  {
+    "origName": "firmalife:metal/double_ingot/stainless_steel",
+    "transName": "不锈钢双层锭(firmalife)"
+  },
+  {
+    "origName": "firmalife:metal/ingot/chromium",
+    "transName": "铬锭(firmalife)"
+  },
+  {
+    "origName": "firmalife:metal/ingot/stainless_steel",
+    "transName": "不锈钢锭(firmalife)"
+  },
+  {
+    "origName": "firmalife:metal/rod/chromium",
+    "transName": "铬棒(firmalife)"
+  },
+  {
+    "origName": "firmalife:metal/rod/stainless_steel",
+    "transName": "不锈钢棒(firmalife)"
+  },
+  {
+    "origName": "firmalife:metal/sheet/chromium",
+    "transName": "铬薄板(firmalife)"
+  },
+  {
+    "origName": "firmalife:metal/sheet/stainless_steel",
+    "transName": "不锈钢薄板(firmalife)"
+  },
+  {
+    "origName": "firmalife:pie_pan",
+    "transName": "馅饼盘(firmalife)"
+  },
+  {
+    "origName": "firmalife:sprinkler",
+    "transName": "洒水器(firmalife)"
+  },
+  {
+    "origName": "forge:double_ingots/bismuth",
+    "transName": "铋双层锭"
+  },
+  {
+    "origName": "forge:double_ingots/bismuth_bronze",
+    "transName": "铋铜双层锭"
+  },
+  {
+    "origName": "forge:double_ingots/black_bronze",
+    "transName": "黑铜双层锭"
+  },
+  {
+    "origName": "forge:double_ingots/black_steel",
+    "transName": "黑钢双层锭"
+  },
+  {
+    "origName": "forge:double_ingots/blue_steel",
+    "transName": "蓝钢双层锭"
+  },
+  {
+    "origName": "forge:double_ingots/brass",
+    "transName": "黄铜双层锭"
+  },
+  {
+    "origName": "forge:double_ingots/bronze",
+    "transName": "青铜双层锭"
+  },
+  {
+    "origName": "forge:double_ingots/cast_iron",
+    "transName": "铸铁双层锭"
+  },
+  {
+    "origName": "forge:double_ingots/copper",
+    "transName": "铜双层锭"
+  },
+  {
+    "origName": "forge:double_ingots/gold",
+    "transName": "金双层锭"
+  },
+  {
+    "origName": "forge:double_ingots/nickel",
+    "transName": "镍双层锭"
+  },
+  {
+    "origName": "forge:double_ingots/red_steel",
+    "transName": "红钢双层锭"
+  },
+  {
+    "origName": "forge:double_ingots/rose_gold",
+    "transName": "玫瑰金双层锭"
+  },
+  {
+    "origName": "forge:double_ingots/silver",
+    "transName": "银双层锭"
+  },
+  {
+    "origName": "forge:double_ingots/steel",
+    "transName": "钢双层锭"
+  },
+  {
+    "origName": "forge:double_ingots/sterling_silver",
+    "transName": "纯银双层锭"
+  },
+  {
+    "origName": "forge:double_ingots/tin",
+    "transName": "锡双层锭"
+  },
+  {
+    "origName": "forge:double_ingots/wrought_iron",
+    "transName": "锻铁双层锭"
+  },
+  {
+    "origName": "forge:double_ingots/zinc",
+    "transName": "锌双层锭"
+  },
+  {
+    "origName": "forge:double_sheets/bismuth_bronze",
+    "transName": "铋铜双层薄板"
+  },
+  {
+    "origName": "forge:double_sheets/black_bronze",
+    "transName": "黑铜双层薄板"
+  },
+  {
+    "origName": "forge:double_sheets/black_steel",
+    "transName": "黑钢双层薄板"
+  },
+  {
+    "origName": "forge:double_sheets/blue_steel",
+    "transName": "蓝钢双层薄板"
+  },
+  {
+    "origName": "forge:double_sheets/bronze",
+    "transName": "青铜双层薄板"
+  },
+  {
+    "origName": "forge:double_sheets/copper",
+    "transName": "铜双层薄板"
+  },
+  {
+    "origName": "forge:double_sheets/red_steel",
+    "transName": "红钢双层薄板"
+  },
+  {
+    "origName": "forge:double_sheets/steel",
+    "transName": "钢双层薄板"
+  },
+  {
+    "origName": "forge:double_sheets/wrought_iron",
+    "transName": "锻铁双层薄板"
+  },
+  {
+    "origName": "forge:ingots/bismuth",
+    "transName": "铋锭"
+  },
+  {
+    "origName": "forge:ingots/bismuth_bronze",
+    "transName": "铋铜锭"
+  },
+  {
+    "origName": "forge:ingots/black_bronze",
+    "transName": "黑铜锭"
+  },
+  {
+    "origName": "forge:ingots/black_steel",
+    "transName": "黑钢锭"
+  },
+  {
+    "origName": "forge:ingots/blue_steel",
+    "transName": "蓝钢锭"
+  },
+  {
+    "origName": "forge:ingots/brass",
+    "transName": "黄铜锭"
+  },
+  {
+    "origName": "forge:ingots/bronze",
+    "transName": "青铜锭"
+  },
+  {
+    "origName": "forge:ingots/cast_iron",
+    "transName": "铸铁锭"
+  },
+  {
+    "origName": "forge:ingots/copper",
+    "transName": "铜锭"
+  },
+  {
+    "origName": "forge:ingots/gold",
+    "transName": "金锭"
+  },
+  {
+    "origName": "forge:ingots/nickel",
+    "transName": "镍锭"
+  },
+  {
+    "origName": "forge:ingots/red_steel",
+    "transName": "红钢锭"
+  },
+  {
+    "origName": "forge:ingots/rose_gold",
+    "transName": "玫瑰金锭"
+  },
+  {
+    "origName": "forge:ingots/silver",
+    "transName": "银锭"
+  },
+  {
+    "origName": "forge:ingots/steel",
+    "transName": "钢锭"
+  },
+  {
+    "origName": "forge:ingots/sterling_silver",
+    "transName": "纯银锭"
+  },
+  {
+    "origName": "forge:ingots/tin",
+    "transName": "锡锭"
+  },
+  {
+    "origName": "forge:ingots/wrought_iron",
+    "transName": "锻铁锭"
+  },
+  {
+    "origName": "forge:ingots/zinc",
+    "transName": "锌锭"
+  },
+  {
+    "origName": "forge:sheets/bismuth_bronze",
+    "transName": "铋铜薄板"
+  },
+  {
+    "origName": "forge:sheets/black_bronze",
+    "transName": "黑铜薄板"
+  },
+  {
+    "origName": "forge:sheets/black_steel",
+    "transName": "黑钢薄板"
+  },
+  {
+    "origName": "forge:sheets/blue_steel",
+    "transName": "蓝钢薄板"
+  },
+  {
+    "origName": "forge:sheets/bronze",
+    "transName": "青铜薄板"
+  },
+  {
+    "origName": "forge:sheets/cast_iron",
+    "transName": "铸铁薄板"
+  },
+  {
+    "origName": "forge:sheets/copper",
+    "transName": "铜薄板"
+  },
+  {
+    "origName": "forge:sheets/red_steel",
+    "transName": "红钢薄板"
+  },
+  {
+    "origName": "forge:sheets/stainless_steel",
+    "transName": "不锈钢薄板"
+  },
+  {
+    "origName": "forge:sheets/steel",
+    "transName": "钢薄板"
+  },
+  {
+    "origName": "forge:sheets/wrought_iron",
+    "transName": "锻铁薄板"
+  },
+  {
+    "origName": "minecraft:iron_bars",
+    "transName": "铁栏杆"
+  },
+  {
+    "origName": "minecraft:iron_door",
+    "transName": "铁门"
+  },
+  {
+    "origName": "tfc:black_steel_bars",
+    "transName": "黑钢栏杆"
+  },
+  {
+    "origName": "tfc:blue_steel_bars",
+    "transName": "蓝钢栏杆"
+  },
+  {
+    "origName": "tfc:brass_mechanisms",
+    "transName": "黄铜机件"
+  },
+  {
+    "origName": "tfc:metal/axe_head/bismuth_bronze",
+    "transName": "铋铜斧头"
+  },
+  {
+    "origName": "tfc:metal/axe_head/black_bronze",
+    "transName": "黑铜斧头"
+  },
+  {
+    "origName": "tfc:metal/axe_head/black_steel",
+    "transName": "黑钢斧头"
+  },
+  {
+    "origName": "tfc:metal/axe_head/blue_steel",
+    "transName": "蓝钢斧头"
+  },
+  {
+    "origName": "tfc:metal/axe_head/bronze",
+    "transName": "青铜斧头"
+  },
+  {
+    "origName": "tfc:metal/axe_head/copper",
+    "transName": "铜斧头"
+  },
+  {
+    "origName": "tfc:metal/axe_head/red_steel",
+    "transName": "红钢斧头"
+  },
+  {
+    "origName": "tfc:metal/axe_head/steel",
+    "transName": "钢斧头"
+  },
+  {
+    "origName": "tfc:metal/axe_head/wrought_iron",
+    "transName": "锻铁斧头"
+  },
+  {
+    "origName": "tfc:metal/bucket/blue_steel",
+    "transName": "蓝钢桶"
+  },
+  {
+    "origName": "tfc:metal/bucket/red_steel",
+    "transName": "红钢桶"
+  },
+  {
+    "origName": "tfc:metal/chain/bismuth_bronze",
+    "transName": "铋铜锁链"
+  },
+  {
+    "origName": "tfc:metal/chain/black_bronze",
+    "transName": "黑铜锁链"
+  },
+  {
+    "origName": "tfc:metal/chain/black_steel",
+    "transName": "黑钢锁链"
+  },
+  {
+    "origName": "tfc:metal/chain/blue_steel",
+    "transName": "蓝钢锁链"
+  },
+  {
+    "origName": "tfc:metal/chain/bronze",
+    "transName": "青铜锁链"
+  },
+  {
+    "origName": "tfc:metal/chain/copper",
+    "transName": "铜锁链"
+  },
+  {
+    "origName": "tfc:metal/chain/red_steel",
+    "transName": "红钢锁链"
+  },
+  {
+    "origName": "tfc:metal/chain/steel",
+    "transName": "钢锁链"
+  },
+  {
+    "origName": "tfc:metal/chain/wrought_iron",
+    "transName": "锻铁锁链"
+  },
+  {
+    "origName": "tfc:metal/chisel_head/bismuth_bronze",
+    "transName": "铋铜凿头"
+  },
+  {
+    "origName": "tfc:metal/chisel_head/black_bronze",
+    "transName": "黑铜凿头"
+  },
+  {
+    "origName": "tfc:metal/chisel_head/black_steel",
+    "transName": "黑钢凿头"
+  },
+  {
+    "origName": "tfc:metal/chisel_head/blue_steel",
+    "transName": "蓝钢凿头"
+  },
+  {
+    "origName": "tfc:metal/chisel_head/bronze",
+    "transName": "青铜凿头"
+  },
+  {
+    "origName": "tfc:metal/chisel_head/copper",
+    "transName": "铜凿头"
+  },
+  {
+    "origName": "tfc:metal/chisel_head/red_steel",
+    "transName": "红钢凿头"
+  },
+  {
+    "origName": "tfc:metal/chisel_head/steel",
+    "transName": "钢凿头"
+  },
+  {
+    "origName": "tfc:metal/chisel_head/wrought_iron",
+    "transName": "锻铁凿头"
+  },
+  {
+    "origName": "tfc:metal/fish_hook/bismuth_bronze",
+    "transName": "铋铜鱼钩"
+  },
+  {
+    "origName": "tfc:metal/fish_hook/black_bronze",
+    "transName": "黑铜鱼钩"
+  },
+  {
+    "origName": "tfc:metal/fish_hook/black_steel",
+    "transName": "黑钢鱼钩"
+  },
+  {
+    "origName": "tfc:metal/fish_hook/blue_steel",
+    "transName": "蓝钢鱼钩"
+  },
+  {
+    "origName": "tfc:metal/fish_hook/bronze",
+    "transName": "青铜鱼钩"
+  },
+  {
+    "origName": "tfc:metal/fish_hook/copper",
+    "transName": "铜鱼钩"
+  },
+  {
+    "origName": "tfc:metal/fish_hook/red_steel",
+    "transName": "红钢鱼钩"
+  },
+  {
+    "origName": "tfc:metal/fish_hook/steel",
+    "transName": "钢鱼钩"
+  },
+  {
+    "origName": "tfc:metal/fish_hook/wrought_iron",
+    "transName": "锻铁鱼钩"
+  },
+  {
+    "origName": "tfc:metal/hammer_head/bismuth_bronze",
+    "transName": "铋铜锤头"
+  },
+  {
+    "origName": "tfc:metal/hammer_head/black_bronze",
+    "transName": "黑铜锤头"
+  },
+  {
+    "origName": "tfc:metal/hammer_head/black_steel",
+    "transName": "黑钢锤头"
+  },
+  {
+    "origName": "tfc:metal/hammer_head/blue_steel",
+    "transName": "蓝钢锤头"
+  },
+  {
+    "origName": "tfc:metal/hammer_head/bronze",
+    "transName": "青铜锤头"
+  },
+  {
+    "origName": "tfc:metal/hammer_head/copper",
+    "transName": "铜锤头"
+  },
+  {
+    "origName": "tfc:metal/hammer_head/red_steel",
+    "transName": "红钢锤头"
+  },
+  {
+    "origName": "tfc:metal/hammer_head/steel",
+    "transName": "钢锤头"
+  },
+  {
+    "origName": "tfc:metal/hammer_head/wrought_iron",
+    "transName": "铸铁锤头"
+  },
+  {
+    "origName": "tfc:metal/hoe_head/bismuth_bronze",
+    "transName": "铋铜锄头"
+  },
+  {
+    "origName": "tfc:metal/hoe_head/black_bronze",
+    "transName": "黑铜锄头"
+  },
+  {
+    "origName": "tfc:metal/hoe_head/black_steel",
+    "transName": "黑钢锄头"
+  },
+  {
+    "origName": "tfc:metal/hoe_head/blue_steel",
+    "transName": "蓝钢锄头"
+  },
+  {
+    "origName": "tfc:metal/hoe_head/bronze",
+    "transName": "青铜锄头"
+  },
+  {
+    "origName": "tfc:metal/hoe_head/copper",
+    "transName": "铜锄头"
+  },
+  {
+    "origName": "tfc:metal/hoe_head/red_steel",
+    "transName": "红钢锄头"
+  },
+  {
+    "origName": "tfc:metal/hoe_head/steel",
+    "transName": "钢锄头"
+  },
+  {
+    "origName": "tfc:metal/hoe_head/wrought_iron",
+    "transName": "锻铁锄头"
+  },
+  {
+    "origName": "tfc:metal/ingot/black_steel",
+    "transName": "黑钢锭"
+  },
+  {
+    "origName": "tfc:metal/ingot/blue_steel",
+    "transName": "蓝钢锭"
+  },
+  {
+    "origName": "tfc:metal/ingot/high_carbon_black_steel",
+    "transName": "高碳黑钢锭"
+  },
+  {
+    "origName": "tfc:metal/ingot/high_carbon_blue_steel",
+    "transName": "高碳蓝钢锭"
+  },
+  {
+    "origName": "tfc:metal/ingot/high_carbon_red_steel",
+    "transName": "高碳红钢锭"
+  },
+  {
+    "origName": "tfc:metal/ingot/high_carbon_steel",
+    "transName": "高碳钢锭"
+  },
+  {
+    "origName": "tfc:metal/ingot/pig_iron",
+    "transName": "生铁锭"
+  },
+  {
+    "origName": "tfc:metal/ingot/red_steel",
+    "transName": "红钢锭"
+  },
+  {
+    "origName": "tfc:metal/ingot/steel",
+    "transName": "钢锭"
+  },
+  {
+    "origName": "tfc:metal/ingot/wrought_iron",
+    "transName": "锻铁锭"
+  },
+  {
+    "origName": "tfc:metal/javelin_head/bismuth_bronze",
+    "transName": "铋铜标枪头"
+  },
+  {
+    "origName": "tfc:metal/javelin_head/black_bronze",
+    "transName": "黑铜标枪头"
+  },
+  {
+    "origName": "tfc:metal/javelin_head/black_steel",
+    "transName": "黑钢标枪头"
+  },
+  {
+    "origName": "tfc:metal/javelin_head/blue_steel",
+    "transName": "蓝钢标枪头"
+  },
+  {
+    "origName": "tfc:metal/javelin_head/bronze",
+    "transName": "青铜标枪头"
+  },
+  {
+    "origName": "tfc:metal/javelin_head/copper",
+    "transName": "铜标枪头"
+  },
+  {
+    "origName": "tfc:metal/javelin_head/red_steel",
+    "transName": "红钢标枪头"
+  },
+  {
+    "origName": "tfc:metal/javelin_head/steel",
+    "transName": "钢标枪头"
+  },
+  {
+    "origName": "tfc:metal/javelin_head/wrought_iron",
+    "transName": "锻铁标枪头"
+  },
+  {
+    "origName": "tfc:metal/knife_blade/bismuth_bronze",
+    "transName": "铋铜刀刃"
+  },
+  {
+    "origName": "tfc:metal/knife_blade/black_bronze",
+    "transName": "黑铜刀刃"
+  },
+  {
+    "origName": "tfc:metal/knife_blade/black_steel",
+    "transName": "黑钢刀刃"
+  },
+  {
+    "origName": "tfc:metal/knife_blade/blue_steel",
+    "transName": "蓝钢刀刃"
+  },
+  {
+    "origName": "tfc:metal/knife_blade/bronze",
+    "transName": "青铜刀刃"
+  },
+  {
+    "origName": "tfc:metal/knife_blade/copper",
+    "transName": "铜刀刃"
+  },
+  {
+    "origName": "tfc:metal/knife_blade/red_steel",
+    "transName": "红钢刀刃"
+  },
+  {
+    "origName": "tfc:metal/knife_blade/steel",
+    "transName": "钢刀刃"
+  },
+  {
+    "origName": "tfc:metal/knife_blade/wrought_iron",
+    "transName": "锻铁刀刃"
+  },
+  {
+    "origName": "tfc:metal/lamp/bismuth_bronze",
+    "transName": "铋铜灯"
+  },
+  {
+    "origName": "tfc:metal/lamp/black_bronze",
+    "transName": "黑铜灯"
+  },
+  {
+    "origName": "tfc:metal/lamp/black_steel",
+    "transName": "黑钢灯"
+  },
+  {
+    "origName": "tfc:metal/lamp/blue_steel",
+    "transName": "蓝钢灯"
+  },
+  {
+    "origName": "tfc:metal/lamp/bronze",
+    "transName": "青铜灯"
+  },
+  {
+    "origName": "tfc:metal/lamp/copper",
+    "transName": "铜灯"
+  },
+  {
+    "origName": "tfc:metal/lamp/red_steel",
+    "transName": "红钢灯"
+  },
+  {
+    "origName": "tfc:metal/lamp/steel",
+    "transName": "钢灯"
+  },
+  {
+    "origName": "tfc:metal/lamp/wrought_iron",
+    "transName": "锻铁灯"
+  },
+  {
+    "origName": "tfc:metal/mace_head/bismuth_bronze",
+    "transName": "铋铜狼牙棒头"
+  },
+  {
+    "origName": "tfc:metal/mace_head/black_bronze",
+    "transName": "黑铜狼牙棒头"
+  },
+  {
+    "origName": "tfc:metal/mace_head/black_steel",
+    "transName": "黑钢狼牙棒头"
+  },
+  {
+    "origName": "tfc:metal/mace_head/blue_steel",
+    "transName": "蓝钢狼牙棒头"
+  },
+  {
+    "origName": "tfc:metal/mace_head/bronze",
+    "transName": "青铜狼牙棒头"
+  },
+  {
+    "origName": "tfc:metal/mace_head/copper",
+    "transName": "铜狼牙棒头"
+  },
+  {
+    "origName": "tfc:metal/mace_head/red_steel",
+    "transName": "红钢狼牙棒头"
+  },
+  {
+    "origName": "tfc:metal/mace_head/steel",
+    "transName": "钢狼牙棒头"
+  },
+  {
+    "origName": "tfc:metal/mace_head/wrought_iron",
+    "transName": "锻铁狼牙棒头"
+  },
+  {
+    "origName": "tfc:metal/pickaxe_head/bismuth_bronze",
+    "transName": "铋铜镐头"
+  },
+  {
+    "origName": "tfc:metal/pickaxe_head/black_bronze",
+    "transName": "黑铜镐头"
+  },
+  {
+    "origName": "tfc:metal/pickaxe_head/black_steel",
+    "transName": "黑钢镐头"
+  },
+  {
+    "origName": "tfc:metal/pickaxe_head/blue_steel",
+    "transName": "蓝钢镐头"
+  },
+  {
+    "origName": "tfc:metal/pickaxe_head/bronze",
+    "transName": "青铜镐头"
+  },
+  {
+    "origName": "tfc:metal/pickaxe_head/copper",
+    "transName": "铜镐头"
+  },
+  {
+    "origName": "tfc:metal/pickaxe_head/red_steel",
+    "transName": "红钢镐头"
+  },
+  {
+    "origName": "tfc:metal/pickaxe_head/steel",
+    "transName": "钢镐头"
+  },
+  {
+    "origName": "tfc:metal/pickaxe_head/wrought_iron",
+    "transName": "锻铁镐头"
+  },
+  {
+    "origName": "tfc:metal/propick_head/bismuth_bronze",
+    "transName": "铋铜勘矿镐头"
+  },
+  {
+    "origName": "tfc:metal/propick_head/black_bronze",
+    "transName": "黑铜勘矿镐头"
+  },
+  {
+    "origName": "tfc:metal/propick_head/black_steel",
+    "transName": "黑钢勘矿镐头"
+  },
+  {
+    "origName": "tfc:metal/propick_head/blue_steel",
+    "transName": "蓝钢勘矿镐头"
+  },
+  {
+    "origName": "tfc:metal/propick_head/bronze",
+    "transName": "青铜勘矿镐头"
+  },
+  {
+    "origName": "tfc:metal/propick_head/copper",
+    "transName": "铜勘矿镐头"
+  },
+  {
+    "origName": "tfc:metal/propick_head/red_steel",
+    "transName": "红钢勘矿镐头"
+  },
+  {
+    "origName": "tfc:metal/propick_head/steel",
+    "transName": "钢勘矿镐头"
+  },
+  {
+    "origName": "tfc:metal/propick_head/wrought_iron",
+    "transName": "锻铁勘矿镐头"
+  },
+  {
+    "origName": "tfc:metal/rod/bismuth",
+    "transName": "铋棒"
+  },
+  {
+    "origName": "tfc:metal/rod/bismuth_bronze",
+    "transName": "铋铜棒"
+  },
+  {
+    "origName": "tfc:metal/rod/black_bronze",
+    "transName": "黑铜棒"
+  },
+  {
+    "origName": "tfc:metal/rod/black_steel",
+    "transName": "黑钢棒"
+  },
+  {
+    "origName": "tfc:metal/rod/blue_steel",
+    "transName": "蓝钢棒"
+  },
+  {
+    "origName": "tfc:metal/rod/brass",
+    "transName": "黄铜棒"
+  },
+  {
+    "origName": "tfc:metal/rod/bronze",
+    "transName": "青铜棒"
+  },
+  {
+    "origName": "tfc:metal/rod/cast_iron",
+    "transName": "铸铁棒"
+  },
+  {
+    "origName": "tfc:metal/rod/copper",
+    "transName": "铜棒"
+  },
+  {
+    "origName": "tfc:metal/rod/gold",
+    "transName": "金棒"
+  },
+  {
+    "origName": "tfc:metal/rod/nickel",
+    "transName": "镍棒"
+  },
+  {
+    "origName": "tfc:metal/rod/red_steel",
+    "transName": "红钢棒"
+  },
+  {
+    "origName": "tfc:metal/rod/rose_gold",
+    "transName": "玫瑰金棒"
+  },
+  {
+    "origName": "tfc:metal/rod/silver",
+    "transName": "银棒"
+  },
+  {
+    "origName": "tfc:metal/rod/steel",
+    "transName": "钢棒"
+  },
+  {
+    "origName": "tfc:metal/rod/sterling_silver",
+    "transName": "纯银棒"
+  },
+  {
+    "origName": "tfc:metal/rod/tin",
+    "transName": "锡棒"
+  },
+  {
+    "origName": "tfc:metal/rod/wrought_iron",
+    "transName": "锻铁棒"
+  },
+  {
+    "origName": "tfc:metal/rod/zinc",
+    "transName": "锌棒"
+  },
+  {
+    "origName": "tfc:metal/saw_blade/bismuth_bronze",
+    "transName": "铋铜锯片"
+  },
+  {
+    "origName": "tfc:metal/saw_blade/black_bronze",
+    "transName": "黑铜锯片"
+  },
+  {
+    "origName": "tfc:metal/saw_blade/black_steel",
+    "transName": "黑钢锯片"
+  },
+  {
+    "origName": "tfc:metal/saw_blade/blue_steel",
+    "transName": "蓝钢锯片"
+  },
+  {
+    "origName": "tfc:metal/saw_blade/bronze",
+    "transName": "青铜锯片"
+  },
+  {
+    "origName": "tfc:metal/saw_blade/copper",
+    "transName": "铜锯片"
+  },
+  {
+    "origName": "tfc:metal/saw_blade/red_steel",
+    "transName": "红钢锯片"
+  },
+  {
+    "origName": "tfc:metal/saw_blade/steel",
+    "transName": "钢锯片"
+  },
+  {
+    "origName": "tfc:metal/saw_blade/wrought_iron",
+    "transName": "锻铁锯片"
+  },
+  {
+    "origName": "tfc:metal/scythe_blade/bismuth_bronze",
+    "transName": "铋铜镰刀刃"
+  },
+  {
+    "origName": "tfc:metal/scythe_blade/black_bronze",
+    "transName": "黑铜镰刀刃"
+  },
+  {
+    "origName": "tfc:metal/scythe_blade/black_steel",
+    "transName": "黑钢镰刀刃"
+  },
+  {
+    "origName": "tfc:metal/scythe_blade/blue_steel",
+    "transName": "蓝钢镰刀刃"
+  },
+  {
+    "origName": "tfc:metal/scythe_blade/bronze",
+    "transName": "青铜镰刀刃"
+  },
+  {
+    "origName": "tfc:metal/scythe_blade/copper",
+    "transName": "铜镰刀刃"
+  },
+  {
+    "origName": "tfc:metal/scythe_blade/red_steel",
+    "transName": "红钢镰刀刃"
+  },
+  {
+    "origName": "tfc:metal/scythe_blade/steel",
+    "transName": "钢镰刀刃"
+  },
+  {
+    "origName": "tfc:metal/scythe_blade/wrought_iron",
+    "transName": "锻铁镰刀刃"
+  },
+  {
+    "origName": "tfc:metal/sheet/bismuth",
+    "transName": "铋薄板"
+  },
+  {
+    "origName": "tfc:metal/sheet/bismuth_bronze",
+    "transName": "铋铜薄板"
+  },
+  {
+    "origName": "tfc:metal/sheet/black_bronze",
+    "transName": "黑铜薄板"
+  },
+  {
+    "origName": "tfc:metal/sheet/black_steel",
+    "transName": "黑钢薄板"
+  },
+  {
+    "origName": "tfc:metal/sheet/blue_steel",
+    "transName": "蓝钢薄板"
+  },
+  {
+    "origName": "tfc:metal/sheet/brass",
+    "transName": "黄铜薄板"
+  },
+  {
+    "origName": "tfc:metal/sheet/bronze",
+    "transName": "青铜薄板"
+  },
+  {
+    "origName": "tfc:metal/sheet/cast_iron",
+    "transName": "铸铁薄板"
+  },
+  {
+    "origName": "tfc:metal/sheet/copper",
+    "transName": "铜薄板"
+  },
+  {
+    "origName": "tfc:metal/sheet/gold",
+    "transName": "金薄板"
+  },
+  {
+    "origName": "tfc:metal/sheet/nickel",
+    "transName": "镍薄板"
+  },
+  {
+    "origName": "tfc:metal/sheet/red_steel",
+    "transName": "红钢薄板"
+  },
+  {
+    "origName": "tfc:metal/sheet/rose_gold",
+    "transName": "玫瑰金薄板"
+  },
+  {
+    "origName": "tfc:metal/sheet/silver",
+    "transName": "银薄板"
+  },
+  {
+    "origName": "tfc:metal/sheet/steel",
+    "transName": "钢薄板"
+  },
+  {
+    "origName": "tfc:metal/sheet/sterling_silver",
+    "transName": "纯银薄板"
+  },
+  {
+    "origName": "tfc:metal/sheet/tin",
+    "transName": "锡薄板"
+  },
+  {
+    "origName": "tfc:metal/sheet/wrought_iron",
+    "transName": "锻铁薄板"
+  },
+  {
+    "origName": "tfc:metal/sheet/zinc",
+    "transName": "锌薄板"
+  },
+  {
+    "origName": "tfc:metal/shield/bismuth_bronze",
+    "transName": "铋铜盾"
+  },
+  {
+    "origName": "tfc:metal/shield/black_bronze",
+    "transName": "黑铜盾"
+  },
+  {
+    "origName": "tfc:metal/shield/black_steel",
+    "transName": "黑钢盾"
+  },
+  {
+    "origName": "tfc:metal/shield/blue_steel",
+    "transName": "蓝钢盾"
+  },
+  {
+    "origName": "tfc:metal/shield/bronze",
+    "transName": "青铜盾"
+  },
+  {
+    "origName": "tfc:metal/shield/copper",
+    "transName": "铜盾"
+  },
+  {
+    "origName": "tfc:metal/shield/red_steel",
+    "transName": "红钢盾"
+  },
+  {
+    "origName": "tfc:metal/shield/steel",
+    "transName": "钢盾"
+  },
+  {
+    "origName": "tfc:metal/shield/wrought_iron",
+    "transName": "锻铁盾"
+  },
+  {
+    "origName": "tfc:metal/shovel_head/bismuth_bronze",
+    "transName": "铋铜铲头"
+  },
+  {
+    "origName": "tfc:metal/shovel_head/black_bronze",
+    "transName": "黑铜铲头"
+  },
+  {
+    "origName": "tfc:metal/shovel_head/black_steel",
+    "transName": "黑钢铲头"
+  },
+  {
+    "origName": "tfc:metal/shovel_head/blue_steel",
+    "transName": "蓝钢铲头"
+  },
+  {
+    "origName": "tfc:metal/shovel_head/bronze",
+    "transName": "青铜铲头"
+  },
+  {
+    "origName": "tfc:metal/shovel_head/copper",
+    "transName": "铜铲头"
+  },
+  {
+    "origName": "tfc:metal/shovel_head/red_steel",
+    "transName": "红钢铲头"
+  },
+  {
+    "origName": "tfc:metal/shovel_head/steel",
+    "transName": "钢铲头"
+  },
+  {
+    "origName": "tfc:metal/shovel_head/wrought_iron",
+    "transName": "锻铁铲头"
+  },
+  {
+    "origName": "tfc:metal/sword_blade/bismuth_bronze",
+    "transName": "铋铜剑刃"
+  },
+  {
+    "origName": "tfc:metal/sword_blade/black_bronze",
+    "transName": "黑铜剑刃"
+  },
+  {
+    "origName": "tfc:metal/sword_blade/black_steel",
+    "transName": "黑钢剑刃"
+  },
+  {
+    "origName": "tfc:metal/sword_blade/blue_steel",
+    "transName": "蓝钢剑刃"
+  },
+  {
+    "origName": "tfc:metal/sword_blade/bronze",
+    "transName": "青铜剑刃"
+  },
+  {
+    "origName": "tfc:metal/sword_blade/copper",
+    "transName": "铜剑刃"
+  },
+  {
+    "origName": "tfc:metal/sword_blade/red_steel",
+    "transName": "红钢剑刃"
+  },
+  {
+    "origName": "tfc:metal/sword_blade/steel",
+    "transName": "钢剑刃"
+  },
+  {
+    "origName": "tfc:metal/sword_blade/wrought_iron",
+    "transName": "锻铁剑刃"
+  },
+  {
+    "origName": "tfc:metal/trapdoor/bismuth_bronze",
+    "transName": "铋铜活板门"
+  },
+  {
+    "origName": "tfc:metal/trapdoor/black_bronze",
+    "transName": "黑铜活板门"
+  },
+  {
+    "origName": "tfc:metal/trapdoor/black_steel",
+    "transName": "黑钢活板门"
+  },
+  {
+    "origName": "tfc:metal/trapdoor/blue_steel",
+    "transName": "蓝钢活板门"
+  },
+  {
+    "origName": "tfc:metal/trapdoor/bronze",
+    "transName": "青铜活板门"
+  },
+  {
+    "origName": "tfc:metal/trapdoor/copper",
+    "transName": "铜活板门"
+  },
+  {
+    "origName": "tfc:metal/trapdoor/red_steel",
+    "transName": "红钢活板门"
+  },
+  {
+    "origName": "tfc:metal/trapdoor/steel",
+    "transName": "钢活板门"
+  },
+  {
+    "origName": "tfc:metal/trapdoor/wrought_iron",
+    "transName": "锻铁活板门"
+  },
+  {
+    "origName": "tfc:metal/tuyere/bismuth_bronze",
+    "transName": "铋铜鼓风口"
+  },
+  {
+    "origName": "tfc:metal/tuyere/black_bronze",
+    "transName": "黑铜鼓风口"
+  },
+  {
+    "origName": "tfc:metal/tuyere/black_steel",
+    "transName": "黑钢鼓风口"
+  },
+  {
+    "origName": "tfc:metal/tuyere/blue_steel",
+    "transName": "蓝钢鼓风口"
+  },
+  {
+    "origName": "tfc:metal/tuyere/bronze",
+    "transName": "青铜鼓风口"
+  },
+  {
+    "origName": "tfc:metal/tuyere/copper",
+    "transName": "铜鼓风口"
+  },
+  {
+    "origName": "tfc:metal/tuyere/red_steel",
+    "transName": "红钢鼓风口"
+  },
+  {
+    "origName": "tfc:metal/tuyere/steel",
+    "transName": "钢鼓风口"
+  },
+  {
+    "origName": "tfc:metal/tuyere/wrought_iron",
+    "transName": "锻铁鼓风口"
+  },
+  {
+    "origName": "tfc:metal/unfinished_boots/bismuth_bronze",
+    "transName": "未完成的铋铜靴"
+  },
+  {
+    "origName": "tfc:metal/unfinished_boots/black_bronze",
+    "transName": "未完成的黑铜靴"
+  },
+  {
+    "origName": "tfc:metal/unfinished_boots/black_steel",
+    "transName": "未完成的黑钢靴"
+  },
+  {
+    "origName": "tfc:metal/unfinished_boots/blue_steel",
+    "transName": "未完成的蓝钢靴"
+  },
+  {
+    "origName": "tfc:metal/unfinished_boots/bronze",
+    "transName": "未完成的青铜靴"
+  },
+  {
+    "origName": "tfc:metal/unfinished_boots/copper",
+    "transName": "未完成的铜靴"
+  },
+  {
+    "origName": "tfc:metal/unfinished_boots/red_steel",
+    "transName": "未完成的红钢靴"
+  },
+  {
+    "origName": "tfc:metal/unfinished_boots/steel",
+    "transName": "未完成的钢靴"
+  },
+  {
+    "origName": "tfc:metal/unfinished_boots/wrought_iron",
+    "transName": "未完成的锻铁靴"
+  },
+  {
+    "origName": "tfc:metal/unfinished_chestplate/bismuth_bronze",
+    "transName": "未完成的铋铜胸甲"
+  },
+  {
+    "origName": "tfc:metal/unfinished_chestplate/black_bronze",
+    "transName": "未完成的黑铜胸甲"
+  },
+  {
+    "origName": "tfc:metal/unfinished_chestplate/black_steel",
+    "transName": "未完成的黑钢胸甲"
+  },
+  {
+    "origName": "tfc:metal/unfinished_chestplate/blue_steel",
+    "transName": "未完成的蓝钢胸甲"
+  },
+  {
+    "origName": "tfc:metal/unfinished_chestplate/bronze",
+    "transName": "未完成的青铜胸甲"
+  },
+  {
+    "origName": "tfc:metal/unfinished_chestplate/copper",
+    "transName": "未完成的铜胸甲"
+  },
+  {
+    "origName": "tfc:metal/unfinished_chestplate/red_steel",
+    "transName": "未完成的红钢胸甲"
+  },
+  {
+    "origName": "tfc:metal/unfinished_chestplate/steel",
+    "transName": "未完成的钢胸甲"
+  },
+  {
+    "origName": "tfc:metal/unfinished_chestplate/wrought_iron",
+    "transName": "未完成的锻铁胸甲"
+  },
+  {
+    "origName": "tfc:metal/unfinished_greaves/bismuth_bronze",
+    "transName": "未完成的铋铜护腿"
+  },
+  {
+    "origName": "tfc:metal/unfinished_greaves/black_bronze",
+    "transName": "未完成的黑铜护腿"
+  },
+  {
+    "origName": "tfc:metal/unfinished_greaves/black_steel",
+    "transName": "未完成的黑钢护腿"
+  },
+  {
+    "origName": "tfc:metal/unfinished_greaves/blue_steel",
+    "transName": "未完成的蓝钢护腿"
+  },
+  {
+    "origName": "tfc:metal/unfinished_greaves/bronze",
+    "transName": "未完成的青铜护腿"
+  },
+  {
+    "origName": "tfc:metal/unfinished_greaves/copper",
+    "transName": "未完成的铜护腿"
+  },
+  {
+    "origName": "tfc:metal/unfinished_greaves/red_steel",
+    "transName": "未完成的红钢护腿"
+  },
+  {
+    "origName": "tfc:metal/unfinished_greaves/steel",
+    "transName": "未完成的钢护腿"
+  },
+  {
+    "origName": "tfc:metal/unfinished_greaves/wrought_iron",
+    "transName": "未完成的锻铁护腿"
+  },
+  {
+    "origName": "tfc:metal/unfinished_helmet/bismuth_bronze",
+    "transName": "未完成的铋铜头盔"
+  },
+  {
+    "origName": "tfc:metal/unfinished_helmet/black_bronze",
+    "transName": "未完成的黑铜头盔"
+  },
+  {
+    "origName": "tfc:metal/unfinished_helmet/black_steel",
+    "transName": "未完成的黑钢头盔"
+  },
+  {
+    "origName": "tfc:metal/unfinished_helmet/blue_steel",
+    "transName": "未完成的蓝钢头盔"
+  },
+  {
+    "origName": "tfc:metal/unfinished_helmet/bronze",
+    "transName": "未完成的青铜头盔"
+  },
+  {
+    "origName": "tfc:metal/unfinished_helmet/copper",
+    "transName": "未完成的铜头盔"
+  },
+  {
+    "origName": "tfc:metal/unfinished_helmet/red_steel",
+    "transName": "未完成的红钢头盔"
+  },
+  {
+    "origName": "tfc:metal/unfinished_helmet/steel",
+    "transName": "未完成的钢头盔"
+  },
+  {
+    "origName": "tfc:metal/unfinished_helmet/wrought_iron",
+    "transName": "未完成的锻铁头盔"
+  },
+  {
+    "origName": "tfc:raw_iron_bloom",
+    "transName": "生铁方坯"
+  },
+  {
+    "origName": "tfc:red_steel_bars",
+    "transName": "红钢栏杆"
+  },
+  {
+    "origName": "tfc:refined_iron_bloom",
+    "transName": "精炼铁方坯"
+  },
+  {
+    "origName": "tfc:steel_bars",
+    "transName": "钢栏杆"
+  },
+  {
+    "origName": "tfc:wrought_iron_grill",
+    "transName": "锻铁烤架"
+  },
+  {
+    "origName": "waterflasks:unfinished_iron_flask",
+    "transName": "未完成的铁瓶(waterflasks)"
+  }
+]
+}

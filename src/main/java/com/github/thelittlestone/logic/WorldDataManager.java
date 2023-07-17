@@ -1,6 +1,7 @@
 package com.github.thelittlestone.logic;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.github.thelittlestone.MainApplication;
 import com.github.thelittlestone.util.FileLoader;
 import com.github.thelittlestone.logic.json.JsonWorldRecipes;
 
@@ -21,12 +22,19 @@ public class WorldDataManager {
     //初始化, 将所有的world文件加载到程序中,
     static {
         ArrayList<String> fileNames = FileLoader.getOutPackageFileNamesContains("^((?i)w)orld_(.*).json");
-        if (fileNames != null &&!fileNames.isEmpty()) {
+        if (fileNames != null && !fileNames.isEmpty()) {
             for (String fileName : fileNames) {
                 try {
                     String fileContent = FileLoader.getFileContent(fileName, false);
                     ObjectMapper objectMapper = new ObjectMapper();
                     JsonWorldRecipes jwr = objectMapper.readValue(fileContent, JsonWorldRecipes.class);
+                    //添加配方版本更新功能
+                    if (!MainApplication.VERSION.equals(jwr.version)){
+                        jwr.merge(new JsonWorldRecipes("raw", RecipeLoader.rawRecipes));
+                        jwr.version = MainApplication.VERSION;
+                        FileLoader.deleteFile(fileName);
+                        FileLoader.writeToFile(fileName, jwr.generateJsonText());
+                    }
                     nameMap.put(jwr.worldName, fileName);
                     worldMap.put(jwr.worldName, jwr);
                 } catch (IOException e) {
@@ -79,7 +87,7 @@ public class WorldDataManager {
     }
 
     public static JsonWorldRecipes createWorldFromRecipe(String worldName, String fileName) throws IOException {
-        JsonWorldRecipes jwr = new JsonWorldRecipes(worldName, RecipeLoader.recipeContent);
+        JsonWorldRecipes jwr = new JsonWorldRecipes(worldName, RecipeLoader.rawRecipes);
         updateWorld(jwr, fileName);
         return jwr;
     }

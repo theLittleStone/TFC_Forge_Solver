@@ -1,4 +1,6 @@
-[
+{
+  "version" : "1.0.0",
+  "recipes": [
   {
     "input": {
       "tag": "forge:ingots/bismuth_bronze"
@@ -3581,3 +3583,4 @@
     ]
   }
 ]
+}

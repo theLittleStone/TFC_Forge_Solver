@@ -8,7 +8,6 @@ import java.util.Objects;
 public class NameMappingUnit {
     public String origName;
     public String transName;
-
     @Override
     public String toString() {
         return transName;

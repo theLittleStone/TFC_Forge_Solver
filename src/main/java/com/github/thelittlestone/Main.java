@@ -18,9 +18,13 @@ import java.util.HashSet;
  */
 public class Main {
     public static void main(String[] args) throws IOException {
-        System.setProperty("file.encoding", "UTF-8");
-        MainApplication.launch(MainApplication.class, args);
-
+        HashSet<Test> tests = new HashSet<>();
+        tests.add(new Test("aaa", 1));
+        tests.add(new Test("bbb", 1));
+        tests.add(new Test("ccc", 1));
+        for (Test test : tests) {
+            System.out.println(test);
+        }
     }
 
     public static void generateNameMap() throws IOException {
@@ -45,12 +49,45 @@ public class Main {
             NameMappingUnit nameMappingUnit = new NameMappingUnit();
             nameMappingUnit.origName = s;
             nameMappingUnit.transName = "";
-            nameMappingTable.add(nameMappingUnit);
+            nameMappingTable.mapUnits.add(nameMappingUnit);
         }
 
         ObjectMapper objectMapper = new ObjectMapper();
         objectMapper.enable(SerializationFeature.INDENT_OUTPUT);
         String content = objectMapper.writeValueAsString(nameMappingTable);
         FileLoader.writeToFile("NameMap11.json", content);
+    }
+}
+
+class Test{
+    String a;
+    int b;
+
+    public Test(String a, int b) {
+        this.a = a;
+        this.b = b;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Test test = (Test) o;
+
+        return b == test.b;
+    }
+
+    @Override
+    public int hashCode() {
+        return b;
+    }
+
+    @Override
+    public String toString() {
+        return "Test{" +
+                "a='" + a + '\'' +
+                ", b=" + b +
+                '}';
     }
 }
